@@ -123,13 +123,25 @@ body {
     position: absolute;
     inset: 0;
     background: linear-gradient(rgba(43, 30, 22, 0.18), rgba(43, 30, 22, 0.22));
-    pointer-events: none
+    pointer-events: none;
+}
+
+/* Background image element (absolute) */
+.hero-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
 }
 
 .hero-inner {
     position: relative;
     z-index: 2;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     max-width: var(--max-width);
     margin: 0 auto;
     padding: 4rem 2rem
@@ -137,9 +149,48 @@ body {
 
 .hero-copy {
     max-width: 680px;
-    background: linear-gradient(180deg, rgba(244, 239, 234, 0.62), rgba(244, 239, 234, 0.38));
     padding: 2rem;
-    border-radius: 10px
+    border-radius: 10px;
+    position: relative;
+    background: transparent;
+}
+
+/* Frosted panel behind the hero text: blurs only the image under the text block */
+.hero-copy::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    border-radius: 10px;
+    background: linear-gradient(180deg, rgba(244, 239, 234, 0.62), rgba(244, 239, 234, 0.38));
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+}
+
+.hero-copy { text-align: center; }
+
+/* Make hero paragraph and hero buttons use same color as H1 */
+.hero .hero-copy .lede,
+.hero .hero-copy .btn {
+    color: var(--coffee-900) !important;
+    transition: background-color .18s ease, color .18s ease, border-color .18s ease, transform .12s ease;
+}
+.hero .hero-copy .lede,
+.hero .hero-copy .btn.btn-outline-secondary {
+    color: var(--coffee-900) !important;
+}
+.hero .hero-copy .btn.btn-outline-secondary {
+    border-color: rgba(43, 30, 22, .12) !important;
+    background: transparent;
+}
+
+/* Hover: invertir colores del botón (texto <-> fondo) */
+.hero .hero-copy .btn.btn-outline-secondary:hover,
+.hero .hero-copy .btn.btn-outline-secondary:focus {
+    background: var(--coffee-900) !important;
+    color: var(--cream) !important;
+    border-color: var(--coffee-900) !important;
+    transform: translateY(-1px);
 }
 
 .hero-copy h1 {
