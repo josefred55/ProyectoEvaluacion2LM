@@ -41,17 +41,11 @@ body {
     padding: 2rem
 }
 
-/* Header */
+/* Header (now using Bootstrap utilities where possible) */
 .site-header {
     background: transparent;
-    padding: 1rem 0
-}
-
-.header-inner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem
+    padding: 0.2rem 0;
+    transition: background-color .18s ease, color .18s ease;
 }
 
 .brand {
@@ -59,28 +53,58 @@ body {
     font-weight: 700;
     color: var(--coffee-900);
     text-decoration: none;
-    font-size: 1.1rem
+    font-size: .95rem;
 }
 
-.site-nav ul {
-    display: flex;
-    gap: 1.25rem;
-    list-style: none;
-    margin: 0;
-    padding: 0
+.nav-toggle { display: inline-flex; align-items:center; font-size: .95rem; padding: .15rem .4rem; }
+
+/* Navbar tweaks: smaller height and nav-link color to match site */
+.site-header .nav {
+    gap: .85rem;
+    align-items: center;
+}
+.site-header .nav-link {
+    color: var(--coffee-900) !important;
+    font-size: .95rem;
+    padding: .2rem .75rem;
+    font-weight: 500;
+}
+.site-header .brand {
+    font-size: 1.5rem;
+}
+.site-header .nav-link:hover {
+    background: rgba(43, 30, 22, .04);
+    border-radius: 6px;
+}
+.site-header .nav .nav-item + .nav-item { margin-left: .35rem; }
+
+/* Hover / focus: invertir colores (texto fondo <-> color) */
+.site-header .nav-link {
+    transition: background-color .18s ease, color .18s ease, transform .12s ease;
 }
 
-.site-nav a {
-    color: var(--coffee-900);
-    text-decoration: none;
-    font-weight: 500
+/* Hover/focus on whole navbar: invertir colores globalmente */
+.site-header:hover,
+.site-header:focus-within {
+    background: var(--coffee-900);
+}
+.site-header:hover .nav-link,
+.site-header:focus-within .nav-link,
+.site-header:hover .brand,
+.site-header:focus-within .brand,
+.site-header:hover .nav-toggle,
+.site-header:focus-within .nav-toggle {
+    color: var(--cream) !important;
 }
 
-.nav-toggle {
-    display: none;
-    background: none;
-    border: 0;
-    font-size: 1.2rem
+/* Individual link hover: subtle lift and light translucent bg when navbar is dark */
+.site-header .nav-link:hover,
+.site-header .nav-link:focus,
+.site-header .nav-link:focus-visible {
+    transform: translateY(-1px);
+    background: rgba(255,255,255,0.06);
+    color: var(--cream) !important;
+    border-radius: 6px;
 }
 
 /* HERO: full-bleed background image with text inside */
@@ -137,28 +161,8 @@ body {
     background: linear-gradient(180deg, rgba(244, 239, 234, 0.7), rgba(244, 239, 234, 0.5))
 }
 
-/* Buttons */
-.btn {
-    display: inline-block;
-    padding: .7rem 1.1rem;
-    border-radius: 8px;
-    text-decoration: none
-}
-
-.btn-ghost {
-    border: 1px solid rgba(43, 30, 22, .08);
-    background: transparent;
-    color: var(--coffee-900)
-}
-
-.btn-ghost:hover {
-    background: rgba(43, 30, 22, .04)
-}
-
-.btn-ghost.light {
-    color: var(--cream);
-    border-color: rgba(255, 255, 255, .12)
-}
+/* Buttons: use Bootstrap .btn utilities; keep minor overrides if needed */
+.btn-ghost { display:inline-block; }
 
 /* Sections */
 .section {
@@ -171,60 +175,7 @@ body {
     margin-bottom: 1rem
 }
 
-/* Grid system (12 columns) */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 1.25rem
-}
-
-.col-1 {
-    grid-column: span 1
-}
-
-.col-2 {
-    grid-column: span 2
-}
-
-.col-3 {
-    grid-column: span 3
-}
-
-.col-4 {
-    grid-column: span 4
-}
-
-.col-5 {
-    grid-column: span 5
-}
-
-.col-6 {
-    grid-column: span 6
-}
-
-.col-7 {
-    grid-column: span 7
-}
-
-.col-8 {
-    grid-column: span 8
-}
-
-.col-9 {
-    grid-column: span 9
-}
-
-.col-10 {
-    grid-column: span 10
-}
-
-.col-11 {
-    grid-column: span 11
-}
-
-.col-12 {
-    grid-column: span 12
-}
+/* Grid handled by Bootstrap (.row / .col-*) */
 
 .story .long {
     color: var(--coffee-600);
@@ -294,14 +245,7 @@ body {
 }
 
 /* Values */
-.values-list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: .5rem;
-    padding: 0;
-    margin: 0;
-    list-style: none
-}
+.values-list { padding:0; margin:0; list-style:none; }
 
 /* Closing (dark) - removed; footer will use dark styling instead */
 
