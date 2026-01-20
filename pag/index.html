@@ -3,22 +3,25 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Slow Coffee — Ritual y Tiempo</title>
+    <title>Slow Coffee — Inicio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
     <link rel="stylesheet" href="../css/styles.css">
   </head>
   <body>
     <header class="site-header py-3">
       <div class="container d-flex align-items-center justify-content-between">
-        <a class="brand navbar-brand" href="#">Slow Coffee</a>
+        <a class="brand navbar-brand" href="index.html">Slow Coffee</a>
         <nav id="site-nav">
           <ul class="nav">
             <li class="nav-item"><a class="nav-link" href="#historia">Historia</a></li>
             <li class="nav-item"><a class="nav-link" href="#origen">Origen</a></li>
-            <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
+            
+            <li class="nav-item"><a class="nav-link" href="catalogo.html">Productos</a></li>
+            
             <li class="nav-item"><a class="nav-link" href="#valores">Valores</a></li>
           </ul>
         </nav>
@@ -27,26 +30,24 @@
     </header>
 
     <main>
-      <!-- HERO: imagen de fondo que ocupa toda la sección; texto y CTA dentro -->
       <section class="hero" aria-label="Hero">
-        <img src="../img/imagen-hero.jpg" alt="Taza de café" class="hero-bg">
+        <img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80" alt="Taza de café" class="hero-bg">
         <div class="hero-overlay"></div>
         <div class="container hero-inner">
           <div class="hero-copy">
             <h1>El café no es prisa.</h1>
             <p class="lede">Es tiempo bien invertido.</p>
-            <p><a class="btn btn-outline-secondary" href="#productos">Explorar cafés</a></p>
+            <p><a class="btn btn-outline-secondary" href="catalogo.html">Explorar cafés</a></p>
           </div>
         </div>
       </section>
 
-      <!-- HISTORIA -->
       <section id="historia" class="section story">
         <div class="container">
           <div class="row">
           <article class="col-md-7">
-            <h2>Una historia de calma y oficio</h2>
-            <p class="long">Nacimos del deseo de honrar el tiempo. Cada lote se tuesta siguiendo una cadencia propia, buscando claridad en el sabor y respeto por la madera, el papel y las manos que lo hacen posible.</p>
+            <h2>Una historia de calma</h2>
+            <p class="long">Nacimos del deseo de honrar el tiempo. Cada lote se tuesta siguiendo una cadencia propia, buscando claridad en el sabor.</p>
           </article>
           <aside class="col-md-5 story-media">
             <div class="vertical-photo">Textura</div>
@@ -55,118 +56,55 @@
         </div>
       </section>
 
-      <!-- ORIGEN & PROCESO -->
       <section id="origen" class="section origin">
         <div class="container">
           <h3>Origen & Proceso</h3>
           <div class="row icons">
             <div class="col-md-4 icon-card">
               <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="3"></circle><path d="M12 2v2"></path></svg>
-              <h4>Origen</h4>
-              <p>Relaciones directas con productores que cuidan la tierra.</p>
+              <h4>Origen</h4><p>Relaciones directas.</p>
             </div>
             <div class="col-md-4 icon-card">
               <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M6 9l6 6 6-6"></path></svg>
-              <h4>Proceso</h4>
-              <p>Tostes pequeños y lecturas por lote para preservar matices.</p>
+              <h4>Proceso</h4><p>Lecturas por lote.</p>
             </div>
             <div class="col-md-4 icon-card">
               <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 20v-6"></path><path d="M8 12h8"></path></svg>
-              <h4>Ritual</h4>
-              <p>Preparar café es un gesto humano, lento y deliberado.</p>
+              <h4>Ritual</h4><p>Un gesto humano.</p>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- PRODUCTOS -->
-      <section id="productos" class="section products">
-        <div class="container">
-          <h3>Nuestros cafés</h3>
-          <div class="row product-grid">
-            <article class="col-md-4 product-card">
-              <div class="product-photo">Foto</div>
-              <h4>Reserva de Monte</h4>
-              <p class="muted">Proceso lavado — notas a chocolate y cáscara de cítrico</p>
-            </article>
-            <article class="col-md-4 product-card">
-              <div class="product-photo">Foto</div>
-              <h4>Ritual de la Mañana</h4>
-              <p class="muted">Blend de desayuno — cuerpo redondo y crema persistente</p>
-            </article>
-            <article class="col-md-4 product-card">
-              <div class="product-photo">Foto</div>
-              <h4>Edición de Finca</h4>
-              <p class="muted">Single origin — delicado y florar</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- VALORES -->
-      <section id="valores" class="section values">
-        <div class="container">
-          <h3>Valores</h3>
-          <div class="row values-list">
-            <div class="col-md-6"><p><strong>Calidad:</strong> Cada lote con atención y cuidado.</p></div>
-            <div class="col-md-6"><p><strong>Origen:</strong> Transparencia y relaciones a largo plazo.</p></div>
-            <div class="col-md-6"><p><strong>Respeto:</strong> Por el tiempo y el proceso.</p></div>
-            <div class="col-md-6"><p><strong>Ritual:</strong> Un momento para sí mismo.</p></div>
-          </div>
-        </div>
-      </section>
-
-    </main>
-
-      <!-- CIERRE (hero similar) -->
       <section class="hero closing-hero" aria-label="Cierre">
-        <img src="../img/closing.jpg" alt="Cierre — taza" class="hero-bg">
+        <img src="https://images.unsplash.com/photo-1507133750069-775e4e416d2b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80" alt="Cierre" class="hero-bg">
         <div class="hero-overlay"></div>
         <div class="container hero-inner">
           <div class="hero-copy center">
             <h2>Ven a saborear el tiempo.</h2>
             <p class="lede">Encuentra tu ritual en cada taza.</p>
-            <p><a class="btn btn-outline-light" href="#productos">Descubrir nuestros cafés</a></p>
+            <p><a class="btn btn-outline-light" href="catalogo.html">Descubrir nuestros cafés</a></p>
           </div>
         </div>
       </section>
+    </main>
 
     <footer class="site-footer">
       <div class="container footer-inner">
-        <p>© <span id="year"></span> Slow Coffee — Todos los derechos reservados</p>
+        <p>© <span id="year"></span> Slow Coffee</p>
       </div>
     </footer>
 
     <script>
-      // Mobile nav toggle
       (function(){
         var btn = document.getElementById('nav-toggle');
         var nav = document.getElementById('site-nav');
         btn.addEventListener('click', function(){
-          var expanded = this.getAttribute('aria-expanded') === 'true';
-          this.setAttribute('aria-expanded', String(!expanded));
+          var e = this.getAttribute('aria-expanded') === 'true';
+          this.setAttribute('aria-expanded', String(!e));
           nav.classList.toggle('open');
         });
         document.getElementById('year').textContent = new Date().getFullYear();
-
-        // Micro-interaction: reveal ritual section slowly on scroll (minimal JS)
-        (function(){
-          var ritual = document.getElementById('ritual');
-          if(!ritual) return;
-          // Respect reduced motion
-          var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-          if(reduce){ ritual.classList.add('in-view'); return; }
-
-          var obs = new IntersectionObserver(function(entries){
-            entries.forEach(function(e){
-              if(e.isIntersecting){
-                ritual.classList.add('in-view');
-                obs.disconnect();
-              }
-            });
-          },{threshold:0.25});
-          obs.observe(ritual);
-        })();
       })();
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
