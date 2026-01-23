@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nuestros Orígenes — Slow Coffee</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <style>
+      /* Estilos Origen */
+      .hero-medium {
+        position: relative; height: 50vh; min-height: 350px;
+        background-color: var(--olive); display: flex; align-items: center; justify-content: center;
+        overflow: hidden; margin-bottom: 4rem;
+      }
+      
+      .origin-card {
+        margin-bottom: 4rem; border-bottom: 1px solid rgba(43,30,22,0.05); padding-bottom: 2rem;
+      }
+      .origin-card:last-child { border-bottom: none; }
+
+      .origin-title { font-family: var(--font-serif); font-size: 2.2rem; color: var(--coffee-900); }
+      .origin-subtitle { color: var(--olive); font-weight: 700; text-transform: uppercase; letter-spacing: 1px; font-size: 0.9rem; }
+      
+      .origin-img { width: 100%; height: 400px; object-fit: cover; border-radius: 6px; }
+      
+      .fact-box {
+        background: var(--cream); padding: 1.5rem; border-radius: 6px; margin-top: 1.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <header class="site-header py-3">
+      <div class="container d-flex align-items-center justify-content-between">
+        <a class="brand navbar-brand" href="index.html">Slow Coffee</a>
+        <nav id="site-nav">
+          <ul class="nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="historia.html">Historia</a></li>
+            <li class="nav-item"><a class="nav-link active" href="origen.html">Origen</a></li>
+            <li class="nav-item"><a class="nav-link" href="catalogo.html">Productos</a></li>
+            <li class="nav-item"><a class="nav-link" href="valores.html">Valores</a></li>
+          </ul>
+        </nav>
+        <button class="nav-toggle btn btn-outline-secondary d-md-none" id="nav-toggle">☰</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-medium">
+        <img src="https://images.unsplash.com/photo-1524350876685-274059332603?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80" alt="Montañas" class="hero-bg">
+        <div class="hero-overlay"></div>
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <h1>Geografía es Sabor</h1>
+            <p class="lede text-white">Viajamos para encontrar lo extraordinario.</p>
+          </div>
+        </div>
+      </section>
+
+      <div class="container">
+        
+        <div class="row align-items-center origin-card">
+          <div class="col-md-6 pe-md-5">
+            <span class="origin-subtitle">África</span>
+            <h2 class="origin-title">Etiopía</h2>
+            <p class="mt-3">El lugar de nacimiento del café. Aquí las variedades crecen casi de forma silvestre. Buscamos perfiles florales y cítricos que recuerdan al té y al jazmín.</p>
+            <div class="fact-box">
+              <strong>Perfil:</strong> Floral, Cítrico, Té Negro.<br>
+              <strong>Altitud:</strong> 2.000 msnm.
+            </div>
+          </div>
+          <div class="col-md-6 mt-4 mt-md-0">
+            <img src="https://images.unsplash.com/photo-1621989495730-1049b7940182?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="origin-img" alt="Etiopía">
+          </div>
+        </div>
+
+        <div class="row align-items-center origin-card">
+          <div class="col-md-6 order-2 order-md-1 mt-4 mt-md-0">
+            <img src="https://images.unsplash.com/photo-1583224376023-458df15694c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="origin-img" alt="Colombia">
+          </div>
+          <div class="col-md-6 order-1 order-md-2 ps-md-5">
+            <span class="origin-subtitle">Sudamérica</span>
+            <h2 class="origin-title">Colombia</h2>
+            <p class="mt-3">Trabajamos en micro-lotes de Huila. El suelo volcánico aporta una dulzura increíble y un balance perfecto.</p>
+            <div class="fact-box">
+              <strong>Perfil:</strong> Caramelo, Frutos Rojos, Cuerpo Medio.<br>
+              <strong>Altitud:</strong> 1.600 msnm.
+            </div>
+          </div>
+        </div>
+
+        <div class="row align-items-center origin-card">
+          <div class="col-md-6 pe-md-5">
+            <span class="origin-subtitle">Asia</span>
+            <h2 class="origin-title">Sumatra</h2>
+            <p class="mt-3">Intenso y terroso. El clima húmedo de Indonesia crea cafés con mucho cuerpo y baja acidez, perfectos para quienes buscan fuerza y notas a madera.</p>
+            <div class="fact-box">
+              <strong>Perfil:</strong> Especias, Madera, Chocolate Negro.<br>
+              <strong>Altitud:</strong> 1.300 msnm.
+            </div>
+          </div>
+          <div class="col-md-6 mt-4 mt-md-0">
+            <img src="https://images.unsplash.com/photo-1525081905268-fc0b46e9d786?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="origin-img" alt="Sumatra">
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner"><p>© <span id="year"></span> Slow Coffee</p></div>
+    </footer>
+    
+    <script>
+      (function(){
+        var btn = document.getElementById('nav-toggle'); var nav = document.getElementById('site-nav');
+        btn.addEventListener('click', function(){
+          var e = this.getAttribute('aria-expanded') === 'true';
+          this.setAttribute('aria-expanded', String(!e)); nav.classList.toggle('open');
+        });
+        document.getElementById('year').textContent = new Date().getFullYear();
+      })();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

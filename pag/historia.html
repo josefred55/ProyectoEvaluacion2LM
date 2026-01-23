@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nuestra Historia — Slow Coffee</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <style>
+      /* Estilos específicos para Historia */
+      .hero-medium {
+        position: relative; height: 50vh; min-height: 350px;
+        background-color: var(--coffee-900); display: flex; align-items: center; justify-content: center;
+        overflow: hidden; margin-bottom: 4rem;
+      }
+      
+      /* Línea de tiempo */
+      .timeline-section { position: relative; padding: 3rem 0; }
+      /* Línea vertical central (solo en desktop) */
+      .timeline-section::before {
+        content: ''; position: absolute; left: 50%; top: 0; bottom: 0; width: 1px; background: rgba(43,30,22,0.1);
+        display: none; 
+      }
+      @media(min-width: 768px) { .timeline-section::before { display: block; } }
+
+      .year-marker {
+        font-family: var(--font-serif); font-size: 2.5rem; color: var(--terracotta); margin-bottom: 1rem; display: block;
+      }
+      
+      .history-img {
+        width: 100%; height: 350px; object-fit: cover; border-radius: 4px; filter: grayscale(20%);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+      }
+    </style>
+  </head>
+  <body>
+    
+    <header class="site-header py-3">
+      <div class="container d-flex align-items-center justify-content-between">
+        <a class="brand navbar-brand" href="index.html">Slow Coffee</a>
+        <nav id="site-nav">
+          <ul class="nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link active" href="historia.html">Historia</a></li>
+            <li class="nav-item"><a class="nav-link" href="origen.html">Origen</a></li>
+            <li class="nav-item"><a class="nav-link" href="catalogo.html">Productos</a></li>
+            <li class="nav-item"><a class="nav-link" href="valores.html">Valores</a></li>
+          </ul>
+        </nav>
+        <button class="nav-toggle btn btn-outline-secondary d-md-none" id="nav-toggle">☰</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-medium">
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80" alt="Taller antiguo" class="hero-bg">
+        <div class="hero-overlay"></div>
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <h1>El Pasado</h1>
+            <p class="lede text-white">Cómo convertimos el tiempo en nuestra materia prima.</p>
+          </div>
+        </div>
+      </section>
+
+      <div class="container mb-5">
+        <div class="row justify-content-center text-center">
+          <div class="col-lg-8">
+            <h2 class="font-serif mb-3">No empezamos con prisa</h2>
+            <p class="lead text-muted">Todo comenzó en un pequeño garaje en 2010. No buscábamos revolucionar la industria, solo queríamos tomar una taza de café que supiera a café, y no a azúcar quemado.</p>
+          </div>
+        </div>
+      </div>
+
+      <section class="timeline-section">
+        <div class="container">
+          
+          <div class="row align-items-center mb-5">
+            <div class="col-md-5 text-md-end">
+              <span class="year-marker">2010</span>
+              <h3>La Primera Tostadora</h3>
+              <p>Compramos una vieja tostadora de 5kg restaurada. Pasamos noches enteras aprendiendo a escuchar el "crack" del grano y a entender el fuego.</p>
+            </div>
+            <div class="col-md-2"></div> 
+            <div class="col-md-5">
+              <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="history-img" alt="Tostadora antigua">
+            </div>
+          </div>
+
+          <div class="row align-items-center mb-5">
+            <div class="col-md-5 order-2 order-md-1">
+              <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="history-img" alt="Primer viaje">
+            </div>
+            <div class="col-md-2 order-1 order-md-2"></div>
+            <div class="col-md-5 order-3 order-md-3">
+              <span class="year-marker">2014</span>
+              <h3>El Primer Viaje</h3>
+              <p>Entendimos que tostar no era suficiente. Viajamos a Colombia por primera vez para conocer las manos que cultivaban nuestro grano. Allí cambió nuestra filosofía.</p>
+            </div>
+          </div>
+
+          <div class="row align-items-center">
+            <div class="col-md-5 text-md-end">
+              <span class="year-marker">Hoy</span>
+              <h3>Slow Coffee</h3>
+              <p>Hoy somos un equipo obsesionado con la pausa. Creemos que cada taza es una oportunidad para detener el reloj y disfrutar del momento.</p>
+            </div>
+            <div class="col-md-2"></div>
+            <div class="col-md-5">
+              <img src="https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="history-img" alt="Cafetería actual">
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <div class="container text-center py-5">
+        <h3 class="font-serif">Sé parte de nuestra historia.</h3>
+        <a href="catalogo.html" class="btn btn-outline-dark mt-3">Probar el café</a>
+      </div>
+
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner"><p>© <span id="year"></span> Slow Coffee</p></div>
+    </footer>
+    
+    <script>
+      (function(){
+        var btn = document.getElementById('nav-toggle'); var nav = document.getElementById('site-nav');
+        btn.addEventListener('click', function(){
+          var e = this.getAttribute('aria-expanded') === 'true';
+          this.setAttribute('aria-expanded', String(!e)); nav.classList.toggle('open');
+        });
+        document.getElementById('year').textContent = new Date().getFullYear();
+      })();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
