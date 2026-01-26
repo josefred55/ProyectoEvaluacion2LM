@@ -12,66 +12,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     
     <link rel="stylesheet" href="../css/styles.css">
-
-    <style>
-      /* Estilos específicos para Valores */
-      .hero-small {
-        position: relative; height: 50vh; min-height: 350px;
-        display: flex; align-items: center; justify-content: center;
-        background-color: var(--coffee-900); overflow: hidden; margin-bottom: 4rem;
-      }
-
-      /* Texto destacado tipo "Manifiesto" */
-      .manifesto-section {
-        background-color: #fff;
-        padding: 4rem 2rem;
-        border-top: 1px solid rgba(43, 30, 22, 0.05);
-        border-bottom: 1px solid rgba(43, 30, 22, 0.05);
-        margin: 4rem 0;
-      }
-      .manifesto-text {
-        font-family: var(--font-serif);
-        font-size: 1.8rem;
-        line-height: 1.6;
-        color: var(--coffee-900);
-        text-align: center;
-        max-width: 800px;
-        margin: 0 auto;
-      }
-
-      /* Grid de Valores */
-      .value-item {
-        padding: 2rem;
-        height: 100%;
-        background: #fff;
-        border-radius: 8px;
-        border: 1px solid rgba(43, 30, 22, 0.05);
-        transition: transform 0.3s ease;
-      }
-      .value-item:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 10px 30px rgba(43, 30, 22, 0.08);
-      }
-      .value-icon {
-        width: 48px; height: 48px;
-        color: var(--terracotta);
-        margin-bottom: 1.5rem;
-      }
-      .value-title {
-        font-family: var(--font-serif);
-        font-size: 1.4rem;
-        margin-bottom: 1rem;
-        color: var(--coffee-900);
-      }
-
-      /* Sección de Equipo/Imagen */
-      .team-img {
-        width: 100%;
-        height: 400px;
-        object-fit: cover;
-        border-radius: 8px;
-      }
-    </style>
   </head>
   <body>
     
@@ -80,12 +20,11 @@
         <a class="brand navbar-brand" href="index.html">Slow Coffee</a>
         <nav id="site-nav">
           <ul class="nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
             <li class="nav-item"><a class="nav-link" href="historia.html">Historia</a></li>
             <li class="nav-item"><a class="nav-link" href="origen.html">Origen</a></li>
-            
             <li class="nav-item"><a class="nav-link" href="catalogo.html">Productos</a></li>
-            
-            <li class="nav-item"><a class="nav-link" href="valores.html">Valores</a></li>
+            <li class="nav-item"><a class="nav-link active" href="valores.html">Valores</a></li>
           </ul>
         </nav>
         <button class="nav-toggle btn btn-outline-secondary d-md-none" id="nav-toggle" aria-expanded="false">☰</button>
@@ -93,7 +32,7 @@
     </header>
 
     <main>
-      <section class="hero-small">
+      <section class="hero-valores">
         <img src="../img/valoresFoto1.png" alt="Manos trabajando café" class="hero-bg">
         <div class="hero-overlay"></div>
         <div class="hero-inner">
@@ -108,8 +47,8 @@
         <div class="row justify-content-center">
           <div class="col-lg-8 text-center">
             <h2 class="mb-4">El Origen de Todo</h2>
-            <p class="lead text-muted mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non nisi est. Sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <p class="lead text-muted mb-4">Entendemos el café como una obra de artesanía que comienza mucho antes del primer sorbo. Nuestros valores se fundamentan en el respeto absoluto por el producto.</p>
+            <p>Desde el trato justo con el agricultor que cuida la tierra, hasta el tueste preciso que resalta el carácter único de cada grano. No buscamos solo despertarte, buscamos ofrecerte una experiencia sensorial honesta, sostenible y de excelencia innegociable.</p>
           </div>
         </div>
       </div>
@@ -117,7 +56,7 @@
       <section class="manifesto-section">
         <div class="container">
           <p class="manifesto-text">
-            "Creemos que el café no debe apresurarse. Lorem ipsum dolor sit amet, consectetur adipiscing elit. El respeto por la tierra y por quien la cultiva es nuestro único dogma."
+            "Creemos que el café no debe apresurarse. Cada taza es el resultado de una pausa necesaria en un mundo que vive corriendo. Elegimos detenernos para cuidar cada detalle."
           </p>
         </div>
       </section>
@@ -129,7 +68,7 @@
             <div class="value-item">
               <svg class="value-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
               <h3 class="value-title">Honestidad Radical</h3>
-              <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+              <p class="text-secondary">No escondemos nada porque no hay nada que ocultar. Practicamos una transparencia total en nuestra cadena de valor, asegurando precios justos para quien cultiva y una calidad sin atajos ni aditivos para quien lo bebe. Café real, sin letras pequeñas.</p>
             </div>
           </div>
 
@@ -137,7 +76,7 @@
             <div class="value-item">
               <svg class="value-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
               <h3 class="value-title">Origen Trazable</h3>
-              <p class="text-secondary">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+              <p class="text-secondary">Cada grano tiene nombre y apellidos. Trabajamos directamente con fincas que conocemos y visitamos, eliminando intermediarios opacos. Del cafetal a tu taza, te garantizamos saber exactamente la procedencia, la variedad y la historia detrás de tu bebida.</p>
             </div>
           </div>
 
@@ -145,7 +84,7 @@
             <div class="value-item">
               <svg class="value-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
               <h3 class="value-title">El Valor del Tiempo</h3>
-              <p class="text-secondary">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet.</p>
+              <p class="text-secondary">La prisa es enemiga de la excelencia. Respetamos los ciclos naturales de la cosecha y aplicamos un tueste lento y artesanal. Solo con paciencia logramos desarrollar los perfiles de sabor complejos y los aromas sutiles que la industria rápida ignora.</p>
             </div>
           </div>
 
@@ -153,7 +92,7 @@
             <div class="value-item">
               <svg class="value-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
               <h3 class="value-title">Comunidad</h3>
-              <p class="text-secondary">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis.</p>
+              <p class="text-secondary">El café es el vínculo que nos une. Fomentamos un ecosistema donde todos ganan: apoyamos el desarrollo de las familias productoras y creamos espacios locales donde compartir una taza se convierte en un acto de cultura y conexión humana.</p>
             </div>
           </div>
 
@@ -167,8 +106,8 @@
           </div>
           <div class="col-md-6 ps-md-5">
             <h3 class="font-serif mb-3">Detrás de cada taza</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</p>
-            <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Nulla quis lorem ut libero malesuada feugiat.</p>
+            <p>Detrás de cada taza hay una historia invisible que viaja miles de kilómetros hasta llegar a ti. Es un relato escrito por las manos de agricultores que cuidan la tierra con devoción, seleccionando grano a grano solo lo mejor de la cosecha para garantizar una calidad que no entiende de atajos.</p>
+            <p>No es solo una bebida, es la culminación de un proceso artesanal donde el tueste preciso, la técnica y la pasión convergen. Cada sorbo es un homenaje al esfuerzo colectivo y al compromiso inquebrantable de ofrecerte una experiencia sensorial capaz de despertar tus sentidos y reconfortar tu alma.</p>
           </div>
         </div>
       </div>
@@ -183,13 +122,10 @@
 
     <script>
       (function(){
-        // Menú móvil
-        var btn = document.getElementById('nav-toggle');
-        var nav = document.getElementById('site-nav');
+        var btn = document.getElementById('nav-toggle'); var nav = document.getElementById('site-nav');
         btn.addEventListener('click', function(){
           var e = this.getAttribute('aria-expanded') === 'true';
-          this.setAttribute('aria-expanded', String(!e));
-          nav.classList.toggle('open');
+          this.setAttribute('aria-expanded', String(!e)); nav.classList.toggle('open');
         });
         document.getElementById('year').textContent = new Date().getFullYear();
       })();

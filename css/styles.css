@@ -623,3 +623,322 @@ h2 {
     font-size: 1.8rem;
     margin: 0 0 1rem
 }
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================
+   ESTILOS DEL CATÁLOGO (Y PÁGINAS INTERNAS)
+   ========================================= */
+
+/* Hero más pequeño para páginas interiores */
+.hero-small {
+  position: relative;
+  height: 40vh;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--coffee-900);
+  overflow: hidden;
+  margin-bottom: 3rem;
+}
+
+/* Sidebar de filtros */
+.filter-sidebar {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid rgba(43, 30, 22, 0.08);
+}
+
+.filter-title {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: var(--coffee-900);
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  padding-bottom: 0.5rem;
+}
+
+.filter-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-check-input:checked {
+  background-color: var(--coffee-600);
+  border-color: var(--coffee-600);
+}
+
+/* Tarjeta de producto del catálogo */
+.catalog-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+.catalog-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(43, 30, 22, 0.08);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  background-color: #eee;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.price-tag {
+  font-weight: 700;
+  color: var(--terracotta);
+  font-size: 1.1rem;
+  margin-top: auto; /* Empuja el precio al fondo */
+  padding-top: 1rem;
+}
+
+/* Paginación personalizada */
+.pagination .page-link {
+  color: var(--coffee-900);
+  border: none;
+  margin: 0 2px;
+  border-radius: 4px;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: var(--coffee-900);
+  border-color: var(--coffee-900);
+  color: var(--cream);
+}
+
+.pagination .page-link:hover {
+  background-color: rgba(43, 30, 22, 0.1);
+}
+
+
+
+
+/* =========================================
+   ESTILOS DE HISTORIA
+   ========================================= */
+
+.hero-medium {
+  position: relative;
+  height: 50vh;
+  min-height: 350px;
+  background-color: var(--coffee-900);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-bottom: 4rem;
+}
+
+/* Línea de tiempo */
+.timeline-section {
+  position: relative;
+  padding: 3rem 0;
+}
+
+/* Línea vertical central (solo en desktop) */
+.timeline-section::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: rgba(43, 30, 22, 0.1);
+  display: none;
+}
+
+@media(min-width: 768px) {
+  .timeline-section::before {
+    display: block;
+  }
+}
+
+.year-marker {
+  font-family: var(--font-serif);
+  font-size: 2.5rem;
+  color: var(--terracotta);
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.history-img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 4px;
+  filter: grayscale(20%);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.35s cubic-bezier(.2, .9, .3, 1), filter 0.35s ease, box-shadow 0.35s ease;
+  will-change: transform, filter;
+  cursor: pointer;
+}
+
+.history-img:hover,
+.history-img:focus {
+  transform: translateY(-6px) scale(1.03);
+  filter: grayscale(0%);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.12);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .history-img {
+    transition: none;
+    transform: none;
+  }
+}
+
+
+
+
+
+/* =========================================
+   ESTILOS DE ORIGEN
+   ========================================= */
+
+/* Hero específico para Origen (Color Verde Oliva) */
+.hero-origen {
+  position: relative;
+  height: 50vh;
+  min-height: 350px;
+  background-color: var(--olive); /* Diferencia clave con Historia */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-bottom: 4rem;
+}
+
+.origin-card {
+  margin-bottom: 4rem;
+  border-bottom: 1px solid rgba(43, 30, 22, 0.05);
+  padding-bottom: 2rem;
+}
+
+.origin-card:last-child {
+  border-bottom: none;
+}
+
+.origin-title {
+  font-family: var(--font-serif);
+  font-size: 2.2rem;
+  color: var(--coffee-900);
+}
+
+.origin-subtitle {
+  color: var(--olive);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+}
+
+.origin-img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.fact-box {
+  background: var(--cream);
+  padding: 1.5rem;
+  border-radius: 6px;
+  margin-top: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+/* =========================================
+   ESTILOS DE VALORES
+   ========================================= */
+
+/* Hero específico para Valores */
+.hero-valores {
+  position: relative;
+  height: 50vh;
+  min-height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--coffee-900);
+  overflow: hidden;
+  margin-bottom: 4rem;
+}
+
+/* Texto destacado tipo "Manifiesto" */
+.manifesto-section {
+  background-color: #fff;
+  padding: 4rem 2rem;
+  border-top: 1px solid rgba(43, 30, 22, 0.05);
+  border-bottom: 1px solid rgba(43, 30, 22, 0.05);
+  margin: 4rem 0;
+}
+
+.manifesto-text {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  line-height: 1.6;
+  color: var(--coffee-900);
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Grid de Valores */
+.value-item {
+  padding: 2rem;
+  height: 100%;
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid rgba(43, 30, 22, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.value-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(43, 30, 22, 0.08);
+}
+
+.value-icon {
+  width: 48px;
+  height: 48px;
+  color: var(--terracotta);
+  margin-bottom: 1.5rem;
+}
+
+.value-title {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: var(--coffee-900);
+}
+
+/* Sección de Equipo/Imagen */
+.team-img {
+  width: 100%;
