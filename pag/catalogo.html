@@ -14,21 +14,29 @@
     <link rel="stylesheet" href="../css/styles.css"> 
   </head>
   <body>
-    
+        <!-- //navegación -->
     <header class="site-header py-3">
-      <div class="container d-flex align-items-center justify-content-between">
-        <a class="brand navbar-brand" href="index.html">Slow Coffee</a>
-        <nav id="site-nav">
-          <ul class="nav">
-            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-            <li class="nav-item"><a class="nav-link" href="historia.html">Historia</a></li>
-            <li class="nav-item"><a class="nav-link" href="origen.html">Origen</a></li>
-            <li class="nav-item"><a class="nav-link active" aria-current="page" href="catalogo.html">Productos</a></li>
-            <li class="nav-item"><a class="nav-link" href="valores.html">Valores</a></li>
-          </ul>
-        </nav>
-        <button class="nav-toggle btn btn-outline-secondary d-md-none" id="nav-toggle" aria-expanded="false">☰</button>
-      </div>
+      <nav class="navbar navbar-expand-md">
+        <div class="container d-flex align-items-center justify-content-between px-4 px-md-0">
+          <a class="navbar-brand brand" href="index.html">
+            <img src="../img/logo_png.png" alt="Slow Coffee" class="logo" height="40">
+          </a>
+
+          <button class="navbar-toggler" id="nav-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Alternar navegación">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto gap-2">
+              <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+              <li class="nav-item"><a class="nav-link" href="historia.html">Historia</a></li>
+              <li class="nav-item"><a class="nav-link" href="origen.html">Origen</a></li>
+              <li class="nav-item"><a class="nav-link" href="catalogo.html">Productos</a></li>
+              <li class="nav-item"><a class="nav-link" href="valores.html">Valores</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <main>
@@ -37,7 +45,7 @@
         <div class="hero-overlay"></div>
         <div class="hero-inner">
           <div class="hero-copy">
-            <h1>Nuestra Colección</h1>
+            <h1 class="fs-2">Nuestra Colección</h1>
             <p class="lede text-white">100 variedades seleccionadas para cada momento.</p>
           </div>
         </div>
@@ -93,7 +101,9 @@
       <div class="container footer-inner">
         <div class="row text-center align-items-center">
           <div class="col-md-4 mb-2">
-            <a class="brand footer-brand" href="index.html">Slow Coffee</a>
+            <a class="brand footer-brand" href="index.html">
+              <img src="../img/logo_png.png" alt="Slow Coffee" class="logo" height="36">
+            </a>
           </div>
 
           <div class="col-md-4 mb-2">
@@ -131,7 +141,7 @@
       // 1. Menú Móvil
       (function(){
         var btn = document.getElementById('nav-toggle');
-        var nav = document.getElementById('site-nav');
+        var nav = document.getElementById('mainNav');
         btn.addEventListener('click', function(){
           var exp = this.getAttribute('aria-expanded') === 'true';
           this.setAttribute('aria-expanded', String(!exp));
@@ -149,7 +159,7 @@
         
         let htmlContent = '';
 
-        for (let i = 1; i <= 100; i++) {
+        for (let i = 1; i <= 20; i++) {
           const randomOrigin = origins[Math.floor(Math.random() * origins.length)];
           const randomProcess = processes[Math.floor(Math.random() * processes.length)];
           const randomNote = notes[Math.floor(Math.random() * notes.length)];

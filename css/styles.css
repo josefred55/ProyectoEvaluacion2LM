@@ -64,17 +64,9 @@ body {
 
 /* Header (now using Bootstrap utilities where possible) */
 .site-header {
-    background: transparent;
+    background: var(--cream);
     padding: 0.2rem 0;
     transition: background-color .18s ease, color .18s ease;
-}
-
-.brand {
-    font-family: var(--font-serif);
-    font-weight: 700;
-    color: var(--coffee-900);
-    text-decoration: none;
-    font-size: .95rem;
 }
 
 .nav-toggle { display: inline-flex; align-items:center; font-size: .95rem; padding: .15rem .4rem; }
@@ -93,30 +85,34 @@ body {
 .site-header .brand {
     font-size: 1.5rem;
 }
+
+/* Logo: fill its container box (header + footer) */
+/* Make the brand container a fixed-height box and let the image fully fill it */
+.navbar-brand.brand,
+.footer-brand {
+    display: inline-flex;
+    align-items: center;
+    height: 60px; /* container box height */
+    padding: 0;
+}
+
+.logo,
+.footer-logo {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* fill the box while preserving aspect; crops if needed */
+}
+
+@media (max-width: 720px) {
+    .navbar-brand.brand,
+    .footer-brand { height: 56px; }
+}
 .site-header .nav-link:hover {
     background: rgba(43, 30, 22, .04);
     border-radius: 6px;
 }
 .site-header .nav .nav-item + .nav-item { margin-left: .35rem; }
-
-/* Hover / focus: invertir colores (texto fondo <-> color) */
-.site-header .nav-link {
-    transition: background-color .18s ease, color .18s ease, transform .12s ease;
-}
-
-/* Hover/focus on whole navbar: invertir colores globalmente */
-.site-header:hover,
-.site-header:focus-within {
-    background: var(--coffee-900);
-}
-.site-header:hover .nav-link,
-.site-header:focus-within .nav-link,
-.site-header:hover .brand,
-.site-header:focus-within .brand,
-.site-header:hover .nav-toggle,
-.site-header:focus-within .nav-toggle {
-    color: var(--cream) !important;
-}
 
 /* HERO: full-bleed background image with text inside */
 .hero {
@@ -159,11 +155,14 @@ body {
 }
 
 .hero-copy {
-    max-width: 680px;
+    min-width: 0;
+    width: 100%;
+    max-width: 500px;
     padding: 2rem;
     border-radius: 10px;
     position: relative;
     background: transparent;
+    box-sizing: border-box;
 }
 
 /* Frosted panel behind the hero text: blurs only the image under the text block */
@@ -584,7 +583,7 @@ body {
 }
 
 .closing-hero .hero-copy {
-    max-width: 760px;
+    max-width: 500px;
     margin: 0 auto;
     padding: 2rem;
     border-radius: 10px;
@@ -971,4 +970,55 @@ h2 {
 /* Sección de Equipo/Imagen */
 .team-img {
   width: 100%;
+}
+
+/* Larger headings on wide screens for improved presence */
+@media (min-width: 1200px) {
+    /* Hero heading more prominent */
+    .hero-copy h1 {
+        font-size: 4rem;
+        line-height: 1;
+    }
+
+    /* General headings scale up a bit */
+    h1 {
+        font-size: 2.75rem;
+    }
+
+    h2 {
+        font-size: 2.05rem;
+    }
+
+    /* Specific larger headings used in story/closing heroes */
+    .story h2 {
+        font-size: 2.4rem;
+    }
+
+    .closing-hero .hero-copy h2 {
+        font-size: 2.8rem;
+    }
+
+    /* Titles used in origin/values cards */
+    .origin-title,
+    .value-title,
+    .font-serif {
+        font-size: 1.8rem;
+    }
+}
+
+/* Ensure the hero text panel (and its overlay) shrink on smaller screens */
+@media (max-width:1000px) {
+    .hero-copy {
+        max-width: 560px;
+        padding: 1.5rem;
+        min-width: 0;
+    }
+}
+
+@media (max-width:720px) {
+    .hero-copy {
+        max-width: 100%;
+        padding: 1rem;
+        min-width: 0;
+    }
 }
