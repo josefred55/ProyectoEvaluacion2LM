@@ -16,28 +16,34 @@
   <body>
     
     <header class="site-header py-3">
-      <div class="container d-flex align-items-center justify-content-between">
-        <a class="brand navbar-brand" href="index.html">Slow Coffee</a>
-        <nav id="site-nav">
-          <ul class="nav">
-            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-            <li class="nav-item"><a class="nav-link" href="historia.html">Historia</a></li>
-            <li class="nav-item"><a class="nav-link active" href="origen.html">Origen</a></li>
-            <li class="nav-item"><a class="nav-link" href="catalogo.html">Productos</a></li>
-            <li class="nav-item"><a class="nav-link" href="valores.html">Valores</a></li>
-          </ul>
-        </nav>
-        <button class="nav-toggle btn btn-outline-secondary d-md-none" id="nav-toggle" aria-expanded="false">☰</button>
-      </div>
+      <nav class="navbar navbar-expand-md">
+        <div class="container d-flex align-items-center justify-content-between px-4 px-md-0">
+          <a class="navbar-brand brand" href="index.html">Slow Coffee</a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Alternar navegación">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+              <li class="nav-item"><a class="nav-link" href="historia.html">Historia</a></li>
+              <li class="nav-item"><a class="nav-link active" href="origen.html">Origen</a></li>
+              <li class="nav-item"><a class="nav-link" href="catalogo.html">Productos</a></li>
+              <li class="nav-item"><a class="nav-link" href="valores.html">Valores</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <main>
       <section class="hero-origen">
         <img src="../img/origenHero.png" alt="Montañas" class="hero-bg">
         <div class="hero-overlay"></div>
-        <div class="hero-inner">
+        <div class="hero-inner px-4 px-md-0 px-lg-5">
           <div class="hero-copy">
-            <h1>Geografía es Sabor</h1>
+            <h1 class="fs-2">Geografía es Sabor</h1>
             <p class="lede text-white">Viajamos para encontrar lo extraordinario.</p>
           </div>
         </div>
@@ -48,7 +54,7 @@
         <div class="row align-items-center origin-card">
           <div class="col-md-6 pe-md-5">
             <span class="origin-subtitle">África</span>
-            <h2 class="origin-title">Etiopía</h2>
+            <h2 class="origin-title fs-4">Etiopía</h2>
             <p class="mt-3">El lugar de nacimiento del café. Aquí las variedades crecen casi de forma silvestre. Buscamos perfiles florales y cítricos que recuerdan al té y al jazmín.</p>
             <div class="fact-box">
               <strong>Perfil:</strong> Floral, Cítrico, Té Negro.<br>
@@ -66,7 +72,7 @@
           </div>
           <div class="col-md-6 order-1 order-md-2 ps-md-5">
             <span class="origin-subtitle">Sudamérica</span>
-            <h2 class="origin-title">Colombia</h2>
+            <h2 class="origin-title fs-4">Colombia</h2>
             <p class="mt-3">Trabajamos en micro-lotes de Huila. El suelo volcánico aporta una dulzura increíble y un balance perfecto.</p>
             <div class="fact-box">
               <strong>Perfil:</strong> Caramelo, Frutos Rojos, Cuerpo Medio.<br>
@@ -78,7 +84,7 @@
         <div class="row align-items-center origin-card">
           <div class="col-md-6 pe-md-5">
             <span class="origin-subtitle">Asia</span>
-            <h2 class="origin-title">Sumatra</h2>
+            <h2 class="origin-title fs-4">Sumatra</h2>
             <p class="mt-3">Intenso y terroso. El clima húmedo de Indonesia crea cafés con mucho cuerpo y baja acidez, perfectos para quienes buscan fuerza y notas a madera.</p>
             <div class="fact-box">
               <strong>Perfil:</strong> Especias, Madera, Chocolate Negro.<br>
@@ -133,11 +139,6 @@
     
     <script>
       (function(){
-        var btn = document.getElementById('nav-toggle'); var nav = document.getElementById('site-nav');
-        btn.addEventListener('click', function(){
-          var e = this.getAttribute('aria-expanded') === 'true';
-          this.setAttribute('aria-expanded', String(!e)); nav.classList.toggle('open');
-        });
         document.getElementById('year').textContent = new Date().getFullYear();
       })();
     </script>

@@ -15,21 +15,25 @@
   <body>
     <!-- //navegación -->
     <header class="site-header py-3">
-      <div class="container d-flex align-items-center justify-content-between">
-        <a class="brand navbar-brand" href="index.html">Slow Coffee</a>
-        <nav id="site-nav">
-          <ul class="nav">
-            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-            <li class="nav-item"><a class="nav-link" href="historia.html">Historia</a></li>
-            <li class="nav-item"><a class="nav-link" href="origen.html">Origen</a></li>
-            
-            <li class="nav-item"><a class="nav-link" href="catalogo.html">Productos</a></li>
-            
-            <li class="nav-item"><a class="nav-link" href="valores.html">Valores</a></li>
-          </ul>
-        </nav>
-        <button class="nav-toggle btn btn-outline-secondary d-md-none" id="nav-toggle" aria-expanded="false">☰</button>
-      </div>
+      <nav class="navbar navbar-expand-md">
+        <div class="container d-flex align-items-center justify-content-between px-4 px-md-0">
+          <a class="navbar-brand brand" href="index.html">Slow Coffee</a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Alternar navegación">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+              <li class="nav-item"><a class="nav-link" href="historia.html">Historia</a></li>
+              <li class="nav-item"><a class="nav-link" href="origen.html">Origen</a></li>
+              <li class="nav-item"><a class="nav-link" href="catalogo.html">Productos</a></li>
+              <li class="nav-item"><a class="nav-link" href="valores.html">Valores</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <!-- hero -->
@@ -37,9 +41,9 @@
       <section class="hero" aria-label="Hero">
         <img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80" alt="Taza de café" class="hero-bg">
         <div class="hero-overlay"></div>
-        <div class="container hero-inner">
+        <div class="container hero-inner px-4 px-md-0 px-lg-5">
           <div class="hero-copy">
-            <h1>El café no es prisa.</h1>
+            <h1 class="fs-2">El café no es prisa.</h1>
             <p class="lede">Es tiempo bien invertido.</p>
             <p><a class="btn btn-outline-secondary" href="catalogo.html">Explorar cafés</a></p>
           </div>
@@ -90,9 +94,9 @@
       <section class="hero closing-hero" aria-label="Cierre">
         <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80" alt="Cierre" class="hero-bg">
         <div class="hero-overlay"></div>
-        <div class="container hero-inner">
+        <div class="container hero-inner px-4 px-md-0 px-lg-5">
           <div class="hero-copy center">
-            <h2>Ven a saborear el tiempo.</h2>
+            <h2 class="fs-4">Ven a saborear el tiempo.</h2>
             <p class="lede">Encuentra tu ritual en cada taza.</p>
             <p><a class="btn btn-outline-light" href="catalogo.html">Descubrir nuestros cafés</a></p>
           </div>
@@ -140,13 +144,6 @@
 
     <script>
       (function(){
-        var btn = document.getElementById('nav-toggle');
-        var nav = document.getElementById('site-nav');
-        btn.addEventListener('click', function(){
-          var e = this.getAttribute('aria-expanded') === 'true';
-          this.setAttribute('aria-expanded', String(!e));
-          nav.classList.toggle('open');
-        });
         document.getElementById('year').textContent = new Date().getFullYear();
       })();
     </script>

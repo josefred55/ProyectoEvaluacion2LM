@@ -16,28 +16,34 @@
   <body>
     
     <header class="site-header py-3">
-      <div class="container d-flex align-items-center justify-content-between">
-        <a class="brand navbar-brand" href="index.html">Slow Coffee</a>
-        <nav id="site-nav">
-          <ul class="nav">
-            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-            <li class="nav-item"><a class="nav-link" href="historia.html">Historia</a></li>
-            <li class="nav-item"><a class="nav-link" href="origen.html">Origen</a></li>
-            <li class="nav-item"><a class="nav-link" href="catalogo.html">Productos</a></li>
-            <li class="nav-item"><a class="nav-link active" href="valores.html">Valores</a></li>
-          </ul>
-        </nav>
-        <button class="nav-toggle btn btn-outline-secondary d-md-none" id="nav-toggle" aria-expanded="false">☰</button>
-      </div>
+      <nav class="navbar navbar-expand-md">
+        <div class="container d-flex align-items-center justify-content-between px-4 px-md-0">
+          <a class="navbar-brand brand" href="index.html">Slow Coffee</a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Alternar navegación">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+              <li class="nav-item"><a class="nav-link" href="historia.html">Historia</a></li>
+              <li class="nav-item"><a class="nav-link" href="origen.html">Origen</a></li>
+              <li class="nav-item"><a class="nav-link" href="catalogo.html">Productos</a></li>
+              <li class="nav-item"><a class="nav-link active" href="valores.html">Valores</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <main>
       <section class="hero-valores">
         <img src="../img/valoresFoto1.png" alt="Manos trabajando café" class="hero-bg">
         <div class="hero-overlay"></div>
-        <div class="hero-inner">
+        <div class="hero-inner px-4 px-md-0 px-lg-5">
           <div class="hero-copy">
-            <h1>Nuestra Filosofía</h1>
+            <h1 class="fs-2">Nuestra Filosofía</h1>
             <p class="lede text-white">Más que una bebida, una forma de entender el tiempo.</p>
           </div>
         </div>
@@ -46,7 +52,7 @@
       <div class="container mb-5">
         <div class="row justify-content-center">
           <div class="col-lg-8 text-center">
-            <h2 class="mb-4">El Origen de Todo</h2>
+            <h2 class="mb-4 fs-4">El Origen de Todo</h2>
             <p class="lead text-muted mb-4">Entendemos el café como una obra de artesanía que comienza mucho antes del primer sorbo. Nuestros valores se fundamentan en el respeto absoluto por el producto.</p>
             <p>Desde el trato justo con el agricultor que cuida la tierra, hasta el tueste preciso que resalta el carácter único de cada grano. No buscamos solo despertarte, buscamos ofrecerte una experiencia sensorial honesta, sostenible y de excelencia innegociable.</p>
           </div>
@@ -154,11 +160,6 @@
 
     <script>
       (function(){
-        var btn = document.getElementById('nav-toggle'); var nav = document.getElementById('site-nav');
-        btn.addEventListener('click', function(){
-          var e = this.getAttribute('aria-expanded') === 'true';
-          this.setAttribute('aria-expanded', String(!e)); nav.classList.toggle('open');
-        });
         document.getElementById('year').textContent = new Date().getFullYear();
       })();
     </script>
