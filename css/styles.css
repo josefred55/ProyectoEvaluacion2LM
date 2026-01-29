@@ -1097,3 +1097,1139 @@ h2 {
         min-width: 0;
     }
 }
+
+/* =========================================
+   ESTILOS DE PÁGINA DE SOPORTE
+   ========================================= */
+
+/* Hero con imagen de fondo - MODIFICADO A soporteFoto1 */
+.faq-hero {
+  background-image: url('../img/soporteFoto1.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 5rem 0 3rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+}
+
+.faq-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(43, 30, 22, 0.7), rgba(26, 17, 11, 0.8));
+  z-index: 1;
+}
+
+.faq-hero-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+.faq-hero h1 {
+  font-family: var(--font-serif);
+  font-size: 3.5rem;
+  color: white;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Recuadro "Estamos aquí para ayudarte" - SIN SÍMBOLO */
+/* Texto "Estamos aquí para ayudarte" – SIN recuadro */
+.help-box {
+  background: none;        /* elimina el recuadro */
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  margin-bottom: 3rem;
+
+  text-align: center;
+  color: white;            /* cambia a var(--coffee-900) si va sobre fondo claro */
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+/* Pills de categorías rápidas */
+.quick-categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.category-pill {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  padding: 0.8rem 1.8rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.category-pill:hover {
+  background: rgba(255, 255, 255, 0.3);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* ========== SECCIÓN DE PREGUNTAS POPULARES ========== */
+
+.popular-section {
+  padding: 5rem 0;
+  background: white;
+}
+
+.section-title {
+  font-family: var(--font-serif);
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 3.5rem;
+  color: var(--coffee-900);
+}
+
+/* Cards de preguntas populares */
+.popular-card {
+  background: white;
+  border: 1px solid rgba(43, 30, 22, 0.12);
+  border-radius: 12px;
+  padding: 2.5rem 2rem;
+  transition: all 0.3s ease;
+  color: var(--coffee-900);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100%;
+  min-height: 320px;
+}
+
+.popular-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(43, 30, 22, 0.12);
+  border-color: var(--terracotta);
+}
+
+.card-icon {
+  width: 48px;
+  height: 48px;
+  color: var(--terracotta);
+  margin-bottom: 1.5rem;
+}
+
+.popular-card h3 {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: var(--coffee-900);
+}
+
+.popular-card p {
+  color: var(--coffee-600);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.card-link {
+  color: var(--terracotta);
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.card-link svg {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.3s ease;
+}
+
+.popular-card:hover .card-link svg {
+  transform: translateX(4px);
+}
+
+/* Botón ver más */
+.btn-ver-mas {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 2rem auto 0;
+  padding: 0.75rem 2.5rem;
+  background: transparent;
+  border: 2px solid var(--coffee-900);
+  border-radius: 50px;
+  color: var(--coffee-900);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-ver-mas:hover {
+  background: var(--coffee-900);
+  color: var(--cream);
+  transform: translateY(-2px);
+}
+
+.btn-ver-mas svg {
+  width: 18px;
+  height: 18px;
+  transition: transform 0.3s ease;
+}
+
+.btn-ver-mas:hover svg {
+  transform: translateY(3px);
+}
+
+.btn-ver-mas.hidden {
+  display: none;
+}
+
+/* Animación para mostrar las cards nuevas */
+.col.d-none.show {
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ========== ACORDEÓN COMPACTO ========== */
+
+/* Secciones de acordeón apiladas */
+.compact-accordion {
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid rgba(43, 30, 22, 0.1);
+}
+
+/* Último acordeón sin borde inferior */
+.compact-accordion:last-child {
+  border-bottom: none;
+}
+
+/* Cabecera del acordeón COMPACTA */
+.accordion-header {
+  padding: 1.2rem 0;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-top: 1px solid rgba(43, 30, 22, 0.1);
+}
+
+.accordion-header:hover {
+  background: linear-gradient(135deg, rgba(179, 106, 74, 0.05), rgba(111, 125, 99, 0.05));
+}
+
+.accordion-header.active {
+  background: linear-gradient(135deg, rgba(179, 106, 74, 0.1), rgba(111, 125, 99, 0.1));
+}
+
+.accordion-header h2 {
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+  color: var(--coffee-900);
+  margin: 0;
+}
+
+/* Icono de expandir */
+.expand-icon {
+  transition: transform 0.3s ease;
+}
+
+.accordion-header.active .expand-icon {
+  transform: rotate(180deg);
+}
+
+/* Contenido del acordeón */
+.accordion-content {
+  background: white;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* ========== BANNER DE CONTACTO ========== */
+
+.contact-banner {
+  position: relative;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-top: 0;
+  background-image: url('../img/soporteFoto3.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.contact-banner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(43, 30, 22, 0.85), rgba(26, 17, 11, 0.9));
+  z-index: 1;
+}
+
+.contact-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+  max-width: 700px;
+  padding: 3rem 2rem;
+}
+
+.response-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, var(--terracotta), var(--olive));
+  color: white;
+  padding: 0.6rem 1.5rem;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 12px rgba(179, 106, 74, 0.4);
+}
+
+.response-badge svg {
+  width: 20px;
+  height: 20px;
+}
+
+.contact-content h2 {
+  font-family: var(--font-serif);
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.contact-content .subtitle {
+  font-size: 1.3rem;
+  opacity: 0.9;
+  margin-bottom: 2.5rem;
+}
+
+.btn-contact-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.2rem 3.5rem;
+  background: linear-gradient(135deg, var(--terracotta) 0%, #c97a5a 100%);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: 0.3px;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(179, 106, 74, 0.4);
+  cursor: pointer;
+}
+
+.btn-contact-primary:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 12px 30px rgba(179, 106, 74, 0.5);
+  background: linear-gradient(135deg, #c97a5a 0%, var(--terracotta) 100%);
+  color: white;
+}
+
+.trust-text {
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  opacity: 0.85;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.trust-text svg {
+  width: 20px;
+  height: 20px;
+  color: var(--accent-gold);
+}
+
+/* ========== CARRUSEL DE TESTIMONIOS ========== */
+
+.testimonials-section {
+  padding: 6rem 0;
+  background-image: url('../img/soporteFoto2.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.testimonials-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.98));
+  z-index: 1;
+}
+
+.testimonials-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+.testimonials-section h2 {
+  font-family: var(--font-serif);
+  font-size: 2.5rem;
+  color: var(--coffee-900);
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: var(--terracotta);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 0 6px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: var(--coffee-900);
+  border-radius: 50%;
+  padding: 1.5rem;
+}
+
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+  background-color: var(--terracotta);
+}
+
+/* ========== MODAL DE CONTACTO ========== */
+
+.modal-header {
+  background: linear-gradient(135deg, var(--coffee-900) 0%, var(--coffee-600) 100%);
+  color: var(--cream);
+  border-bottom: none;
+}
+
+.modal-title {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+}
+
+.modal-body {
+  padding: 2rem;
+}
+
+.form-label {
+  font-weight: 600;
+  color: var(--coffee-900);
+  margin-bottom: 0.5rem;
+}
+
+.form-control {
+  border-color: rgba(43, 30, 22, 0.2);
+  padding: 0.75rem;
+  border-radius: 8px;
+}
+
+.form-control:focus {
+  border-color: var(--terracotta);
+  box-shadow: 0 0 0 0.2rem rgba(179, 106, 74, 0.25);
+}
+
+.modal-footer {
+  border-top: none;
+  padding: 1.5rem 2rem 2rem;
+}
+
+.btn-enviar {
+  background: linear-gradient(135deg, var(--terracotta) 0%, #c97a5a 100%);
+  color: white;
+  border: none;
+  padding: 0.75rem 2.5rem;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.btn-enviar:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(179, 106, 74, 0.4);
+  background: linear-gradient(135deg, #c97a5a 0%, var(--terracotta) 100%);
+  color: white;
+}
+
+.btn-close {
+  filter: brightness(0) invert(1);
+}
+
+/* ========== RESPONSIVE ========== */
+
+@media (max-width: 768px) {
+  .faq-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .help-box {
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .accordion-header h2 {
+    font-size: 1.3rem;
+  }
+
+  .contact-content h2 {
+    font-size: 2rem;
+  }
+
+  .btn-contact-primary {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+  }
+
+  .category-pill {
+    font-size: 0.85rem;
+    padding: 0.6rem 1.2rem;
+  }
+
+  .popular-card {
+    min-height: 280px;
+  }
+
+  .testimonials-section h2 {
+    font-size: 2rem;
+  }
+
+  .compact-accordion {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .faq-hero h1 {
+    font-size: 2rem;
+  }
+
+  .help-box {
+    font-size: 0.9rem;
+    padding: 0.7rem 1.2rem;
+  }
+
+  .quick-categories {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .category-pill {
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+  }
+
+  .accordion-header h2 {
+    font-size: 1.1rem;
+  }
+
+  .accordion-header .me-3 {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+/* =========================================
+   ESTILOS DE PÁGINA DE SOPORTE
+   ========================================= */
+
+/* Hero con imagen de fondo - MODIFICADO A soporteFoto1 */
+.faq-hero {
+  background-image: url('../img/soporteFoto1.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 5rem 0 3rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+}
+
+.faq-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(43, 30, 22, 0.7), rgba(26, 17, 11, 0.8));
+  z-index: 1;
+}
+
+.faq-hero-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+.faq-hero h1 {
+  font-family: var(--font-serif);
+  font-size: 3.5rem;
+  color: white;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Recuadro "Estamos aquí para ayudarte" */
+.help-box {
+  background: none;        /* elimina el recuadro */
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  margin-bottom: 3rem;
+
+  text-align: center;
+  color: white;            /* cambia a var(--coffee-900) si va sobre fondo claro */
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.help-icon {
+  width: 28px;
+  height: 28px;
+}
+
+/* Pills de categorías rápidas */
+.quick-categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.category-pill {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  padding: 0.8rem 1.8rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.category-pill:hover {
+  background: rgba(255, 255, 255, 0.3);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* ========== SECCIÓN DE PREGUNTAS POPULARES ========== */
+
+.popular-section {
+  padding: 5rem 0;
+  background: white;
+}
+
+.section-title {
+  font-family: var(--font-serif);
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 3.5rem;
+  color: var(--coffee-900);
+}
+
+/* Cards de preguntas populares */
+.popular-card {
+  background: white;
+  border: 1px solid rgba(43, 30, 22, 0.12);
+  border-radius: 12px;
+  padding: 2.5rem 2rem;
+  transition: all 0.3s ease;
+  color: var(--coffee-900);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100%;
+  min-height: 320px;
+}
+
+.popular-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(43, 30, 22, 0.12);
+  border-color: var(--terracotta);
+}
+
+.card-icon {
+  width: 48px;
+  height: 48px;
+  color: var(--terracotta);
+  margin-bottom: 1.5rem;
+}
+
+.popular-card h3 {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: var(--coffee-900);
+}
+
+.popular-card p {
+  color: var(--coffee-600);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.card-link {
+  color: var(--terracotta);
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.card-link svg {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.3s ease;
+}
+
+.popular-card:hover .card-link svg {
+  transform: translateX(4px);
+}
+
+/* Botón ver más */
+.btn-ver-mas {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 2rem auto 0;
+  padding: 0.75rem 2.5rem;
+  background: transparent;
+  border: 2px solid var(--coffee-900);
+  border-radius: 50px;
+  color: var(--coffee-900);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-ver-mas:hover {
+  background: var(--coffee-900);
+  color: var(--cream);
+  transform: translateY(-2px);
+}
+
+.btn-ver-mas svg {
+  width: 18px;
+  height: 18px;
+  transition: transform 0.3s ease;
+}
+
+.btn-ver-mas:hover svg {
+  transform: translateY(3px);
+}
+
+.btn-ver-mas.hidden {
+  display: none;
+}
+
+/* Animación para mostrar las cards nuevas */
+.col.d-none.show {
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ========== ACORDEÓN COMPACTO ========== */
+
+/* Secciones de acordeón apiladas */
+.compact-accordion {
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid rgba(43, 30, 22, 0.1);
+}
+
+/* Último acordeón sin borde inferior */
+.compact-accordion:last-child {
+  border-bottom: none;
+}
+
+/* Cabecera del acordeón COMPACTA */
+.accordion-header {
+  padding: 1.2rem 0;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-top: 1px solid rgba(43, 30, 22, 0.1);
+}
+
+.accordion-header:hover {
+  background: linear-gradient(135deg, rgba(179, 106, 74, 0.05), rgba(111, 125, 99, 0.05));
+}
+
+.accordion-header.active {
+  background: linear-gradient(135deg, rgba(179, 106, 74, 0.1), rgba(111, 125, 99, 0.1));
+}
+
+.accordion-header h2 {
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+  color: var(--coffee-900);
+  margin: 0;
+}
+
+/* Icono de expandir */
+.expand-icon {
+  transition: transform 0.3s ease;
+}
+
+.accordion-header.active .expand-icon {
+  transform: rotate(180deg);
+}
+
+/* Contenido del acordeón */
+.accordion-content {
+  background: white;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* ========== BANNER DE CONTACTO ========== */
+
+.contact-banner {
+  position: relative;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-top: 0;
+  background-image: url('../img/soporteFoto3.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.contact-banner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(43, 30, 22, 0.85), rgba(26, 17, 11, 0.9));
+  z-index: 1;
+}
+
+.contact-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+  max-width: 700px;
+  padding: 3rem 2rem;
+}
+
+.response-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, var(--terracotta), var(--olive));
+  color: white;
+  padding: 0.6rem 1.5rem;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 12px rgba(179, 106, 74, 0.4);
+}
+
+.response-badge svg {
+  width: 20px;
+  height: 20px;
+}
+
+.contact-content h2 {
+  font-family: var(--font-serif);
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.contact-content .subtitle {
+  font-size: 1.3rem;
+  opacity: 0.9;
+  margin-bottom: 2.5rem;
+}
+
+.btn-contact-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.2rem 3.5rem;
+  background: linear-gradient(135deg, var(--terracotta) 0%, #c97a5a 100%);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: 0.3px;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(179, 106, 74, 0.4);
+  cursor: pointer;
+}
+
+.btn-contact-primary:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 12px 30px rgba(179, 106, 74, 0.5);
+  background: linear-gradient(135deg, #c97a5a 0%, var(--terracotta) 100%);
+  color: white;
+}
+
+.trust-text {
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  opacity: 0.85;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.trust-text svg {
+  width: 20px;
+  height: 20px;
+  color: var(--accent-gold);
+}
+
+/* ========== CARRUSEL DE TESTIMONIOS ========== */
+
+.testimonials-section {
+  padding: 6rem 0;
+  background-image: url('../img/soporteFoto2.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.testimonials-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.98));
+  z-index: 1;
+}
+
+.testimonials-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+.testimonials-section h2 {
+  font-family: var(--font-serif);
+  font-size: 2.5rem;
+  color: var(--coffee-900);
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: var(--terracotta);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 0 6px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: var(--coffee-900);
+  border-radius: 50%;
+  padding: 1.5rem;
+}
+
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+  background-color: var(--terracotta);
+}
+
+/* ========== MODAL DE CONTACTO ========== */
+
+.modal-header {
+  background: linear-gradient(135deg, var(--coffee-900) 0%, var(--coffee-600) 100%);
+  color: var(--cream);
+  border-bottom: none;
+}
+
+.modal-title {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+}
+
+.modal-body {
+  padding: 2rem;
+}
+
+.form-label {
+  font-weight: 600;
+  color: var(--coffee-900);
+  margin-bottom: 0.5rem;
+}
+
+.form-control {
+  border-color: rgba(43, 30, 22, 0.2);
+  padding: 0.75rem;
+  border-radius: 8px;
+}
+
+.form-control:focus {
+  border-color: var(--terracotta);
+  box-shadow: 0 0 0 0.2rem rgba(179, 106, 74, 0.25);
+}
+
+.modal-footer {
+  border-top: none;
+  padding: 1.5rem 2rem 2rem;
+}
+
+.btn-enviar {
+  background: linear-gradient(135deg, var(--terracotta) 0%, #c97a5a 100%);
+  color: white;
+  border: none;
+  padding: 0.75rem 2.5rem;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.btn-enviar:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(179, 106, 74, 0.4);
+  background: linear-gradient(135deg, #c97a5a 0%, var(--terracotta) 100%);
+  color: white;
+}
+
+.btn-close {
+  filter: brightness(0) invert(1);
+}
+
+/* ========== RESPONSIVE ========== */
+
+@media (max-width: 768px) {
+  .faq-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .help-box {
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .accordion-header h2 {
+    font-size: 1.3rem;
+  }
+
+  .contact-content h2 {
+    font-size: 2rem;
+  }
+
+  .btn-contact-primary {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+  }
+
+  .category-pill {
+    font-size: 0.85rem;
+    padding: 0.6rem 1.2rem;
+  }
+
+  .popular-card {
+    min-height: 280px;
+  }
+
+  .testimonials-section h2 {
+    font-size: 2rem;
+  }
+
+  .compact-accordion {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .faq-hero h1 {
+    font-size: 2rem;
+  }
+
+  .help-box {
+    font-size: 0.9rem;
+    padding: 0.7rem 1.2rem;
+  }
+
+  .quick-categories {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .category-pill {
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+  }
+
+  .accordion-header h2 {
+    font-size: 1.1rem;
+  }
+
+  .accordion-header .me-3 {
+    width: 24px;
+    height: 24px;
+  }
+}
