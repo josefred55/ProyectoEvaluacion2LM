@@ -656,324 +656,472 @@ h2 {
     margin: 0 0 1rem
 }
 
-
-
-
-
-
-
-
-
-
-
 /* =========================================
-   ESTILOS DEL CATÁLOGO (Y PÁGINAS INTERNAS)
+   ESTILOS DE PÁGINA HISTORIA (REDISEÑADA)
    ========================================= */
 
-/* Hero más pequeño para páginas interiores */
-.hero-small {
+/* ========== HERO HISTORIA ========== */
+.hero-historia-new {
   position: relative;
-  height: 40vh;
-  min-height: 300px;
+  min-height: 65vh;
   display: flex;
   align-items: center;
-  justify-content: center;
-  background-color: var(--coffee-900);
   overflow: hidden;
-  margin-bottom: 3rem;
+  background-color: var(--coffee-900);
 }
 
-/* Sidebar de filtros */
-.filter-sidebar {
-  background-color: #fff;
-  padding: 1.5rem;
-  border-radius: 8px;
-  border: 1px solid rgba(43, 30, 22, 0.08);
-}
-
-.filter-title {
-  font-family: var(--font-serif);
-  font-size: 1.1rem;
-  margin-bottom: 1rem;
-  color: var(--coffee-900);
-  border-bottom: 1px solid rgba(0,0,0,0.1);
-  padding-bottom: 0.5rem;
-}
-
-.filter-group {
-  margin-bottom: 1.5rem;
-}
-
-.form-check-input:checked {
-  background-color: var(--coffee-600);
-  border-color: var(--coffee-600);
-}
-
-/* Tarjeta de producto del catálogo */
-.catalog-card {
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+.hero-historia-new .hero-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  background: #fff;
-  border: 1px solid rgba(0,0,0,0.05);
-}
-
-.catalog-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 20px rgba(43, 30, 22, 0.08);
-}
-
-.card-img-top {
-  height: 200px;
   object-fit: cover;
-  background-color: #eee;
+  z-index: 0;
 }
 
-.card-body {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
+.hero-overlay-historia {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(43, 30, 22, 0.85), rgba(107, 74, 58, 0.75));
+  z-index: 1;
 }
 
-.price-tag {
-  font-weight: 700;
-  color: var(--terracotta);
-  font-size: 1.1rem;
-  margin-top: auto; /* Empuja el precio al fondo */
-  padding-top: 1rem;
-}
-
-/* Paginación personalizada */
-.pagination .page-link {
-  color: var(--coffee-900);
-  border: none;
-  margin: 0 2px;
-  border-radius: 4px;
-}
-
-.pagination .page-item.active .page-link {
-  background-color: var(--coffee-900);
-  border-color: var(--coffee-900);
-  color: var(--cream);
-}
-
-.pagination .page-link:hover {
-  background-color: rgba(43, 30, 22, 0.1);
-}
-
-
-
-
-/* =========================================
-   ESTILOS DE HISTORIA
-   ========================================= */
-
-.hero-medium {
+.hero-content-historia {
   position: relative;
-  height: 50vh;
-  min-height: 350px;
-  background-color: var(--coffee-900);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  margin-bottom: 4rem;
-}
-
-/* Línea de tiempo */
-.timeline-section {
-  position: relative;
+  z-index: 2;
+  max-width: 700px;
   padding: 3rem 0;
 }
 
-/* Línea vertical central (solo en desktop) */
-.timeline-section::before {
-  content: '';
-  position: absolute;
-  left: 50%;
-  top: 0;
-  bottom: 0;
-  width: 1px;
-  background: rgba(43, 30, 22, 0.1);
-  display: none;
-}
-
-@media(min-width: 768px) {
-  .timeline-section::before {
-    display: block;
-  }
-}
-
-.year-marker {
-  font-family: var(--font-serif);
-  font-size: 2.5rem;
-  color: var(--terracotta);
-  margin-bottom: 1rem;
-  display: block;
-}
-
-.history-img {
-  width: 100%;
-  height: 350px;
-  object-fit: cover;
-  border-radius: 4px;
-  filter: grayscale(20%);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
-  transition: transform 0.35s cubic-bezier(.2, .9, .3, 1), filter 0.35s ease, box-shadow 0.35s ease;
-  will-change: transform, filter;
-  cursor: pointer;
-}
-
-.history-img:hover,
-.history-img:focus {
-  transform: translateY(-6px) scale(1.03);
-  filter: grayscale(0%);
-  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.12);
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .history-img {
-    transition: none;
-    transform: none;
-  }
-}
-
-
-
-
-
-/* =========================================
-   ESTILOS DE ORIGEN
-   ========================================= */
-
-/* Hero específico para Origen (Color Verde Oliva) */
-.hero-origen {
-  position: relative;
-  height: 50vh;
-  min-height: 350px;
-  background-color: var(--olive); /* Diferencia clave con Historia */
-  display: flex;
+/* Badge */
+.hero-badge-historia {
+  display: inline-flex;
   align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  margin-bottom: 4rem;
+  gap: 0.5rem;
+  background: rgba(212, 165, 116, 0.2);
+  border: 1px solid rgba(212, 165, 116, 0.4);
+  color: var(--gold);
+  padding: 0.5rem 1.2rem;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  backdrop-filter: blur(10px);
 }
 
-.origin-card {
-  margin-bottom: 5rem;
-  border-bottom: 1px solid rgba(43, 30, 22, 0.08);
-  padding-bottom: 3rem;
-}
-
-.origin-card:last-child {
-  border-bottom: none;
-}
-
-/* Subtítulo (continente) */
-.origin-subtitle {
-  color: var(--olive);
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-  font-size: 1.1rem;
-  display: block;
-  margin-bottom: 0.75rem;
-}
-
-/* Título principal (país) */
-.origin-title {
+.hero-title-historia {
   font-family: var(--font-serif);
-  font-size: 2.8rem;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  color: white;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+}
+
+.hero-subtitle-historia {
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.95);
+  margin-bottom: 0;
+  line-height: 1.6;
+}
+
+/* ========== INTRODUCCIÓN ========== */
+.intro-section-historia {
+  padding: 5rem 0 3rem;
+  background: white;
+}
+
+.section-title-historia {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 4vw, 3rem);
   color: var(--coffee-900);
   margin-bottom: 1.5rem;
   line-height: 1.2;
 }
 
-/* Texto descriptivo */
-.origin-description {
+.lead-text-historia {
+  font-size: 1.2rem;
   color: var(--coffee-600);
-  font-size: 1.15rem;
   line-height: 1.8;
-  margin-bottom: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-/* Imagen */
-.origin-img {
+/* ========== LÍNEA DE TIEMPO MEJORADA ========== */
+.timeline-historia-new {
+  padding: 4rem 0 6rem;
+  background: linear-gradient(180deg, white 0%, var(--cream) 100%);
+  position: relative;
+}
+
+/* Línea vertical continua */
+.timeline-historia-new::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(180deg, 
+    var(--terracotta) 0%, 
+    rgba(179, 106, 74, 0.3) 50%, 
+    var(--terracotta) 100%);
+  transform: translateX(-50%);
+  opacity: 0.2;
+}
+
+/* Contenedor de cada milestone */
+.timeline-item-new {
+  position: relative;
+  margin-bottom: 6rem;
+}
+
+.timeline-item-new:last-child {
+  margin-bottom: 0;
+}
+
+/* Marcador central (año + punto) */
+.timeline-marker {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  text-align: center;
+}
+
+.timeline-dot {
+  width: 24px;
+  height: 24px;
+  background: white;
+  border: 4px solid var(--terracotta);
+  border-radius: 50%;
+  margin: 0 auto 1rem;
+  box-shadow: 0 0 0 8px rgba(179, 106, 74, 0.1);
+  transition: all 0.3s ease;
+}
+
+/* Punto actual más grande */
+.timeline-dot-current {
+  width: 32px;
+  height: 32px;
+  background: var(--terracotta);
+  border-color: var(--gold);
+  box-shadow: 0 0 0 8px rgba(212, 165, 116, 0.2);
+  animation: pulse-timeline 2s infinite;
+}
+
+@keyframes pulse-timeline {
+  0%, 100% {
+    box-shadow: 0 0 0 8px rgba(212, 165, 116, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 0 16px rgba(212, 165, 116, 0.1);
+  }
+}
+
+.timeline-year {
+  font-family: var(--font-serif);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--terracotta);
+  background: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 50px;
+  box-shadow: 0 4px 16px rgba(43, 30, 22, 0.1);
+  white-space: nowrap;
+}
+
+/* Contenido del milestone */
+.timeline-content-new {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(43, 30, 22, 0.08);
+  border: 1px solid rgba(43, 30, 22, 0.06);
+  transition: all 0.4s ease;
+}
+
+.timeline-item-new:hover .timeline-content-new {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 48px rgba(43, 30, 22, 0.12);
+}
+
+.timeline-title {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  color: var(--coffee-900);
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.timeline-text {
+  color: var(--coffee-600);
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+/* Tag decorativo */
+.timeline-tag {
+  display: inline-block;
+  background: linear-gradient(135deg, rgba(179, 106, 74, 0.1), rgba(111, 125, 99, 0.1));
+  color: var(--terracotta);
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Stats del milestone actual */
+.timeline-stats {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.stat-item {
+  flex: 1;
+  min-width: 120px;
+}
+
+.stat-number {
+  font-family: var(--font-serif);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--terracotta);
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: var(--coffee-600);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Imagen del timeline */
+.timeline-image-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 12px 40px rgba(43, 30, 22, 0.15);
+}
+
+.timeline-img {
   width: 100%;
   height: 400px;
   object-fit: cover;
-  border-radius: 8px;
-  box-shadow: 0 8px 24px rgba(43, 30, 22, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.origin-img:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 32px rgba(43, 30, 22, 0.15);
+.timeline-item-new:hover .timeline-img {
+  transform: scale(1.05);
 }
 
-/* Caja de información (Perfil y Altitud) */
-.fact-box {
-  background: linear-gradient(135deg, rgba(244, 239, 234, 0.6), rgba(244, 239, 234, 0.8));
-  padding: 1.75rem 2rem;
-  border-radius: 8px;
-  border: 1px solid rgba(43, 30, 22, 0.08);
-  box-shadow: 0 4px 12px rgba(43, 30, 22, 0.05);
-  font-size: 1.05rem;
-  line-height: 1.8;
+/* ========== CTA FINAL ========== */
+.cta-historia {
+  padding: 5rem 0;
+  background: linear-gradient(135deg, var(--coffee-900), var(--coffee-600));
+  color: white;
+  text-align: center;
 }
 
-.fact-box strong {
-  color: var(--coffee-900);
+.cta-content-historia {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.cta-historia h2 {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 1.5rem;
   font-weight: 700;
+}
+
+.cta-historia p {
+  font-size: 1.2rem;
+  opacity: 0.95;
+  margin-bottom: 2.5rem;
+}
+
+.btn-cta-historia {
+  background: white;
+  color: var(--coffee-900);
+  padding: 1.1rem 3rem;
+  font-size: 1.15rem;
+  font-weight: 700;
+  border-radius: 50px;
+  border: none;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+.btn-cta-historia:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+  color: var(--coffee-900);
+}
+
+/* ========== FOOTER ========== */
+.footer-historia {
+  background: var(--coffee-900);
+  color: rgba(255, 255, 255, 0.9);
+  padding: 3rem 0 1.5rem;
+}
+
+.footer-historia h4 {
+  color: white;
+  font-weight: 700;
+  margin-bottom: 1rem;
   font-size: 1.1rem;
 }
 
-/* Responsive */
-@media (max-width: 767px) {
-  .origin-subtitle {
-    font-size: 0.95rem;
-  }
+.footer-historia a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
 
-  .origin-title {
+.footer-historia a:hover {
+  color: var(--gold);
+}
+
+.social-icon-historia {
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.social-icon-historia:hover {
+  background: var(--terracotta);
+  transform: translateY(-3px);
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 991px) {
+  /* Ocultar línea vertical en tablet/móvil */
+  .timeline-historia-new::before {
+    display: none;
+  }
+  
+  /* Mover marcador a la izquierda */
+  .timeline-marker {
+    position: relative;
+    left: 0;
+    top: 0;
+    transform: none;
+    margin-bottom: 2rem;
+    text-align: left;
+  }
+  
+  .timeline-dot {
+    margin: 0 0 1rem 0;
+  }
+  
+  .timeline-year {
     font-size: 2rem;
+    padding: 0.4rem 1.2rem;
   }
-
-  .origin-description {
-    font-size: 1rem;
+  
+  .timeline-item-reverse .timeline-content-new {
+    order: 1;
   }
-
-  .origin-img {
+  
+  .timeline-img {
     height: 300px;
-  }
-
-  .fact-box {
-    padding: 1.25rem 1.5rem;
-    font-size: 0.95rem;
-  }
-
-  .fact-box strong {
-    font-size: 1rem;
-  }
-
-  /* En móvil no necesitamos min-height */
-  .col-md-6[style*="min-height"] {
-    min-height: auto !important;
   }
 }
 
-@media (min-width: 1200px) {
-  .origin-title {
-    font-size: 3.2rem;
+@media (max-width: 768px) {
+  .hero-historia-new {
+    min-height: 60vh;
   }
-
-  .origin-subtitle {
-    font-size: 1.2rem;
+  
+  .hero-content-historia {
+    padding: 2rem 1rem;
   }
+  
+  .hero-badge-historia {
+    font-size: 0.75rem;
+    padding: 0.4rem 1rem;
+  }
+  
+  .intro-section-historia {
+    padding: 3rem 0 2rem;
+  }
+  
+  .timeline-content-new {
+    padding: 1.5rem;
+  }
+  
+  .timeline-title {
+    font-size: 1.5rem;
+  }
+  
+  .timeline-text {
+    font-size: 1rem;
+  }
+  
+  .stat-number {
+    font-size: 2rem;
+  }
+  
+  .timeline-stats {
+    gap: 1rem;
+  }
+  
+  .cta-historia {
+    padding: 3rem 0;
+  }
+  
+  .btn-cta-historia {
+    padding: 1rem 2.5rem;
+    font-size: 1rem;
+  }
+}
 
-  .origin-description {
-    font-size: 1.2rem;
+/* Animación de entrada para los items del timeline */
+@media (prefers-reduced-motion: no-preference) {
+  .timeline-item-new {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease forwards;
+  }
+  
+  .timeline-item-new:nth-child(1) {
+    animation-delay: 0.2s;
+  }
+  
+  .timeline-item-new:nth-child(2) {
+    animation-delay: 0.4s;
+  }
+  
+  .timeline-item-new:nth-child(3) {
+    animation-delay: 0.6s;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 }
 
