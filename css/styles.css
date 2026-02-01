@@ -978,124 +978,443 @@ h2 {
 }
 
 /* =========================================
-   ESTILOS DE VALORES
+   ESTILOS DE PÁGINA VALORES (REDISEÑADA UX/UI)
    ========================================= */
 
-/* Hero específico para Valores */
-.hero-valores {
-  position: relative;
-  height: 50vh;
-  min-height: 350px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--coffee-900);
-  overflow: hidden;
-  margin-bottom: 4rem;
+/* Variables adicionales para valores */
+:root {
+  --gold: #D4A574;
+  --accent-gold: #D4A574;
 }
 
-/* Texto destacado tipo "Manifiesto" */
-.manifesto-section {
-  background-color: #fff;
-  padding: 4rem 2rem;
-  border-top: 1px solid rgba(43, 30, 22, 0.05);
-  border-bottom: 1px solid rgba(43, 30, 22, 0.05);
+/* ========== NAVEGACIÓN MEJORADA ========== */
+.navbar.sticky-top {
+  background: rgba(244, 239, 234, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 12px rgba(43, 30, 22, 0.08);
+  padding: 1rem 0;
+}
+
+/* ========== HERO OPTIMIZADO (F-Pattern) ========== */
+.hero-valores-new {
+  position: relative;
+  min-height: 65vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, rgba(43, 30, 22, 0.85), rgba(107, 74, 58, 0.75)), 
+              url('../img/valoresFoto1.png') center/cover;
+  overflow: hidden;
+}
+
+.hero-content-new {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+}
+
+/* Badge de credibilidad */
+.hero-badge-new {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(212, 165, 116, 0.2);
+  border: 1px solid rgba(212, 165, 116, 0.4);
+  color: var(--gold);
+  padding: 0.5rem 1.2rem;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  backdrop-filter: blur(10px);
+}
+
+.hero-title-new {
+  font-family: var(--font-serif);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  color: white;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+}
+
+.hero-subtitle-new {
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.95);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+/* CTA Principal - Alto contraste */
+.btn-cta-primary {
+  background: linear-gradient(135deg, var(--terracotta), #D4895F);
+  color: white;
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 50px;
+  border: none;
+  box-shadow: 0 8px 24px rgba(179, 106, 74, 0.4);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-cta-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(179, 106, 74, 0.5);
+  color: white;
+}
+
+/* ========== SECCIÓN DE PROPUESTA DE VALOR ========== */
+.value-proposition-section {
+  padding: 5rem 0;
+  background: white;
+}
+
+.section-overline {
+  color: var(--terracotta);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+}
+
+.section-title-new {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: var(--coffee-900);
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.lead-text-new {
+  font-size: 1.2rem;
+  color: var(--coffee-600);
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto 2.5rem;
+}
+
+/* ========== MANIFIESTO DESTACADO ========== */
+.manifesto-block {
+  background: linear-gradient(135deg, rgba(179, 106, 74, 0.05), rgba(111, 125, 99, 0.05));
+  border-left: 4px solid var(--terracotta);
+  padding: 3rem 2.5rem;
+  border-radius: 12px;
   margin: 4rem 0;
 }
 
-.manifesto-text {
+.manifesto-quote {
   font-family: var(--font-serif);
-  font-size: 1.8rem;
-  line-height: 1.6;
+  font-size: clamp(1.3rem, 3vw, 2rem);
   color: var(--coffee-900);
-  text-align: center;
-  max-width: 800px;
-  margin: 0 auto;
+  line-height: 1.6;
+  font-style: italic;
+  margin: 0;
 }
 
-/* Grid de Valores */
-.value-item {
-  padding: 2rem;
-  height: 100%;
-  background: #fff;
-  border-radius: 8px;
-  border: 1px solid rgba(43, 30, 22, 0.05);
-  transition: transform 0.3s ease;
-}
-
-.value-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(43, 30, 22, 0.08);
-}
-
-.value-icon {
-  width: 48px;
-  height: 48px;
+.manifesto-author {
+  margin-top: 1.5rem;
+  font-weight: 600;
   color: var(--terracotta);
+  font-size: 1rem;
+}
+
+/* ========== GRID DE VALORES (Scannable) ========== */
+.values-grid-section {
+  padding: 5rem 0;
+  background: var(--cream);
+}
+
+.value-card-new {
+  background: white;
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+  height: 100%;
+  border: 1px solid rgba(43, 30, 22, 0.08);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Efecto hover premium */
+.value-card-new::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--terracotta), var(--olive));
+  transform: scaleX(0);
+  transition: transform 0.4s ease;
+}
+
+.value-card-new:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(43, 30, 22, 0.12);
+  border-color: var(--terracotta);
+}
+
+.value-card-new:hover::before {
+  transform: scaleX(1);
+}
+
+.value-icon-wrapper {
+  width: 64px;
+  height: 64px;
+  background: linear-gradient(135deg, rgba(179, 106, 74, 0.1), rgba(111, 125, 99, 0.1));
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 1.5rem;
 }
 
-.value-title {
+.value-icon-new {
+  width: 32px;
+  height: 32px;
+  color: var(--terracotta);
+}
+
+.value-title-new {
   font-family: var(--font-serif);
-  font-size: 1.4rem;
+  font-size: 1.5rem;
+  color: var(--coffee-900);
   margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.value-description {
+  color: var(--coffee-600);
+  font-size: 1rem;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ========== SECCIÓN STORYTELLING CON IMAGEN ========== */
+.story-section-new {
+  padding: 6rem 0;
+  background: white;
+}
+
+.story-image-new {
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(43, 30, 22, 0.15);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  min-height: 400px;
+}
+
+.story-content-new h3 {
+  font-family: var(--font-serif);
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  color: var(--coffee-900);
+  margin-bottom: 1.5rem;
+}
+
+.story-text-new {
+  color: var(--coffee-600);
+  font-size: 1.1rem;
+  line-height: 1.9;
+  margin-bottom: 1.5rem;
+}
+
+/* Badges de stats/credibilidad */
+.stats-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: linear-gradient(135deg, rgba(179, 106, 74, 0.08), rgba(111, 125, 99, 0.08));
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  margin-top: 1.5rem;
+}
+
+.stats-number {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--terracotta);
+  line-height: 1;
+}
+
+.stats-label {
+  font-size: 0.9rem;
+  color: var(--coffee-600);
+  line-height: 1.3;
+}
+
+/* ========== CTA FINAL (High Conversion) ========== */
+.cta-final-section {
+  background: linear-gradient(135deg, var(--coffee-900), var(--coffee-600));
+  padding: 5rem 0;
+  text-align: center;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-final-section::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -10%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(212, 165, 116, 0.1), transparent);
+  border-radius: 50%;
+}
+
+.cta-content-final {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.cta-final-section h2 {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.cta-final-section p {
+  font-size: 1.2rem;
+  opacity: 0.95;
+  margin-bottom: 2.5rem;
+}
+
+.btn-cta-white {
+  background: white;
+  color: var(--coffee-900);
+  padding: 1.1rem 3rem;
+  font-size: 1.15rem;
+  font-weight: 700;
+  border-radius: 50px;
+  border: none;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-cta-white:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
   color: var(--coffee-900);
 }
 
-/* Sección de Equipo/Imagen */
-.team-img {
-  width: 100%;
+/* Trust indicators debajo del CTA */
+.trust-indicators {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 3rem;
+  flex-wrap: wrap;
 }
 
-/* Larger headings on wide screens for improved presence */
-@media (min-width: 1200px) {
-    /* Hero heading more prominent */
-    .hero-copy h1 {
-        font-size: 4rem;
-        line-height: 1;
-    }
-
-    /* General headings scale up a bit */
-    h1 {
-        font-size: 2.75rem;
-    }
-
-    h2 {
-        font-size: 2.05rem;
-    }
-
-    /* Specific larger headings used in story/closing heroes */
-    .story h2 {
-        font-size: 2.4rem;
-    }
-
-    .closing-hero .hero-copy h2 {
-        font-size: 2.8rem;
-    }
-
-    /* Titles used in origin/values cards */
-    .origin-title,
-    .value-title,
-    .font-serif {
-        font-size: 1.8rem;
-    }
+.trust-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.95rem;
 }
 
-/* Ensure the hero text panel (and its overlay) shrink on smaller screens */
-@media (max-width:1000px) {
-    .hero-copy {
-        max-width: 560px;
-        padding: 1.5rem;
-        min-width: 0;
-    }
+.trust-icon {
+  width: 24px;
+  height: 24px;
+  color: var(--gold);
 }
 
-@media (max-width:720px) {
-    .hero-copy {
-        max-width: 100%;
-        padding: 1rem;
-        min-width: 0;
-    }
+/* ========== FOOTER MEJORADO ========== */
+.footer-new {
+  background: var(--coffee-900);
+  color: rgba(255, 255, 255, 0.9);
+  padding: 3rem 0 1.5rem;
+}
+
+.footer-new h4 {
+  color: white;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.footer-new a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-new a:hover {
+  color: var(--gold);
+}
+
+.social-icon-new {
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.social-icon-new:hover {
+  background: var(--terracotta);
+  transform: translateY(-3px);
+}
+
+/* ========== RESPONSIVE OPTIMIZATIONS ========== */
+@media (max-width: 768px) {
+  .hero-valores-new {
+    min-height: 60vh;
+    padding: 3rem 1.5rem;
+  }
+  
+  .value-card-new {
+    margin-bottom: 1.5rem;
+  }
+  
+  .story-image-new {
+    min-height: 300px;
+    margin-bottom: 2rem;
+  }
+  
+  .trust-indicators {
+    gap: 1.5rem;
+  }
+  
+  .stats-badge {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .manifesto-block {
+    padding: 2rem 1.5rem;
+  }
+  
+  .hero-badge-new {
+    font-size: 0.75rem;
+    padding: 0.4rem 1rem;
+  }
+  
+  .btn-cta-primary {
+    padding: 0.9rem 2rem;
+    font-size: 1rem;
+  }
+  
+  .btn-cta-white {
+    padding: 1rem 2.5rem;
+    font-size: 1rem;
+  }
 }
 
 /* =========================================
