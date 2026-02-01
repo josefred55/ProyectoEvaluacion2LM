@@ -2277,18 +2277,8 @@ h2 {
   margin: 0 auto;
   padding: 2rem;
   border-radius: 10px;
-  background: transparent;
-  position: relative;
-}
-
-.hero-comunidad .hero-copy::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  border-radius: 10px;
-  background: linear-gradient(180deg, rgba(244, 239, 234, 0.62), rgba(244, 239, 234, 0.38));
+  background: rgba(244, 239, 234, 0.5);
   backdrop-filter: blur(6px);
-  z-index: -1;
 }
 
 .hero-comunidad h1 {
@@ -2333,6 +2323,10 @@ h2 {
   gap: 0.25rem;
 }
 
+.star-empty {
+  color: #ddd;
+}
+
 .review-text {
   color: var(--coffee-600);
   line-height: 1.7;
@@ -2361,6 +2355,43 @@ h2 {
   padding: 0.25rem 0.75rem;
   border-radius: 12px;
   align-self: flex-start;
+}
+
+/* Sección de conversaciones con fondo de imagen */
+.conversations-wrapper {
+  position: relative;
+  padding: 5rem 0;
+  background-image: url('../img/comunidadFoto2.jpg');
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.conversations-wrapper .container {
+  position: relative;
+  z-index: 2;
+}
+
+.conversations-box {
+  background: white;
+  border-radius: 16px;
+  padding: 3rem 2.5rem;
+  box-shadow: 0 12px 48px rgba(43, 30, 22, 0.15);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.conversations-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.conversations-intro {
+  font-size: 1.15rem;
+  color: var(--coffee-600);
+  line-height: 1.8;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 /* Acordeón personalizado */
@@ -2397,8 +2428,26 @@ h2 {
 
 .accordion-body {
   padding: 1.5rem;
+  background: linear-gradient(135deg, rgba(244, 239, 234, 0.3), rgba(244, 239, 234, 0.1));
+}
+
+.question-author {
+  font-style: italic;
+  color: var(--coffee-600);
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.accordion-body p {
   color: var(--coffee-600);
   line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.accordion-body em {
+  color: var(--terracotta);
+  font-weight: 600;
 }
 
 /* CTA de suscripción */
@@ -2408,16 +2457,18 @@ h2 {
   margin-top: 3rem;
 }
 
+/* Badge exclusivo MÁS GRANDE */
 .badge-exclusive {
   display: inline-block;
   background: linear-gradient(135deg, var(--terracotta), var(--olive));
   color: white;
-  padding: 0.5rem 1.25rem;
-  border-radius: 20px;
-  font-size: 0.85rem;
-  font-weight: 600;
+  padding: 0.9rem 2.25rem;
+  border-radius: 30px;
+  font-size: 1.15rem;
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 1.5px;
+  box-shadow: 0 6px 16px rgba(179, 106, 74, 0.35);
 }
 
 .cta-title {
@@ -2492,6 +2543,20 @@ h2 {
   font-style: italic;
 }
 
+/* Imagen CTA alineada verticalmente */
+.cta-image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.cta-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
 /* Sección de contacto */
 .contact-banner {
   position: relative;
@@ -2500,6 +2565,9 @@ h2 {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  background-image: url('../img/comunidadFoto3.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 .contact-banner::before {
@@ -2508,15 +2576,6 @@ h2 {
   inset: 0;
   background: linear-gradient(135deg, rgba(43, 30, 22, 0.85), rgba(26, 17, 11, 0.9));
   z-index: 1;
-}
-
-.contact-bg {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 0;
 }
 
 .contact-content {
@@ -2594,6 +2653,10 @@ h2 {
   .cta-content {
     margin-bottom: 3rem;
   }
+  
+  .cta-image img {
+    max-height: 350px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -2607,6 +2670,15 @@ h2 {
 
   .section-title {
     font-size: 2rem;
+  }
+  
+  .conversations-box {
+    padding: 2rem 1.5rem;
+  }
+  
+  .badge-exclusive {
+    font-size: 0.95rem;
+    padding: 0.7rem 1.5rem;
   }
 
   .cta-title {
