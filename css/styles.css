@@ -3164,3 +3164,561 @@ h2 {
     font-size: 0.95rem;
   }
 }
+
+/* =============================================================
+   CATÁLOGO — ESTILOS AISLADOS
+   Todo bajo .catalogo-page para no interferir con otras páginas.
+   Referencia de colores: mismo sistema que valores.html
+   ============================================================= */
+
+
+/* ═══════════════════════════════════════════════════════════
+   NAVBAR — idéntico a valores visualmente
+   El HTML ya usa .site-header que viene de styles.css,
+   aquí solo ajustamos lo que catalogo-page necesita.
+   ═══════════════════════════════════════════════════════════ */
+
+.catalogo-page .site-header {
+  background: var(--cream);                                  /* mismo que valores */
+  box-shadow: 0 1px 8px rgba(43, 30, 22, 0.07);
+}
+
+.catalogo-page .site-header .nav-link {
+  color: var(--coffee-900) !important;
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 0.35rem 0.75rem;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+}
+
+.catalogo-page .site-header .nav-link:hover {
+  background: rgba(43, 30, 22, 0.05);
+}
+
+.catalogo-page .site-header .nav-link.active {
+  color: var(--coffee-900) !important;
+  font-weight: 500;
+}
+
+
+/* ═══════════════════════════════════════════════════════════
+   HERO
+   ═══════════════════════════════════════════════════════════ */
+
+.hero-catalogo {
+  position: relative;
+  min-height: 52vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background-color: var(--coffee-900);               /* fallback */
+}
+
+/* Imagen de fondo (elemento, no background-image → mejor control) */
+.hero-catalogo__bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* Overlay degradado (mismo patrón que valores) */
+.hero-catalogo__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(43, 30, 22, 0.82), rgba(107, 74, 58, 0.68));
+  z-index: 1;
+}
+
+/* Contenido posicionado */
+.hero-catalogo__inner {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.hero-catalogo__content {
+  max-width: 640px;
+}
+
+/* Badge de credibilidad (mismo estilo que .hero-badge-new de valores) */
+.hero-badge-catalogo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(212, 165, 116, 0.2);
+  border: 1px solid rgba(212, 165, 116, 0.4);
+  color: #D4A574;
+  padding: 0.5rem 1.2rem;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.hero-catalogo__title {
+  font-family: var(--font-serif);
+  font-size: clamp(2.4rem, 5vw, 3.6rem);
+  color: white;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+}
+
+.hero-catalogo__subtitle {
+  font-size: 1.15rem;
+  color: rgba(255, 255, 255, 0.92);
+  line-height: 1.65;
+  margin: 0;
+}
+
+
+/* ═══════════════════════════════════════════════════════════
+   TRUST BAR (debajo del hero)
+   ═══════════════════════════════════════════════════════════ */
+
+.trust-bar {
+  background: white;
+  border-bottom: 1px solid rgba(43, 30, 22, 0.07);
+  padding: 1.1rem 0;
+}
+
+.trust-bar__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.trust-bar__item {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  color: var(--coffee-900);
+  font-size: 0.88rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.trust-bar__item svg {
+  color: var(--terracotta);
+  flex-shrink: 0;
+}
+
+.trust-bar__item em {
+  font-style: normal;
+  font-weight: 400;
+  color: var(--coffee-600);
+}
+
+.trust-bar__sep {
+  width: 1px;
+  height: 28px;
+  background: rgba(43, 30, 22, 0.1);
+}
+
+
+/* ═══════════════════════════════════════════════════════════
+   LAYOUT GENERAL
+   ═══════════════════════════════════════════════════════════ */
+
+.catalogo-grid {
+  padding-top: 2.5rem;
+  padding-bottom: 3.5rem;
+}
+
+
+/* ═══════════════════════════════════════════════════════════
+   SIDEBAR
+   ═══════════════════════════════════════════════════════════ */
+
+.sidebar {
+  background: white;
+  border: 1px solid rgba(43, 30, 22, 0.08);
+  border-radius: 14px;
+  padding: 1.75rem 1.5rem;
+  box-shadow: 0 4px 18px rgba(43, 30, 22, 0.06);
+  top: 1.5rem !important;                            /* sticky offset */
+}
+
+.sidebar__group {
+  margin-bottom: 1.6rem;
+}
+
+.sidebar__group:last-of-type {
+  margin-bottom: 0;
+}
+
+/* Título de grupo */
+.sidebar__title {
+  font-family: var(--font-serif);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--coffee-900);
+  margin-bottom: 0.9rem;
+  padding-bottom: 0.55rem;
+  border-bottom: 2px solid rgba(179, 106, 74, 0.18);
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.sidebar__title svg {
+  color: var(--terracotta);
+  flex-shrink: 0;
+}
+
+/* Input buscar */
+.sidebar__input {
+  width: 100%;
+  padding: 0.65rem 1rem;
+  border: 1px solid rgba(43, 30, 22, 0.14);
+  border-radius: 8px;
+  font-size: 0.92rem;
+  font-family: var(--font-sans);
+  background: rgba(244, 239, 234, 0.45);
+  transition: border-color 0.2s, box-shadow 0.2s;
+  outline: none;
+}
+
+.sidebar__input:focus {
+  border-color: var(--terracotta);
+  box-shadow: 0 0 0 3px rgba(179, 106, 74, 0.14);
+  background: white;
+}
+
+/* Checks */
+.sidebar__check {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  padding: 0.42rem 0.6rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-bottom: 0.15rem;
+}
+
+.sidebar__check:hover {
+  background: rgba(179, 106, 74, 0.06);
+}
+
+.sidebar__check input[type="checkbox"] {
+  width: 17px;
+  height: 17px;
+  accent-color: var(--terracotta);
+  margin-right: 0.7rem;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.sidebar__check-label {
+  font-size: 0.92rem;
+  color: var(--coffee-900);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.sidebar__check-flag {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+/* Mini badges dentro del sidebar (filtro por calidad) */
+.sidebar__mini-badge {
+  display: inline-block;
+  font-size: 0.77rem;
+  font-weight: 700;
+  padding: 0.25rem 0.7rem;
+  border-radius: 50px;
+  white-space: nowrap;
+}
+
+.sidebar__mini-badge--premium {
+  background: linear-gradient(135deg, #D4A574, #c49060);
+  color: white;
+}
+
+.sidebar__mini-badge--justo {
+  background: linear-gradient(135deg, #6F7D63, #556b4a);
+  color: white;
+}
+
+.sidebar__mini-badge--organico {
+  background: linear-gradient(135deg, rgba(179, 106, 74, 0.88), rgba(160, 90, 60, 0.92));
+  color: white;
+}
+
+/* Botón aplicar */
+.sidebar__btn-apply {
+  width: 100%;
+  margin-top: 1.4rem;
+  padding: 0.75rem;
+  background: linear-gradient(135deg, var(--terracotta), #c97a5a);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 0.93rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 14px rgba(179, 106, 74, 0.35);
+}
+
+.sidebar__btn-apply:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(179, 106, 74, 0.45);
+}
+
+
+/* ═══════════════════════════════════════════════════════════
+   CONTROLES (barra superior de productos)
+   ═══════════════════════════════════════════════════════════ */
+
+.catalogo-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.4rem;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.catalogo-controls__count {
+  font-size: 0.88rem;
+  color: var(--coffee-600);
+  font-weight: 500;
+}
+
+.catalogo-controls__sort {
+  padding: 0.48rem 0.95rem;
+  border: 1px solid rgba(43, 30, 22, 0.14);
+  border-radius: 8px;
+  font-size: 0.88rem;
+  font-family: var(--font-sans);
+  color: var(--coffee-900);
+  background: white;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.catalogo-controls__sort:focus {
+  border-color: var(--terracotta);
+}
+
+
+/* ═══════════════════════════════════════════════════════════
+   CARDS DE PRODUCTO
+   ═══════════════════════════════════════════════════════════ */
+
+.cat-card {
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(43, 30, 22, 0.07);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+              box-shadow 0.3s;
+}
+
+.cat-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 44px rgba(43, 30, 22, 0.13);
+}
+
+/* ── Imagen + badge superpuesto ── */
+.cat-card__img-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.cat-card__img {
+  width: 100%;
+  height: 215px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.cat-card:hover .cat-card__img {
+  transform: scale(1.06);
+}
+
+/* ── BADGES (superpuestos sobre la imagen) ── */
+.cat-badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.9rem;
+  border-radius: 50px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  white-space: nowrap;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.22);
+  /* pequeña línea inferior sutil */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* ★ Premium — dorado cálido */
+.cat-badge--premium {
+  background: linear-gradient(135deg, #D4A574 0%, #c08a5e 100%);
+  color: #fff;
+}
+
+.cat-badge--premium svg {
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.3));
+}
+
+/* ☰ Comercio Justo — verde oliva (transmite confianza + medio ambiente) */
+.cat-badge--justo {
+  background: linear-gradient(135deg, #6F7D63 0%, #556b4a 100%);
+  color: #fff;
+}
+
+.cat-badge--justo svg {
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.25));
+}
+
+/* ✿ Orgánico — terracotta suave */
+.cat-badge--organico {
+  background: linear-gradient(135deg, rgba(179, 106, 74, 0.93) 0%, rgba(158, 86, 56, 0.96) 100%);
+  color: #fff;
+}
+
+.cat-badge--organico svg {
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.2));
+}
+
+/* ── Cuerpo de la card ── */
+.cat-card__body {
+  padding: 1.3rem 1.3rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.cat-card__origin {
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+  color: var(--terracotta);
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+}
+
+.cat-card__title {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  color: var(--coffee-900);
+  margin-bottom: 0.3rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.cat-card__note {
+  font-size: 0.86rem;
+  color: var(--coffee-600);
+  margin-bottom: 0;
+  flex-grow: 1;
+  line-height: 1.5;
+}
+
+/* ── Footer card (precio + botón) ── */
+.cat-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(43, 30, 22, 0.08);
+}
+
+.cat-card__price {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--terracotta);
+}
+
+.cat-card__btn {
+  padding: 0.44rem 1.05rem;
+  background: var(--coffee-900);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 0.81rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
+  white-space: nowrap;
+}
+
+.cat-card__btn:hover {
+  background: var(--terracotta);
+  transform: scale(1.06);
+}
+
+
+/* ═══════════════════════════════════════════════════════════
+   RESPONSIVE
+   ═══════════════════════════════════════════════════════════ */
+
+/* Tablet */
+@media (max-width: 991px) {
+  .trust-bar__sep   { display: none; }
+  .trust-bar__inner { gap: 1.4rem; }
+}
+
+/* Móvil grande */
+@media (max-width: 768px) {
+  .hero-catalogo        { min-height: 44vh; }
+  .hero-catalogo__inner { padding: 2.5rem 1.5rem; }
+  .hero-catalogo__content { max-width: 100%; }
+
+  .hero-catalogo__title    { font-size: 2.1rem; }
+  .hero-catalogo__subtitle { font-size: 1rem; }
+
+  .trust-bar__inner { gap: 1rem; }
+  .trust-bar__item  { font-size: 0.82rem; }
+
+  .sidebar {
+    position: static !important;
+    margin-bottom: 1.5rem;
+  }
+
+  .catalogo-controls {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* Móvil pequeño */
+@media (max-width: 576px) {
+  .hero-catalogo        { min-height: 37vh; }
+  .hero-catalogo__title { font-size: 1.85rem; }
+
+  .cat-card__img        { height: 180px; }
+
+  .trust-bar            { padding: 0.7rem 0; }
+  .trust-bar__item      { font-size: 0.78rem; }
+}
