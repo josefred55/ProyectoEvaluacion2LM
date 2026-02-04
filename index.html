@@ -42,14 +42,80 @@
 
     <!-- hero -->
     <main>
-      <section class="hero" aria-label="Hero">
-        <img src="./img/indexHero.png" alt="Taza de café" class="hero-bg">
-        <div class="hero-overlay"></div>
-        <div class="container hero-inner px-4 px-md-0 px-lg-5">
-          <div class="hero-copy">
-            <h1 class="fs-2">El café no es prisa.</h1>
-            <p class="lede">Es tiempo bien invertido.</p>
-            <p><a class="btn btn-outline-secondary" href="pag/catalogo.html">Explorar cafés</a></p>
+    <section class="hero-index-new">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="hero-content-new">
+            
+            <h1 class="hero-title-new">El café no es prisa.</h1>
+            <p class="hero-subtitle-new">Es tiempo bien invertido.</p>
+            
+            <a href="catalogo.html" class="btn-cta-hero">
+              Explorar Cafés
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-left: 0.5rem;">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+      <!-- productos más vendidos -->
+      <section id="best-sellers" class="section best-sellers py-5">
+        <div class="container">
+          <h2 class="text-center mb-4">Nuestros Productos más vendidos</h2>
+          <div class="row g-4">
+            <div class="col-md-4">
+              <a href="pag/catalogo.html" class="cat-card h-100 text-decoration-none text-body" aria-label="Ir al catálogo - Café Colina">
+                <div class="cat-card__img-wrap">
+                  <img src="./img/productosFoto.png" class="cat-card__img" alt="Café Colina">
+                </div>
+                <div class="cat-card__body">
+                  <span class="cat-card__origin">Colombia · Natural</span>
+                  <h5 class="cat-card__title">Café Colina</h5>
+                  <p class="cat-card__note">Notas de chocolate y naranja. 250g.</p>
+                  <div class="cat-card__footer">
+                    <span class="cat-card__price">9.50 €</span>
+                    <span class="cat-card__btn">Ver</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-4">
+              <a href="pag/catalogo.html" class="cat-card h-100 text-decoration-none text-body" aria-label="Ir al catálogo - Blend Amanecer">
+                <div class="cat-card__img-wrap">
+                  <img src="./img/productosFoto.png" class="cat-card__img" alt="Blend Amanecer">
+                </div>
+                <div class="cat-card__body">
+                  <span class="cat-card__origin">Blend · Filtrado</span>
+                  <h5 class="cat-card__title">Blend Amanecer</h5>
+                  <p class="cat-card__note">Equilibrado y dulce, ideal para filtrado. 250g.</p>
+                  <div class="cat-card__footer">
+                    <span class="cat-card__price">8.90 €</span>
+                    <span class="cat-card__btn">Ver</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-4">
+              <a href="pag/catalogo.html" class="cat-card h-100 text-decoration-none text-body" aria-label="Ir al catálogo - Espresso Tostado">
+                <div class="cat-card__img-wrap">
+                  <img src="./img/productosFoto.png" class="cat-card__img" alt="Espresso Tostado">
+                </div>
+                <div class="cat-card__body">
+                  <span class="cat-card__origin">Espresso · Tostado</span>
+                  <h5 class="cat-card__title">Espresso Tostado</h5>
+                  <p class="cat-card__note">Cuerpo intenso y final persistente. 250g.</p>
+                  <div class="cat-card__footer">
+                    <span class="cat-card__price">10.20 €</span>
+                    <span class="cat-card__btn">Ver</span>
+                  </div>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -74,7 +140,7 @@
       <!-- cards -->
       <section id="origen" class="section origin py-5">
         <div class="container">
-          <h3>Origen & Proceso</h3>
+          <h2 class="text-center mb-4">Origen & Proceso</h2>
           <div class="row icons">
             <div class="col-md-4 icon-card">
               <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 2C8 2 4 5 4 9c0 6 8 13 8 13s8-7 8-13c0-4-4-7-8-7z"/><circle cx="12" cy="9" r="2.2"/></svg>
@@ -96,15 +162,16 @@
       </section>
 
       <!-- cta -->
-      <section class="hero closing-hero" aria-label="Cierre">
-        <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80" alt="Cierre" class="hero-bg">
-        <div class="hero-overlay"></div>
-        <div class="container hero-inner px-4 px-md-0 px-lg-5">
-          <div class="hero-copy center">
-            <h2 class="fs-4">Ven a saborear el tiempo.</h2>
-            <p class="lede">Encuentra tu ritual en cada taza.</p>
-            <p><a class="btn btn-outline-light" href="catalogo.html">Descubrir nuestros cafés</a></p>
-          </div>
+      <section class="contact-banner-hero">
+        <div class="contact-content">
+          <h2>Ven a Saborear el Tiempo</h2>
+          <p class="subtitle">Encuentra tu ritual en cada taza.</p>
+          <a href="catalogo.html" class="btn-cta-hero">
+              Descubrir Más
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-left: 0.5rem;">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
         </div>
       </section>
     </main>

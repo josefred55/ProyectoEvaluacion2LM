@@ -39,7 +39,7 @@ body {
          Uses min() so we never grow beyond --max-width. */
     max-width: min(var(--max-width), calc(100% - 200px));
     margin: 0 auto;
-    padding: 1.5rem;
+    padding: .5rem;
 }
 
 @media (max-width: 1400px) {
@@ -78,7 +78,7 @@ body {
 }
 .site-header .nav-link {
     color: var(--coffee-900) !important;
-    font-size: .95rem;
+    font-size: 1.05rem;
     padding: .2rem .75rem;
     font-weight: 500;
 }
@@ -142,6 +142,32 @@ body {
     object-fit: cover;
     z-index: 0;
 }
+
+.hero-index-new {
+  position: relative;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, rgba(43, 30, 22, 0.85), rgba(107, 74, 58, 0.75)), 
+              url('../img/indexHero.png') center/cover;
+  overflow: hidden;
+}
+
+
+.btn-cta-hero {
+  background:#ffffff;
+  color: rgb(0, 0, 0);
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 50px;
+  border: none;
+  box-shadow: 0 8px 24px rgba(179, 106, 74, 0.4);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
 
 .hero-inner {
     position: relative;
@@ -237,8 +263,8 @@ body {
 
 /* Historia: sección decorada */
 .story {
-    padding: 4rem 0;
-    background: linear-gradient(180deg, rgba(179,106,74,0.03), rgba(111,125,99,0.02));
+    padding: 3rem 0;
+    
     position: relative;
     overflow: visible;
 }
@@ -266,9 +292,9 @@ body {
 .story-media { display: flex; align-items: center; justify-content: center }
 
 .vertical-photo {
-    height: 360px;
+    height: 240px;
     width: 100%;
-    max-width: 360px;
+    max-width: 400px;
     background: linear-gradient(180deg, #e9e2db, #dfd6cc);
     border-radius: 10px;
     display: flex;
@@ -289,15 +315,6 @@ body {
     object-fit: cover;
     display: block;
     border-radius: 10px;
-}
-
-/* Reduce gap specifically between historia and origen */
-#historia {
-    padding-bottom: 2rem; /* reduce bottom padding of historia */
-}
-
-.origin {
-    padding-top: 1.75rem; /* reduce top padding of origen */
 }
 
 .vertical-photo:hover {
@@ -555,63 +572,27 @@ body {
 }
 
 /* Closing-hero (variant similar to hero but for the final CTA) */
-.closing-hero {
-    position: relative;
-    min-height: 420px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    margin-top: 1.5rem
+
+
+.contact-banner-hero {
+  position: relative;
+  min-height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-top: 0;
+  background-image: url('../img/ctaIndex.png');
+  background-size: cover;
+  background-position: center;
 }
 
-.closing-hero .hero-overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(rgba(43, 30, 22, 0.36), rgba(43, 30, 22, 0.44));
-    pointer-events: none
-}
-
-.closing-hero .hero-inner {
-    position: relative;
-    z-index: 2;
-    display: block;
-    max-width: var(--max-width);
-    margin: 0 auto;
-    padding: 3rem 2rem
-}
-
-.closing-hero .hero-copy {
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 2rem;
-    border-radius: 10px;
-    background: rgba(43, 30, 22, 0.18)
-}
-
-.closing-hero .hero-copy h2 {
-    font-family: var(--font-serif);
-    font-size: 2.25rem;
-    margin: 0 0 .4rem;
-    color: var(--cream)
-}
-
-.closing-hero .lede {
-    color: rgba(244,239,234, 0.9)
-}
-
-.closing-hero .btn-ghost {
-    border: 1px solid rgba(244,239,234, 0.16);
-    color: var(--cream)
-}
-
-.closing-hero .btn-ghost:hover {
-    background: rgba(244,239,234, 0.04)
-}
-
-.hero-copy.center {
-    text-align: center
+.contact-banner-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(43, 30, 22, 0.85), rgba(26, 17, 11, 0.9));
+  z-index: 1;
 }
 
 @media (max-width:1000px) {
@@ -1146,7 +1127,7 @@ h2 {
 /* ========== HERO OPTIMIZADO (F-Pattern) ========== */
 .hero-valores-new {
   position: relative;
-  min-height: 65vh;
+  min-height: 85vh;
   display: flex;
   align-items: center;
   background: linear-gradient(135deg, rgba(43, 30, 22, 0.85), rgba(107, 74, 58, 0.75)), 
@@ -3178,37 +3159,13 @@ h2 {
    aquí solo ajustamos lo que catalogo-page necesita.
    ═══════════════════════════════════════════════════════════ */
 
-.catalogo-page .site-header {
-  background: var(--cream);                                  /* mismo que valores */
-  box-shadow: 0 1px 8px rgba(43, 30, 22, 0.07);
-}
-
-.catalogo-page .site-header .nav-link {
-  color: var(--coffee-900) !important;
-  font-size: 0.95rem;
-  font-weight: 500;
-  padding: 0.35rem 0.75rem;
-  border-radius: 6px;
-  transition: background 0.2s ease;
-}
-
-.catalogo-page .site-header .nav-link:hover {
-  background: rgba(43, 30, 22, 0.05);
-}
-
-.catalogo-page .site-header .nav-link.active {
-  color: var(--coffee-900) !important;
-  font-weight: 500;
-}
-
-
 /* ═══════════════════════════════════════════════════════════
    HERO
    ═══════════════════════════════════════════════════════════ */
 
 .hero-catalogo {
   position: relative;
-  min-height: 52vh;
+  min-height: 80vh;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -3239,12 +3196,13 @@ h2 {
   z-index: 2;
   width: 100%;
   max-width: 1320px;
-  margin: 0 auto;
+  margin:  auto;
   padding: 4rem 2rem;
 }
 
 .hero-catalogo__content {
   max-width: 640px;
+  margin-left: 80px
 }
 
 /* Badge de credibilidad (mismo estilo que .hero-badge-new de valores) */
