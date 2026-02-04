@@ -571,6 +571,22 @@ body {
     }
 }
 
+/* Center hero-index-new on smaller screens */
+@media (max-width: 992px) {
+  .hero-index-new .row {
+    justify-content: center;
+  }
+  .hero-index-new .col-lg-8 {
+    flex: 0 0 100%;
+    max-width: 720px;
+  }
+  .hero-content-new {
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
 /* Closing-hero (variant similar to hero but for the final CTA) */
 
 
