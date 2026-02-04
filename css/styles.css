@@ -648,7 +648,7 @@ h2 {
   display: flex;
   align-items: center;
   overflow: hidden;
-  background-color: var(--coffee-900);
+  background-color: var(--cream);
 }
 
 .hero-historia-new .hero-bg {
@@ -710,7 +710,7 @@ h2 {
 /* ========== INTRODUCCIÓN ========== */
 .intro-section-historia {
   padding: 5rem 0 3rem;
-  background: white;
+  background: var(--cream);
 }
 
 .section-title-historia {
@@ -732,7 +732,7 @@ h2 {
 /* ========== LÍNEA DE TIEMPO MEJORADA ========== */
 .timeline-historia-new {
   padding: 4rem 0 6rem;
-  background: linear-gradient(180deg, white 0%, var(--cream) 100%);
+  background: var(--cream);
   position: relative;
 }
 
@@ -920,6 +920,7 @@ h2 {
 
 .cta-historia h2 {
   font-family: var(--font-serif);
+  color: white;
   font-size: clamp(2rem, 4vw, 3rem);
   margin-bottom: 1.5rem;
   font-weight: 700;
@@ -1114,14 +1115,6 @@ h2 {
 :root {
   --gold: #D4A574;
   --accent-gold: #D4A574;
-}
-
-/* ========== NAVEGACIÓN MEJORADA ========== */
-.navbar.sticky-top {
-  background: rgba(244, 239, 234, 0.95);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 2px 12px rgba(43, 30, 22, 0.08);
-  padding: 1rem 0;
 }
 
 /* ========== HERO OPTIMIZADO (F-Pattern) ========== */
@@ -1407,6 +1400,7 @@ h2 {
 
 .cta-final-section h2 {
   font-family: var(--font-serif);
+  color: white;
   font-size: clamp(2rem, 4vw, 3rem);
   margin-bottom: 1.5rem;
   font-weight: 700;
@@ -2725,7 +2719,7 @@ h2 {
   margin: 0 auto;
   padding: 2rem;
   border-radius: 10px;
-  background: rgba(244, 239, 234, 0.5);
+  background: var(--cream);
   backdrop-filter: blur(6px);
 }
 
@@ -2751,8 +2745,8 @@ h2 {
 
 /* Cards de reseñas */
 .review-card {
-  background: linear-gradient(180deg, rgba(244, 239, 234, 0.7), rgba(244, 239, 234, 0.5));
-  border: 1px solid rgba(43, 30, 22, 0.08);
+  background: linear-gradient(180deg, rgba(253, 253, 253, 0.7), rgba(244, 239, 234, 0.5));
+  border: 1px solid rgba(35, 25, 20, 0.08);
   border-radius: 12px;
   padding: 2rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -2821,7 +2815,7 @@ h2 {
 }
 
 .conversations-box {
-  background: white;
+  background: var(--cream);
   border-radius: 16px;
   padding: 3rem 2.5rem;
   box-shadow: 0 12px 48px rgba(43, 30, 22, 0.15);
@@ -2844,7 +2838,7 @@ h2 {
 
 /* Acordeón personalizado */
 .accordion-item {
-  border: 1px solid rgba(43, 30, 22, 0.1);
+  border: 1px solid rgba(181, 165, 156, 0.1);
   border-radius: 8px !important;
   margin-bottom: 1rem;
   overflow: hidden;
@@ -2855,7 +2849,7 @@ h2 {
   font-weight: 600;
   font-size: 1.05rem;
   color: var(--coffee-900);
-  background-color: rgba(244, 239, 234, 0.5);
+  background-color: white;
   padding: 1.25rem 1.5rem;
 }
 
@@ -2876,7 +2870,7 @@ h2 {
 
 .accordion-body {
   padding: 1.5rem;
-  background: linear-gradient(135deg, rgba(244, 239, 234, 0.3), rgba(244, 239, 234, 0.1));
+  background: white;
 }
 
 .question-author {
@@ -2900,7 +2894,7 @@ h2 {
 
 /* CTA de suscripción */
 .subscription-cta {
-  background: linear-gradient(135deg, rgba(179, 106, 74, 0.05), rgba(111, 125, 99, 0.05));
+  background: var(--cream);
   padding: 5rem 0;
   margin-top: 3rem;
 }
@@ -3213,9 +3207,9 @@ h2 {
   background: rgba(212, 165, 116, 0.2);
   border: 1px solid rgba(212, 165, 116, 0.4);
   color: #D4A574;
-  padding: 0.5rem 1.2rem;
+  padding: 1rem 1.2rem;
   border-radius: 50px;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   font-weight: 600;
   margin-bottom: 1.5rem;
   backdrop-filter: blur(10px);
