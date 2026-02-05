@@ -1,226 +1,262 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Slow Coffee — Inicio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <link rel="stylesheet" href="css/styles.css">
-  </head>
-  
-  <body>
-    <!-- //navegación -->
-    <header class="site-header py-3">
-      <nav class="navbar navbar-expand-md">
-        <div class="container d-flex align-items-center justify-content-between px-4 px-md-0">
-          <a class="navbar-brand brand" href="index.html">
-            <img src="img/logo_png.png" alt="Slow Coffee" class="logo" height="40">
-          </a>
 
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Alternar navegación">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Slow Coffee — Inicio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Libre+Baskerville:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-          <div class="collapse navbar-collapse" id="mainNav">
-            <ul class="navbar-nav ms-auto gap-2">
-              <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-              <li class="nav-item"><a class="nav-link" href="pag/historia.html">Historia</a></li>
-              <li class="nav-item"><a class="nav-link" href="pag/catalogo.html">Productos</a></li>
-              <li class="nav-item"><a class="nav-link" href="pag/comunidad.html">Comunidad</a></li>
-              <li class="nav-item"><a class="nav-link" href="pag/valores.html">Valores</a></li>
-              <li class="nav-item"><a class="nav-link" href="pag/soporte.html">Soporte</a></li>
-              
-            </ul>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <!-- //navegación -->
+  <header class="site-header py-3">
+    <nav class="navbar navbar-expand-md">
+      <div class="container d-flex align-items-center justify-content-between px-4 px-md-0">
+        <a class="navbar-brand brand" href="index.html">
+          <img src="img/logo_png.png" alt="Slow Coffee" class="logo" height="40">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+          aria-controls="mainNav" aria-expanded="false" aria-label="Alternar navegación">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto gap-2">
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="pag/historia.html">Historia</a></li>
+            <li class="nav-item"><a class="nav-link" href="pag/catalogo.html">Productos</a></li>
+            <li class="nav-item"><a class="nav-link" href="pag/comunidad.html">Comunidad</a></li>
+            <li class="nav-item"><a class="nav-link" href="pag/valores.html">Valores</a></li>
+            <li class="nav-item"><a class="nav-link" href="pag/soporte.html">Soporte</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- hero -->
+  <main>
+    <section class="hero-index-new" style="--hero-image: url('../img/indexHero.png');">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="hero-content-new">
+
+              <h1 class="hero-title-new">El café no es prisa.</h1>
+              <p class="hero-subtitle-new">Es tiempo bien invertido.</p>
+
+              <a href="catalogo.html" class="btn-cta-hero">
+                Explorar Cafés
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  style="margin-left: 0.5rem;">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
-      </nav>
-    </header>
+      </div>
+    </section>
 
-    <!-- hero -->
-    <main>
-    <section class="hero-index-new">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8">
-          <div class="hero-content-new">
-            
-            <h1 class="hero-title-new">El café no es prisa.</h1>
-            <p class="hero-subtitle-new">Es tiempo bien invertido.</p>
-            
-            <a href="catalogo.html" class="btn-cta-hero">
-              Explorar Cafés
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-left: 0.5rem;">
-                <path d="M5 12h14M12 5l7 7-7 7"/>
-              </svg>
+    <!-- productos más vendidos -->
+    <section id="best-sellers" class="section best-sellers py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Nuestros Productos más vendidos</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <a href="pag/catalogo.html" class="cat-card h-100 text-decoration-none text-body"
+              aria-label="Ir al catálogo - Café Colina">
+              <div class="cat-card__img-wrap">
+                <img src="./img/productosFoto.png" class="cat-card__img" alt="Café Colina">
+              </div>
+              <div class="cat-card__body">
+                <span class="cat-card__origin">Colombia · Natural</span>
+                <h5 class="cat-card__title">Café Colina</h5>
+                <p class="cat-card__note">Notas de chocolate y naranja. 250g.</p>
+                <div class="cat-card__footer">
+                  <span class="cat-card__price">9.50 €</span>
+                  <span class="cat-card__btn">Ver</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="pag/catalogo.html" class="cat-card h-100 text-decoration-none text-body"
+              aria-label="Ir al catálogo - Blend Amanecer">
+              <div class="cat-card__img-wrap">
+                <img src="./img/productosFoto.png" class="cat-card__img" alt="Blend Amanecer">
+              </div>
+              <div class="cat-card__body">
+                <span class="cat-card__origin">Blend · Filtrado</span>
+                <h5 class="cat-card__title">Blend Amanecer</h5>
+                <p class="cat-card__note">Equilibrado y dulce, ideal para filtrado. 250g.</p>
+                <div class="cat-card__footer">
+                  <span class="cat-card__price">8.90 €</span>
+                  <span class="cat-card__btn">Ver</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="pag/catalogo.html" class="cat-card h-100 text-decoration-none text-body"
+              aria-label="Ir al catálogo - Espresso Tostado">
+              <div class="cat-card__img-wrap">
+                <img src="./img/productosFoto.png" class="cat-card__img" alt="Espresso Tostado">
+              </div>
+              <div class="cat-card__body">
+                <span class="cat-card__origin">Espresso · Tostado</span>
+                <h5 class="cat-card__title">Espresso Tostado</h5>
+                <p class="cat-card__note">Cuerpo intenso y final persistente. 250g.</p>
+                <div class="cat-card__footer">
+                  <span class="cat-card__price">10.20 €</span>
+                  <span class="cat-card__btn">Ver</span>
+                </div>
+              </div>
             </a>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-      <!-- productos más vendidos -->
-      <section id="best-sellers" class="section best-sellers py-5">
-        <div class="container">
-          <h2 class="text-center mb-4">Nuestros Productos más vendidos</h2>
-          <div class="row g-4">
-            <div class="col-md-4">
-              <a href="pag/catalogo.html" class="cat-card h-100 text-decoration-none text-body" aria-label="Ir al catálogo - Café Colina">
-                <div class="cat-card__img-wrap">
-                  <img src="./img/productosFoto.png" class="cat-card__img" alt="Café Colina">
-                </div>
-                <div class="cat-card__body">
-                  <span class="cat-card__origin">Colombia · Natural</span>
-                  <h5 class="cat-card__title">Café Colina</h5>
-                  <p class="cat-card__note">Notas de chocolate y naranja. 250g.</p>
-                  <div class="cat-card__footer">
-                    <span class="cat-card__price">9.50 €</span>
-                    <span class="cat-card__btn">Ver</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="col-md-4">
-              <a href="pag/catalogo.html" class="cat-card h-100 text-decoration-none text-body" aria-label="Ir al catálogo - Blend Amanecer">
-                <div class="cat-card__img-wrap">
-                  <img src="./img/productosFoto.png" class="cat-card__img" alt="Blend Amanecer">
-                </div>
-                <div class="cat-card__body">
-                  <span class="cat-card__origin">Blend · Filtrado</span>
-                  <h5 class="cat-card__title">Blend Amanecer</h5>
-                  <p class="cat-card__note">Equilibrado y dulce, ideal para filtrado. 250g.</p>
-                  <div class="cat-card__footer">
-                    <span class="cat-card__price">8.90 €</span>
-                    <span class="cat-card__btn">Ver</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="col-md-4">
-              <a href="pag/catalogo.html" class="cat-card h-100 text-decoration-none text-body" aria-label="Ir al catálogo - Espresso Tostado">
-                <div class="cat-card__img-wrap">
-                  <img src="./img/productosFoto.png" class="cat-card__img" alt="Espresso Tostado">
-                </div>
-                <div class="cat-card__body">
-                  <span class="cat-card__origin">Espresso · Tostado</span>
-                  <h5 class="cat-card__title">Espresso Tostado</h5>
-                  <p class="cat-card__note">Cuerpo intenso y final persistente. 250g.</p>
-                  <div class="cat-card__footer">
-                    <span class="cat-card__price">10.20 €</span>
-                    <span class="cat-card__btn">Ver</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- historia -->
-      <section id="historia" class="section story py-5">
-        <div class="container">
-          <div class="row">
+    <!-- historia -->
+    <section id="historia" class="section story py-5">
+      <div class="container">
+        <div class="row">
           <article class="col-md-7">
             <h2>Una historia de calma</h2>
-            <p class="long">Nacimos del deseo de honrar el tiempo. Cada lote se tuesta siguiendo una cadencia propia, buscando claridad en el sabor. Trabajamos mano a mano con productores locales, afinando cada proceso para revelar matices únicos en cada taza y cuidar la trazabilidad desde la finca hasta tu ritual diario.</p>
+            <p class="long">Nacimos del deseo de honrar el tiempo. Cada lote se tuesta siguiendo una cadencia propia,
+              buscando claridad en el sabor. Trabajamos mano a mano con productores locales, afinando cada proceso para
+              revelar matices únicos en cada taza y cuidar la trazabilidad desde la finca hasta tu ritual diario.</p>
           </article>
           <aside class="col-md-5 story-media">
             <div class="vertical-photo">
-              <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60" alt="Textura de granos de café" />
+              <img
+                src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60"
+                alt="Textura de granos de café" />
             </div>
           </aside>
-          </div>
-        </div>
-      </section>
-
-      <!-- cards -->
-      <section id="origen" class="section origin py-5">
-        <div class="container">
-          <h2 class="text-center mb-4">Origen & Proceso</h2>
-          <div class="row icons">
-            <div class="col-md-4 icon-card">
-              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 2C8 2 4 5 4 9c0 6 8 13 8 13s8-7 8-13c0-4-4-7-8-7z"/><circle cx="12" cy="9" r="2.2"/></svg>
-              <h4>Origen</h4>
-              <p>Relaciones directas con productores locales para asegurar calidad, trazabilidad y prácticas justas en cada cosecha.</p>
-            </div>
-            <div class="col-md-4 icon-card">
-              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M21 12c0 5-9 10-9 10S3 17 3 12a9 9 0 0 1 18 0z"/><path d="M12 6v12" stroke-linecap="round"/></svg>
-              <h4>Proceso</h4>
-              <p>Lecturas por lote y ajustes precisos de tueste que permiten revelar perfiles de sabor únicos en cada partida.</p>
-            </div>
-            <div class="col-md-4 icon-card">
-              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 7h12v6a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7z"/><path d="M17 8v3a3 3 0 0 0 3 3" stroke-linecap="round"/></svg>
-              <h4>Ritual</h4>
-              <p>Un gesto humano que acompaña tu pausa diaria, celebrando la paciencia y la atención en cada taza.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- cta -->
-      <section class="contact-banner-hero">
-        <div class="contact-content">
-          <h2>Ven a Saborear el Tiempo</h2>
-          <p class="subtitle">Encuentra tu ritual en cada taza.</p>
-          <a href="catalogo.html" class="btn-cta-hero">
-              Descubrir Más
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-left: 0.5rem;">
-                <path d="M5 12h14M12 5l7 7-7 7"/>
-              </svg>
-            </a>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer py-3">
-      <div class="container footer-inner">
-        <div class="row text-center align-items-center">
-          <div class="col-md-4 mb-2">
-            <a class="brand footer-brand" href="index.html">
-              <img src="img/logo_negativo_png.png" alt="Slow Coffee" class="logo" height="36">
-            </a>
-          </div>
-
-          <div class="col-md-4 mb-2">
-            <h4>Contacto</h4>
-            <ul class="list-unstyled mb-0 contact-list">
-              <li>Email: <a href="mailto:hola@slowcoffee.example">hola@slowcoffee.example</a></li>
-              <li>Tel: <a href="tel:+34911222333">+34 911 222 333</a></li>
-              <li>Horario: Lun–Vie 9:00–18:00</li>
-            </ul>
-          </div>
-
-          <div class="col-md-4 mb-2">
-            <h4>Síguenos</h4>
-            <div class="d-flex justify-content-center gap-2 social-icons" aria-label="Redes sociales">
-              <a href="#" class="social-icon" aria-label="Instagram">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/></svg>
-              </a>
-              <a href="#" class="social-icon" aria-label="Twitter">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 22.43 1s-1.94 1.16-3.54 1.58A4.48 4.48 0 0 0 12 6v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5A4.5 4.5 0 0 0 23 3z"/></svg>
-              </a>
-              <a href="#" class="social-icon" aria-label="Facebook">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M18 2h-3a4 4 0 0 0-4 4v3H8v4h3v8h4v-8h3l1-4h-4V6a1 1 0 0 1 1-1h3z"/></svg>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="footer-bottom text-center small mt-3">
-          <p class="mb-0">© <span id="year"></span> Slow Coffee — Todos los derechos reservados.</p>
         </div>
       </div>
-    </footer>
+    </section>
 
-    <script>
-      (function(){
-        document.getElementById('year').textContent = new Date().getFullYear();
-      })();
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+    <!-- cards -->
+    <section id="origen" class="section origin py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Origen & Proceso</h2>
+        <div class="row icons">
+          <div class="col-md-4 icon-card">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+              aria-hidden="true">
+              <path d="M12 2C8 2 4 5 4 9c0 6 8 13 8 13s8-7 8-13c0-4-4-7-8-7z" />
+              <circle cx="12" cy="9" r="2.2" />
+            </svg>
+            <h4>Origen</h4>
+            <p>Relaciones directas con productores locales para asegurar calidad, trazabilidad y prácticas justas en
+              cada cosecha.</p>
+          </div>
+          <div class="col-md-4 icon-card">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+              aria-hidden="true">
+              <path d="M21 12c0 5-9 10-9 10S3 17 3 12a9 9 0 0 1 18 0z" />
+              <path d="M12 6v12" stroke-linecap="round" />
+            </svg>
+            <h4>Proceso</h4>
+            <p>Lecturas por lote y ajustes precisos de tueste que permiten revelar perfiles de sabor únicos en cada
+              partida.</p>
+          </div>
+          <div class="col-md-4 icon-card">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+              aria-hidden="true">
+              <path d="M3 7h12v6a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7z" />
+              <path d="M17 8v3a3 3 0 0 0 3 3" stroke-linecap="round" />
+            </svg>
+            <h4>Ritual</h4>
+            <p>Un gesto humano que acompaña tu pausa diaria, celebrando la paciencia y la atención en cada taza.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- cta -->
+    <section class="contact-banner-hero">
+      <div class="contact-content">
+        <h2>Ven a Saborear el Tiempo</h2>
+        <p class="subtitle">Encuentra tu ritual en cada taza.</p>
+        <a href="catalogo.html" class="btn-cta-hero">
+          Descubrir Más
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            style="margin-left: 0.5rem;">
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer py-3">
+    <div class="container footer-inner">
+      <div class="row text-center align-items-center">
+        <div class="col-md-4 mb-2">
+          <a class="brand footer-brand" href="index.html">
+            <img src="img/logo_negativo_png.png" alt="Slow Coffee" class="logo" height="36">
+          </a>
+        </div>
+
+        <div class="col-md-4 mb-2">
+          <h4>Contacto</h4>
+          <ul class="list-unstyled mb-0 contact-list">
+            <li>Email: <a href="mailto:hola@slowcoffee.example">hola@slowcoffee.example</a></li>
+            <li>Tel: <a href="tel:+34911222333">+34 911 222 333</a></li>
+            <li>Horario: Lun–Vie 9:00–18:00</li>
+          </ul>
+        </div>
+
+        <div class="col-md-4 mb-2">
+          <h4>Síguenos</h4>
+          <div class="d-flex justify-content-center gap-2 social-icons" aria-label="Redes sociales">
+            <a href="#" class="social-icon" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <rect x="3" y="3" width="18" height="18" rx="4" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+              </svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="Twitter">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path
+                  d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 22.43 1s-1.94 1.16-3.54 1.58A4.48 4.48 0 0 0 12 6v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5A4.5 4.5 0 0 0 23 3z" />
+              </svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path d="M18 2h-3a4 4 0 0 0-4 4v3H8v4h3v8h4v-8h3l1-4h-4V6a1 1 0 0 1 1-1h3z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom text-center small mt-3">
+        <p class="mb-0">© <span id="year"></span> Slow Coffee — Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      document.getElementById('year').textContent = new Date().getFullYear();
+    })();
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>

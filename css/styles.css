@@ -149,8 +149,41 @@ body {
   display: flex;
   align-items: center;
   background: linear-gradient(135deg, rgba(43, 30, 22, 0.85), rgba(107, 74, 58, 0.75)), 
-              url('../img/indexHero.png') center/cover;
+              var(--hero-image) center/cover;
   overflow: hidden;
+  padding: 30px
+}
+
+.hero-index-new .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content-new {
+  position: relative;
+  text-align: center;
+  margin-left: 0;
+  margin-right: 0;
+  z-index: 2;
+  max-width: 700px;
+}
+
+.hero-title-new {
+  font-family: var(--font-serif);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  color: white;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+}
+
+.hero-subtitle-new {
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.95);
+  margin-bottom: 2rem;
+  line-height: 1.6;
 }
 
 
@@ -166,6 +199,11 @@ body {
   transition: all 0.3s ease;
   text-decoration: none;
   display: inline-block;
+}
+
+.btn-cta-hero:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 12px 32px rgba(179, 106, 74, 0.6);
 }
 
 
@@ -571,22 +609,6 @@ body {
     }
 }
 
-/* Center hero-index-new on smaller screens */
-@media (max-width: 992px) {
-  .hero-index-new .row {
-    justify-content: center;
-  }
-  .hero-index-new .col-lg-8 {
-    flex: 0 0 100%;
-    max-width: 720px;
-  }
-  .hero-content-new {
-    text-align: center;
-    margin-left: 0;
-    margin-right: 0;
-  }
-}
-
 /* Closing-hero (variant similar to hero but for the final CTA) */
 
 
@@ -656,40 +678,6 @@ h2 {
 /* =========================================
    ESTILOS DE PÁGINA HISTORIA (REDISEÑADA)
    ========================================= */
-
-/* ========== HERO HISTORIA ========== */
-.hero-historia-new {
-  position: relative;
-  min-height: 65vh;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  background-color: var(--cream);
-}
-
-.hero-historia-new .hero-bg {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 0;
-}
-
-.hero-overlay-historia {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(135deg, rgba(43, 30, 22, 0.85), rgba(107, 74, 58, 0.75));
-  z-index: 1;
-}
-
-.hero-content-historia {
-  position: relative;
-  z-index: 2;
-  max-width: 700px;
-  padding: 3rem 0;
-}
-
 /* Badge */
 .hero-badge-historia {
   display: inline-flex;
@@ -702,25 +690,8 @@ h2 {
   border-radius: 50px;
   font-size: 0.85rem;
   font-weight: 600;
-  margin-bottom: 1.5rem;
+  margin-top: .1rem;
   backdrop-filter: blur(10px);
-}
-
-.hero-title-historia {
-  font-family: var(--font-serif);
-  font-size: clamp(2.5rem, 5vw, 4rem);
-  color: white;
-  font-weight: 700;
-  line-height: 1.1;
-  margin-bottom: 1.5rem;
-  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
-}
-
-.hero-subtitle-historia {
-  font-size: 1.25rem;
-  color: rgba(255, 255, 255, 0.95);
-  margin-bottom: 0;
-  line-height: 1.6;
 }
 
 /* ========== INTRODUCCIÓN ========== */
@@ -1045,14 +1016,6 @@ h2 {
 }
 
 @media (max-width: 768px) {
-  .hero-historia-new {
-    min-height: 60vh;
-  }
-  
-  .hero-content-historia {
-    padding: 2rem 1rem;
-  }
-  
   .hero-badge-historia {
     font-size: 0.75rem;
     padding: 0.4rem 1rem;
@@ -1133,55 +1096,8 @@ h2 {
   --accent-gold: #D4A574;
 }
 
-/* ========== HERO OPTIMIZADO (F-Pattern) ========== */
-.hero-valores-new {
-  position: relative;
-  min-height: 85vh;
-  display: flex;
-  align-items: center;
-  background: linear-gradient(135deg, rgba(43, 30, 22, 0.85), rgba(107, 74, 58, 0.75)), 
-              url('../img/valoresFoto1.png') center/cover;
-  overflow: hidden;
-}
 
-.hero-content-new {
-  position: relative;
-  z-index: 2;
-  max-width: 700px;
-}
 
-/* Badge de credibilidad */
-.hero-badge-new {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  background: rgba(212, 165, 116, 0.2);
-  border: 1px solid rgba(212, 165, 116, 0.4);
-  color: var(--gold);
-  padding: 0.5rem 1.2rem;
-  border-radius: 50px;
-  font-size: 0.85rem;
-  font-weight: 600;
-  margin-bottom: 1.5rem;
-  backdrop-filter: blur(10px);
-}
-
-.hero-title-new {
-  font-family: var(--font-serif);
-  font-size: clamp(2.5rem, 5vw, 4rem);
-  color: white;
-  font-weight: 700;
-  line-height: 1.1;
-  margin-bottom: 1.5rem;
-  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
-}
-
-.hero-subtitle-new {
-  font-size: 1.25rem;
-  color: rgba(255, 255, 255, 0.95);
-  margin-bottom: 2rem;
-  line-height: 1.6;
-}
 
 /* CTA Principal - Alto contraste */
 .btn-cta-primary {
@@ -1559,58 +1475,6 @@ h2 {
 /* =========================================
    ESTILOS DE PÁGINA DE SOPORTE
    ========================================= */
-
-/* Hero con imagen de fondo - MODIFICADO A soporteFoto1 */
-.faq-hero {
-  background-image: url('../img/soporteFoto1.jpg');
-  background-size: cover;
-  background-position: center;
-  padding: 5rem 0 3rem;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-  min-height: 60vh;
-  display: flex;
-  align-items: center;
-}
-
-.faq-hero::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(135deg, rgba(43, 30, 22, 0.7), rgba(26, 17, 11, 0.8));
-  z-index: 1;
-}
-
-.faq-hero-content {
-  position: relative;
-  z-index: 2;
-  width: 100%;
-}
-
-.faq-hero h1 {
-  font-family: var(--font-serif);
-  font-size: 3.5rem;
-  color: white;
-  margin-bottom: 2rem;
-  font-weight: 700;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
-}
-
-/* Recuadro "Estamos aquí para ayudarte" - SIN SÍMBOLO */
-/* Texto "Estamos aquí para ayudarte" – SIN recuadro */
-.help-box {
-  background: none;        /* elimina el recuadro */
-  border: none;
-  box-shadow: none;
-  padding: 0;
-  margin-bottom: 3rem;
-
-  text-align: center;
-  color: white;            /* cambia a var(--coffee-900) si va sobre fondo claro */
-  font-size: 1.3rem;
-  font-weight: 600;
-}
 
 /* Pills de categorías rápidas */
 .quick-categories {
@@ -2696,62 +2560,6 @@ h2 {
    ESTILOS DE PÁGINA COMUNIDAD
    ========================================= */
 
-/* Hero comunidad */
-.hero-comunidad {
-  position: relative;
-  min-height: 450px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  background-color: var(--coffee-900);
-}
-
-.hero-comunidad .hero-bg {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 0;
-}
-
-.hero-comunidad .hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(rgba(43, 30, 22, 0.4), rgba(43, 30, 22, 0.5));
-  z-index: 1;
-}
-
-.hero-comunidad .hero-inner {
-  position: relative;
-  z-index: 2;
-  text-align: center;
-  padding: 3rem 2rem;
-}
-
-.hero-comunidad .hero-copy {
-  max-width: 700px;
-  margin: 0 auto;
-  padding: 2rem;
-  border-radius: 10px;
-  background: var(--cream);
-  backdrop-filter: blur(6px);
-}
-
-.hero-comunidad h1 {
-  font-family: var(--font-serif);
-  font-size: 3rem;
-  color: var(--coffee-900);
-  margin-bottom: 1rem;
-}
-
-.hero-comunidad .lede {
-  font-size: 1.2rem;
-  color: var(--coffee-900);
-  margin: 0;
-}
-
 /* Título de sección */
 .section-title {
   font-family: var(--font-serif);
@@ -3162,58 +2970,9 @@ h2 {
    Referencia de colores: mismo sistema que valores.html
    ============================================================= */
 
-
-/* ═══════════════════════════════════════════════════════════
-   NAVBAR — idéntico a valores visualmente
-   El HTML ya usa .site-header que viene de styles.css,
-   aquí solo ajustamos lo que catalogo-page necesita.
-   ═══════════════════════════════════════════════════════════ */
-
 /* ═══════════════════════════════════════════════════════════
    HERO
    ═══════════════════════════════════════════════════════════ */
-
-.hero-catalogo {
-  position: relative;
-  min-height: 80vh;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  background-color: var(--coffee-900);               /* fallback */
-}
-
-/* Imagen de fondo (elemento, no background-image → mejor control) */
-.hero-catalogo__bg {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 0;
-}
-
-/* Overlay degradado (mismo patrón que valores) */
-.hero-catalogo__overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(135deg, rgba(43, 30, 22, 0.82), rgba(107, 74, 58, 0.68));
-  z-index: 1;
-}
-
-/* Contenido posicionado */
-.hero-catalogo__inner {
-  position: relative;
-  z-index: 2;
-  width: 100%;
-  max-width: 1320px;
-  margin:  auto;
-  padding: 4rem 2rem;
-}
-
-.hero-catalogo__content {
-  max-width: 640px;
-  margin-left: 80px
-}
 
 /* Badge de credibilidad (mismo estilo que .hero-badge-new de valores) */
 .hero-badge-catalogo {
@@ -3231,24 +2990,6 @@ h2 {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
-
-.hero-catalogo__title {
-  font-family: var(--font-serif);
-  font-size: clamp(2.4rem, 5vw, 3.6rem);
-  color: white;
-  font-weight: 700;
-  line-height: 1.1;
-  margin-bottom: 1rem;
-  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
-}
-
-.hero-catalogo__subtitle {
-  font-size: 1.15rem;
-  color: rgba(255, 255, 255, 0.92);
-  line-height: 1.65;
-  margin: 0;
-}
-
 
 /* ═══════════════════════════════════════════════════════════
    TRUST BAR (debajo del hero)

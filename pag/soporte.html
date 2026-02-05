@@ -1,943 +1,1030 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Soporte — Slow Coffee</title>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/soporte-styles.css">
-  </head>
-  
-  <body>
-    <!-- Navegación -->
-    <header class="site-header py-3">
-      <nav class="navbar navbar-expand-md">
-        <div class="container d-flex align-items-center justify-content-between px-4 px-md-0">
-          <a class="navbar-brand brand" href="../index.html">
-            <img src="../img/logo_png.png" alt="Slow Coffee" class="logo" height="40">
-          </a>
 
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Alternar navegación">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Soporte — Slow Coffee</title>
 
-          <div class="collapse navbar-collapse" id="mainNav">
-            <ul class="navbar-nav ms-auto gap-2">
-              <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
-              <li class="nav-item"><a class="nav-link" href="historia.html">Historia</a></li>
-              <li class="nav-item"><a class="nav-link" href="catalogo.html">Productos</a></li>
-              <li class="nav-item"><a class="nav-link" href="comunidad.html">Comunidad</a></li>
-              <li class="nav-item"><a class="nav-link" href="valores.html">Valores</a></li>
-              <li class="nav-item"><a class="nav-link" href="soporte.html">Soporte</a></li>
-              
-            </ul>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Libre+Baskerville:wght@400;700&display=swap"
+    rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/soporte-styles.css">
+</head>
+
+<body>
+  <!-- Navegación -->
+  <header class="site-header py-3">
+    <nav class="navbar navbar-expand-md">
+      <div class="container d-flex align-items-center justify-content-between px-4 px-md-0">
+        <a class="navbar-brand brand" href="../index.html">
+          <img src="../img/logo_png.png" alt="Slow Coffee" class="logo" height="40">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+          aria-controls="mainNav" aria-expanded="false" aria-label="Alternar navegación">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto gap-2">
+            <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="historia.html">Historia</a></li>
+            <li class="nav-item"><a class="nav-link" href="catalogo.html">Productos</a></li>
+            <li class="nav-item"><a class="nav-link" href="comunidad.html">Comunidad</a></li>
+            <li class="nav-item"><a class="nav-link" href="valores.html">Valores</a></li>
+            <li class="nav-item"><a class="nav-link" href="soporte.html">Soporte</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-index-new" style="--hero-image: url('../img/soporteFoto2.jpg');">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="hero-content-new">
+              <h1 class="hero-title-new">¿En qué podemos ayudarte?</h1>
+              <p class="hero-subtitle-new">Nuestros clientes son nuestra mayor prioridad.</p>
+
+              <div class="quick-categories">
+                <a href="#metodos-pago" class="category-pill">Métodos de Pago</a>
+                <a href="#envio-entrega" class="category-pill">Envío y Entrega</a>
+                <a href="#devoluciones" class="category-pill">Devoluciones</a>
+              </div>
+            </div>
           </div>
         </div>
-      </nav>
-    </header>
+      </div>
+    </section>
 
-    <main>
-      <!-- Hero modificado -->
-      <section class="faq-hero">
-        <div class="container faq-hero-content">
-          <h1>Bienvenido al Soporte de Slow Coffee</h1>
-          
-          <!-- Texto "Estamos aquí para ayudarte" en recuadro - SIN ICONO -->
-          <div class="help-box">
-            Estamos aquí para ayudarte
-          </div>
+    <!-- Preguntas Populares (AHORA va primero) -->
+    <section class="popular-section">
+      <div class="container">
+        <h2 class="section-title">Preguntas Populares</h2>
 
-          <!-- Categorías rápidas -->
-          <div class="quick-categories">
-            <a href="#metodos-pago" class="category-pill">Métodos de Pago</a>
-            <a href="#envio-entrega" class="category-pill">Envío y Entrega</a>
-            <a href="#devoluciones" class="category-pill">Devoluciones</a>
-            <a href="#productos-servicios" class="category-pill">Productos y servicios</a>
-          </div>
-        </div>
-      </section>
-
-      <!-- Preguntas Populares (AHORA va primero) -->
-      <section class="popular-section">
-        <div class="container">
-          <h2 class="section-title">Preguntas Populares</h2>
-          
-          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-4">
-            <!-- Card 1 -->
-            <div class="col">
-              <a href="#metodos-pago" class="popular-card text-decoration-none">
-                <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                  <circle cx="12" cy="12" r="10"/>
-                  <path d="M12 16v-4M12 8h.01"/>
-                </svg>
-                <h3>¿Qué significa "Slow Coffee"?</h3>
-                <p>Descubre nuestra filosofía de honrar el tiempo en cada etapa del proceso del café artesanal.</p>
-                <span class="card-link">
-                  Más información
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M5 12h14M12 5l7 7-7 7"/>
-                  </svg>
-                </span>
-              </a>
-            </div>
-
-            <!-- Card 2 -->
-            <div class="col">
-              <a href="#envio-entrega" class="popular-card text-decoration-none">
-                <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                  <path d="M20 7h-9M14 17H5M20 17h-2M5 7h2M10 3v18M18 10v7"/>
-                </svg>
-                <h3>Pedidos & Envíos</h3>
-                <p>Información sobre procesos de compra, tiempos de entrega y seguimiento en tiempo real de tus pedidos.</p>
-                <span class="card-link">
-                  Más información
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M5 12h14M12 5l7 7-7 7"/>
-                  </svg>
-                </span>
-              </a>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="col">
-              <a href="#metodos-pago" class="popular-card text-decoration-none">
-                <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
-                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
-                </svg>
-                <h3>Métodos de Pago</h3>
-                <p>Conoce todas las formas de pago disponibles para cada tipo de compra en nuestra tienda.</p>
-                <span class="card-link">
-                  Más información
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M5 12h14M12 5l7 7-7 7"/>
-                  </svg>
-                </span>
-              </a>
-            </div>
-
-            <!-- Card 4 -->
-            <div class="col">
-              <a href="#productos-servicios" class="popular-card text-decoration-none">
-                <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                  <path d="M3 7h12v6a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7z"/>
-                  <path d="M17 8v3a3 3 0 0 0 3 3"/>
-                </svg>
-                <h3>Preparación</h3>
-                <p>Guías detalladas para extraer lo mejor de cada taza según tu método de preparación preferido.</p>
-                <span class="card-link">
-                  Más información
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M5 12h14M12 5l7 7-7 7"/>
-                  </svg>
-                </span>
-              </a>
-            </div>
-
-            <!-- Card 5 -->
-            <div class="col">
-              <a href="#devoluciones" class="popular-card text-decoration-none">
-                <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-                  <polyline points="9 22 9 12 15 12 15 22"/>
-                </svg>
-                <h3>Devoluciones y Cancelaciones</h3>
-                <p>Conoce nuestra política de devoluciones y cómo proceder si necesitas devolver un producto.</p>
-                <span class="card-link">
-                  Más información
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M5 12h14M12 5l7 7-7 7"/>
-                  </svg>
-                </span>
-              </a>
-            </div>
-
-            <!-- Card 6 -->
-            <div class="col">
-              <a href="#productos-servicios" class="popular-card text-decoration-none">
-                <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                  <circle cx="12" cy="12" r="10"/>
-                  <path d="M12 6v6l4 2"/>
-                </svg>
-                <h3>Cuidado del Café</h3>
-                <p>Aprende las mejores prácticas para almacenar y conservar la frescura de tu café en casa.</p>
-                <span class="card-link">
-                  Más información
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M5 12h14M12 5l7 7-7 7"/>
-                  </svg>
-                </span>
-              </a>
-            </div>
-
-            <!-- Card 7 (oculta) -->
-            <div class="col d-none">
-              <a href="#metodos-pago" class="popular-card text-decoration-none">
-                <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                  <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                </svg>
-                <h3>Tiempo de Tueste Recomendado</h3>
-                <p>Descubre cuál es el tiempo de tueste ideal para cada tipo de grano y cómo afecta al sabor final de tu café.</p>
-                <span class="card-link">
-                  Más información
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M5 12h14M12 5l7 7-7 7"/>
-                  </svg>
-                </span>
-              </a>
-            </div>
-
-            <!-- Card 8 (oculta) -->
-            <div class="col d-none">
-              <a href="#productos-servicios" class="popular-card text-decoration-none">
-                <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                  <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
-                </svg>
-                <h3>Certificaciones de Calidad</h3>
-                <p>Conoce nuestras certificaciones de calidad, comercio justo y sostenibilidad que garantizan la excelencia de nuestros productos.</p>
-                <span class="card-link">
-                  Más información
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M5 12h14M12 5l7 7-7 7"/>
-                  </svg>
-                </span>
-              </a>
-            </div>
-
-            <!-- Card 9 (oculta) -->
-            <div class="col d-none">
-              <a href="#productos-servicios" class="popular-card text-decoration-none">
-                <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                  <path d="M19 21v-2a4 4 0 00-4-4H9a4 4 0 00-4 4v2M12 11a4 4 0 100-8 4 4 0 000 8z"/>
-                </svg>
-                <h3>Asesoramiento Personalizado</h3>
-                <p>¿Necesitas ayuda para elegir? Nuestros expertos en café ofrecen asesoramiento personalizado según tus preferencias y equipo.</p>
-                <span class="card-link">
-                  Más información
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M5 12h14M12 5l7 7-7 7"/>
-                  </svg>
-                </span>
-              </a>
-            </div>
-            
-          </div>
-
-          <!-- Botón Ver Más -->
-          <div class="text-center">
-            <a href="#" class="btn-ver-mas" id="verMasBtn">
-              Ver más
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <polyline points="6 9 12 15 18 9"/>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-4">
+          <!-- Card 1 -->
+          <div class="col">
+            <a href="#metodos-pago" class="popular-card text-decoration-none">
+              <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 16v-4M12 8h.01" />
               </svg>
+              <h3>¿Qué significa "Slow Coffee"?</h3>
+              <p>Descubre nuestra filosofía de honrar el tiempo en cada etapa del proceso del café artesanal.</p>
+              <span class="card-link">
+                Más información
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </span>
             </a>
           </div>
-        </div>
-      </section>
 
-      <!-- Secciones de contenido en ACORDEÓN COMPACTO (AHORA después de Preguntas Populares) -->
-      
-      <!-- Métodos de Pago (Acordeón compacto) -->
-      <section id="metodos-pago" class="compact-accordion">
-        <!-- Cabecera clickable -->
-        <div class="accordion-header" data-target="metodos-pago-content">
-          <div class="container">
-            <div class="d-flex align-items-center">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="me-3">
-                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
-                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+          <!-- Card 2 -->
+          <div class="col">
+            <a href="#envio-entrega" class="popular-card text-decoration-none">
+              <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M20 7h-9M14 17H5M20 17h-2M5 7h2M10 3v18M18 10v7" />
               </svg>
-              <h2 class="mb-0">Métodos de Pago</h2>
-              <svg class="expand-icon ms-auto" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M6 9l6 6 6-6"/>
+              <h3>Pedidos & Envíos</h3>
+              <p>Información sobre procesos de compra, tiempos de entrega y seguimiento en tiempo real de tus pedidos.
+              </p>
+              <span class="card-link">
+                Más información
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </span>
+            </a>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col">
+            <a href="#metodos-pago" class="popular-card text-decoration-none">
+              <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
               </svg>
-            </div>
+              <h3>Métodos de Pago</h3>
+              <p>Conoce todas las formas de pago disponibles para cada tipo de compra en nuestra tienda.</p>
+              <span class="card-link">
+                Más información
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </span>
+            </a>
           </div>
-        </div>
-        
-        <!-- Contenido (oculto inicialmente) -->
-        <div id="metodos-pago-content" class="accordion-content" style="display: none;">
-          <div class="container py-4">
-            <p class="lead mb-4">En Slow Coffee aceptamos múltiples formas de pago para que tu experiencia de compra sea lo más cómoda posible.</p>
-            
-            <div class="mb-4">
-              <h4 class="fw-bold mb-3">Tarjetas de Crédito y Débito</h4>
-              <p>Aceptamos todas las tarjetas principales: Visa, Mastercard, American Express y Maestro. Todas las transacciones están protegidas con certificado SSL y encriptación de última generación para garantizar la máxima seguridad de tus datos.</p>
-            </div>
 
-            <div class="mb-4">
-              <h4 class="fw-bold mb-3">PayPal</h4>
-              <p>Realiza tu pago de forma rápida y segura con tu cuenta de PayPal. No necesitas compartir tus datos bancarios con nosotros, PayPal gestiona todo el proceso de forma confidencial.</p>
-            </div>
-
-            <div class="mb-4">
-              <h4 class="fw-bold mb-3">Transferencia Bancaria</h4>
-              <p>Puedes realizar una transferencia directa a nuestra cuenta bancaria. Una vez confirmado el pago, procesaremos tu pedido inmediatamente. Te enviaremos los datos bancarios por email tras realizar el pedido.</p>
-            </div>
-
-            <div class="mb-4">
-              <h4 class="fw-bold mb-3">Bizum</h4>
-              <p>Para compras dentro de España, aceptamos Bizum. Rápido, seguro y sin comisiones. Simplemente introduce tu número de teléfono asociado a Bizum durante el proceso de pago.</p>
-            </div>
-
-            <div class="alert alert-info">
-              <strong>Importante:</strong> Todos nuestros métodos de pago cumplen con las normativas PSD2 europeas y garantizan la máxima protección en tus transacciones online.
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Envío y Entrega (Acordeón compacto) -->
-      <section id="envio-entrega" class="compact-accordion">
-        <!-- Cabecera clickable -->
-        <div class="accordion-header" data-target="envio-entrega-content">
-          <div class="container">
-            <div class="d-flex align-items-center">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="me-3">
-                <path d="M20 7h-9M14 17H5M20 17h-2M5 7h2M10 3v18M18 10v7"/>
+          <!-- Card 4 -->
+          <div class="col">
+            <a href="#productos-servicios" class="popular-card text-decoration-none">
+              <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M3 7h12v6a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7z" />
+                <path d="M17 8v3a3 3 0 0 0 3 3" />
               </svg>
-              <h2 class="mb-0">Envío y Entrega</h2>
-              <svg class="expand-icon ms-auto" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M6 9l6 6 6-6"/>
+              <h3>Preparación</h3>
+              <p>Guías detalladas para extraer lo mejor de cada taza según tu método de preparación preferido.</p>
+              <span class="card-link">
+                Más información
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </span>
+            </a>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="col">
+            <a href="#devoluciones" class="popular-card text-decoration-none">
+              <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                <polyline points="9 22 9 12 15 12 15 22" />
               </svg>
-            </div>
+              <h3>Devoluciones y Cancelaciones</h3>
+              <p>Conoce nuestra política de devoluciones y cómo proceder si necesitas devolver un producto.</p>
+              <span class="card-link">
+                Más información
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </span>
+            </a>
           </div>
-        </div>
-        
-        <!-- Contenido (oculto inicialmente) -->
-        <div id="envio-entrega-content" class="accordion-content" style="display: none;">
-          <div class="container py-4">
-            <p class="lead mb-4">Trabajamos con las mejores empresas de mensajería para que tu café llegue fresco y en perfectas condiciones.</p>
-            
-            <div class="mb-4">
-              <h4 class="fw-bold mb-3">Tiempos de Entrega</h4>
-              <ul class="list-unstyled">
-                <li class="mb-2">✓ <strong>Península:</strong> 24-48 horas laborables</li>
-                <li class="mb-2">✓ <strong>Islas Baleares:</strong> 48-72 horas laborables</li>
-                <li class="mb-2">✓ <strong>Canarias, Ceuta y Melilla:</strong> 5-7 días laborables</li>
-                <li class="mb-2">✓ <strong>Envío Express (Península):</strong> 24 horas garantizado</li>
-              </ul>
-            </div>
 
-            <div class="mb-4">
-              <h4 class="fw-bold mb-3">Costes de Envío</h4>
-              <p>Nuestras tarifas son transparentes y competitivas:</p>
-              <ul class="list-unstyled">
-                <li class="mb-2">• Envío estándar Península: <strong>4,95€</strong></li>
-                <li class="mb-2">• Envío estándar Islas: <strong>9,95€</strong></li>
-                <li class="mb-2">• Envío Express Península: <strong>7,95€</strong></li>
-                <li class="mb-2">• <strong>¡GRATIS!</strong> En pedidos superiores a 30€ (Península)</li>
-              </ul>
-            </div>
-
-            <div class="mb-4">
-              <h4 class="fw-bold mb-3">Seguimiento de Pedido</h4>
-              <p>Una vez procesado tu pedido, recibirás un email con el número de seguimiento. Podrás consultar el estado de tu envío en tiempo real a través de nuestra web o directamente en la página de la empresa de transporte.</p>
-            </div>
-
-            <div class="mb-4">
-              <h4 class="fw-bold mb-3">Empaquetado</h4>
-              <p>Cada pedido se empaqueta cuidadosamente en cajas especiales con válvula de desgasificación para preservar el aroma y frescura del café. Utilizamos materiales 100% reciclables y biodegradables.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Devoluciones (Acordeón compacto) -->
-      <section id="devoluciones" class="compact-accordion">
-        <!-- Cabecera clickable -->
-        <div class="accordion-header" data-target="devoluciones-content">
-          <div class="container">
-            <div class="d-flex align-items-center">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="me-3">
-                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-                <polyline points="9 22 9 12 15 12 15 22"/>
+          <!-- Card 6 -->
+          <div class="col">
+            <a href="#productos-servicios" class="popular-card text-decoration-none">
+              <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 6v6l4 2" />
               </svg>
-              <h2 class="mb-0">Devoluciones y Cancelaciones</h2>
-              <svg class="expand-icon ms-auto" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M6 9l6 6 6-6"/>
+              <h3>Cuidado del Café</h3>
+              <p>Aprende las mejores prácticas para almacenar y conservar la frescura de tu café en casa.</p>
+              <span class="card-link">
+                Más información
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </span>
+            </a>
+          </div>
+
+          <!-- Card 7 (oculta) -->
+          <div class="col d-none">
+            <a href="#metodos-pago" class="popular-card text-decoration-none">
+              <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
-            </div>
+              <h3>Tiempo de Tueste Recomendado</h3>
+              <p>Descubre cuál es el tiempo de tueste ideal para cada tipo de grano y cómo afecta al sabor final de tu
+                café.</p>
+              <span class="card-link">
+                Más información
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </span>
+            </a>
           </div>
-        </div>
-        
-        <!-- Contenido (oculto inicialmente) -->
-        <div id="devoluciones-content" class="accordion-content" style="display: none;">
-          <div class="container py-4">
-            <p class="lead mb-4">Tu satisfacción es nuestra prioridad. Si por algún motivo no estás satisfecho, estamos aquí para ayudarte.</p>
-            
-            <div class="mb-4">
-              <h4 class="fw-bold mb-3">Política de Devolución</h4>
-              <p>Dispones de <strong>14 días naturales</strong> desde la recepción del pedido para solicitar una devolución, de acuerdo con la ley de comercio electrónico española.</p>
-              <p><strong>Condiciones:</strong></p>
-              <ul>
-                <li>El producto debe estar sin abrir y en su embalaje original</li>
-                <li>Debe conservar todas sus etiquetas y precintos de seguridad</li>
-                <li>No se aceptan devoluciones de productos personalizados o de lotes especiales bajo petición</li>
-              </ul>
-            </div>
 
-            <div class="mb-4">
-              <h4 class="fw-bold mb-3">Cómo Solicitar una Devolución</h4>
-              <ol>
-                <li class="mb-2">Contacta con nuestro equipo a través del formulario de contacto o por email</li>
-                <li class="mb-2">Indica el número de pedido y el motivo de la devolución</li>
-                <li class="mb-2">Te enviaremos una etiqueta de devolución prepagada</li>
-                <li class="mb-2">Empaqueta el producto de forma segura</li>
-                <li class="mb-2">Deposita el paquete en cualquier punto de recogida</li>
-              </ol>
-            </div>
-
-            <div class="mb-4">
-              <h4 class="fw-bold mb-3">Reembolsos</h4>
-              <p>Una vez recibamos y verifiquemos el producto devuelto, procederemos al reembolso completo en un plazo máximo de <strong>7 días laborables</strong>. El importe se abonará mediante el mismo método de pago utilizado en la compra.</p>
-            </div>
-
-            <div class="mb-4">
-              <h4 class="fw-bold mb-3">Cancelaciones</h4>
-              <p>Puedes cancelar tu pedido sin coste alguno siempre que no haya sido procesado y enviado. Contacta con nosotros lo antes posible si deseas cancelar tu pedido.</p>
-            </div>
-
-            <div class="alert alert-success">
-              <strong>Garantía de Satisfacción:</strong> Si el café no cumple con tus expectativas de calidad, házmelo saber. Encontraremos una solución que te satisfaga.
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Productos y Servicios (Acordeón compacto) -->
-      <section id="productos-servicios" class="compact-accordion">
-        <!-- Cabecera clickable -->
-        <div class="accordion-header" data-target="productos-servicios-content">
-          <div class="container">
-            <div class="d-flex align-items-center">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="me-3">
-                <circle cx="12" cy="12" r="10"/>
-                <path d="M12 6v6l4 2"/>
+          <!-- Card 8 (oculta) -->
+          <div class="col d-none">
+            <a href="#productos-servicios" class="popular-card text-decoration-none">
+              <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path
+                  d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
               </svg>
-              <h2 class="mb-0">Productos y Servicios</h2>
-              <svg class="expand-icon ms-auto" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M6 9l6 6 6-6"/>
+              <h3>Certificaciones de Calidad</h3>
+              <p>Conoce nuestras certificaciones de calidad, comercio justo y sostenibilidad que garantizan la
+                excelencia de nuestros productos.</p>
+              <span class="card-link">
+                Más información
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </span>
+            </a>
+          </div>
+
+          <!-- Card 9 (oculta) -->
+          <div class="col d-none">
+            <a href="#productos-servicios" class="popular-card text-decoration-none">
+              <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M19 21v-2a4 4 0 00-4-4H9a4 4 0 00-4 4v2M12 11a4 4 0 100-8 4 4 0 000 8z" />
               </svg>
-            </div>
+              <h3>Asesoramiento Personalizado</h3>
+              <p>¿Necesitas ayuda para elegir? Nuestros expertos en café ofrecen asesoramiento personalizado según tus
+                preferencias y equipo.</p>
+              <span class="card-link">
+                Más información
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </span>
+            </a>
           </div>
+
         </div>
-        
-        <!-- Contenido (oculto inicialmente) -->
-        <div id="productos-servicios-content" class="accordion-content" style="display: none;">
-          <div class="container py-4">
-            <p class="lead mb-4">Descubre todo lo que Slow Coffee tiene para ofrecerte, desde café de origen único hasta experiencias personalizadas.</p>
-            
-            <div class="mb-4">
-              <h4 class="fw-bold mb-3">Catálogo de Cafés</h4>
-              <p>Nuestro catálogo incluye:</p>
-              <ul>
-                <li><strong>Cafés de Origen Único:</strong> Etiopía, Colombia, Sumatra y más</li>
-                <li><strong>Blends Exclusivos:</strong> Mezclas cuidadosamente balanceadas</li>
-                <li><strong>Ediciones Limitadas:</strong> Micro-lotes de temporada</li>
-                <li><strong>Café Descafeinado:</strong> Procesado mediante método suizo</li>
-                <li><strong>Formatos:</strong> Grano entero, molido fino, molido grueso</li>
-              </ul>
-            </div>
 
-            <div class="mb-4">
-              <h4 class="fw-bold mb-3">Servicio de Suscripción</h4>
-              <p>Recibe café fresco regularmente sin preocuparte de hacer pedidos:</p>
-              <ul>
-                <li>Frecuencia flexible: semanal, quincenal o mensual</li>
-                <li>Descuento del 10% en todas las entregas</li>
-                <li>Acceso anticipado a ediciones limitadas</li>
-                <li>Cambio de productos según tus preferencias</li>
-                <li>Sin permanencia: cancela cuando quieras</li>
-              </ul>
-            </div>
-
-            <div class="mb-4">
-              <h4 class="fw-bold mb-3">Experiencias y Talleres</h4>
-              <p>Sumérgete en el mundo del café con nuestras experiencias:</p>
-              <ul>
-                <li><strong>Visitas al Taller:</strong> Conoce nuestro proceso de tueste</li>
-                <li><strong>Catas de Café:</strong> Aprende a identificar sabores y aromas</li>
-                <li><strong>Talleres de Barista:</strong> Domina las técnicas de preparación</li>
-                <li><strong>Cursos Online:</strong> Formación desde casa a tu ritmo</li>
-              </ul>
-            </div>
-
-            <div class="mb-4">
-              <h4 class="fw-bold mb-3">Servicio para Empresas</h4>
-              <p>Ofrecemos soluciones personalizadas para cafeterías, restaurantes y oficinas:</p>
-              <ul>
-                <li>Volúmenes a medida con precios especiales</li>
-                <li>Formación de baristas</li>
-                <li>Desarrollo de blends exclusivos</li>
-                <li>Máquinas en comodato</li>
-                <li>Servicio técnico y mantenimiento</li>
-              </ul>
-            </div>
-
-            <div class="alert alert-info">
-              <strong>¿Necesitas asesoramiento?</strong> Nuestro equipo de expertos está disponible para ayudarte a elegir el café perfecto según tus preferencias y método de preparación.
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Banner de contacto con imagen de fondo (soporteFoto3) -->
-      <section class="contact-banner">
-        <div class="contact-content">
-          <span class="response-badge">
+        <!-- Botón Ver Más -->
+        <div class="text-center">
+          <a href="#" class="btn-ver-mas" id="verMasBtn">
+            Ver más
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polyline points="20 6 9 17 4 12"></polyline>
+              <polyline points="6 9 12 15 18 9" />
             </svg>
-            Respondemos en menos de 24h
-          </span>
-          <h2>¿Aún tienes preguntas?</h2>
-          <p class="subtitle">Nuestro equipo de expertos está listo para ayudarte</p>
-          <button class="btn-contact-primary" data-bs-toggle="modal" data-bs-target="#contactModal">
-            Enviar consulta
-          </button>
-          <p class="trust-text">
-            <svg viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-            </svg>
-            Más de 5,000 clientes satisfechos nos respaldan
-          </p>
+          </a>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Carrusel de Reseñas con fondo soporteFoto2 -->
-      <section class="testimonials-section">
+    <!-- Secciones de contenido en ACORDEÓN COMPACTO (AHORA después de Preguntas Populares) -->
+
+    <!-- Métodos de Pago (Acordeón compacto) -->
+    <section id="metodos-pago" class="compact-accordion">
+      <!-- Cabecera clickable -->
+      <div class="accordion-header" data-target="metodos-pago-content">
         <div class="container">
-          <h2 class="text-center mb-5">Lo que dicen nuestros clientes</h2>
-          
-          <div id="testimonialsCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Testimonio 1"></button>
-              <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="1" aria-label="Testimonio 2"></button>
-              <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="2" aria-label="Testimonio 3"></button>
-              <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="3" aria-label="Testimonio 4"></button>
-              <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="4" aria-label="Testimonio 5"></button>
-            </div>
-
-            <div class="carousel-inner">
-              <!-- Testimonio 1 -->
-              <div class="carousel-item active">
-                <div class="row justify-content-center">
-                  <div class="col-lg-8">
-                    <div class="card border-0 shadow-lg p-4 p-md-5 text-center">
-                      <div class="card-body">
-                        <div class="mb-4">
-                          <svg width="48" height="48" viewBox="0 0 24 24" fill="var(--terracotta)">
-                            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
-                          </svg>
-                        </div>
-                        <p class="lead mb-4">
-                          "El equipo de Slow Coffee respondió mi consulta en menos de 2 horas. Su atención al detalle y conocimiento sobre el café es impresionante. Realmente se nota la pasión por lo que hacen."
-                        </p>
-                        <div class="d-flex justify-content-center mb-3">
-                          <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--accent-gold)" class="me-1">
-                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                          </svg>
-                          <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--accent-gold)" class="me-1">
-                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                          </svg>
-                          <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--accent-gold)" class="me-1">
-                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                          </svg>
-                          <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--accent-gold)" class="me-1">
-                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                          </svg>
-                          <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--accent-gold)">
-                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                          </svg>
-                        </div>
-                        <h5 class="fw-bold mb-1">María González</h5>
-                        <p class="text-muted mb-0">Madrid</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Testimonio 2 -->
-              <div class="carousel-item">
-                <div class="row justify-content-center">
-                  <div class="col-lg-8">
-                    <div class="card border-0 shadow-lg p-4 p-md-5 text-center">
-                      <div class="card-body">
-                        <div class="mb-4">
-                          <svg width="48" height="48" viewBox="0 0 24 24" fill="var(--terracotta)">
-                            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
-                          </svg>
-                        </div>
-                        <p class="lead mb-4">
-                          "Tenía dudas sobre qué método de preparación elegir y me enviaron una guía completa personalizada. El trato fue excepcional, muy profesional y cercano a la vez."
-                        </p>
-                        <div class="d-flex justify-content-center mb-3">
-                          <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--accent-gold)" class="me-1">
-                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                          </svg>
-                          <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--accent-gold)" class="me-1">
-                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                          </svg>
-                          <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--accent-gold)" class="me-1">
-                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                          </svg>
-                          <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--accent-gold)" class="me-1">
-                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                          </svg>
-                          <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--accent-gold)">
-                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                          </svg>
-                        </div>
-                        <h5 class="fw-bold mb-1">Carlos Ruiz</h5>
-                        <p class="text-muted mb-0">Barcelona</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Testimonio 3 -->
-              <div class="carousel-item">
-                <div class="row justify-content-center">
-                  <div class="col-lg-8">
-                    <div class="card border-0 shadow-lg p-4 p-md-5 text-center">
-                      <div class="card-body">
-                        <div class="mb-4">
-                          <svg width="48" height="48" viewBox="0 0 24 24" fill="var(--terracotta)">
-                            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
-                          </svg>
-                        </div>
-                        <p class="lead mb-4">
-                          "Contacté para preguntar sobre el origen de sus granos y me sorprendió la transparencia. Me explicaron todo el proceso desde la finca hasta el tueste. Un servicio de 10."
-                        </p>
-                        <div class="d-flex justify-content-center mb-3">
-                          <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--accent-gold)" class="me-1">
-                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                          </svg>
-                          <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--accent-gold)" class="me-1">
-                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                          </svg>
-                          <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--accent-gold)" class="me-1">
-                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                          </svg>
-                          <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--accent-gold)" class="me-1">
-                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                          </svg>
-                          <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--accent-gold)">
-                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                          </svg>
-                        </div>
-                        <h5 class="fw-bold mb-1">Ana Martínez</h5>
-                        <p class="text-muted mb-0">Valencia</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Testimonio 4 -->
-              <div class="carousel-item">
-                <div class="row justify-content-center">
-                  <div class="col-lg-8">
-                    <div class="card border-0 shadow-lg p-4 p-md-5 text-center">
-                      <div class="card-body">
-                        <div class="mb-4">
-                          <svg width="48" height="48" viewBox="0 0 24 24" fill="var(--terracotta)">
-                            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
-                          </svg>
-                        </div>
-                        <p class="lead mb-4">
-                          "La rapidez y calidad en las respuestas es increíble. Me ayudaron a elegir el café perfecto para mi cafetería. Ahora son nuestros proveedores principales."
-                        </p>
-                        <div class="d-flex justify-content-center mb-3">
-                          <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--accent-gold)" class="me-1">
-                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                          </svg>
-                          <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--accent-gold)" class="me-1">
-                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                          </svg>
-                          <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--accent-gold)" class="me-1">
-                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                          </svg>
-                          <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--accent-gold)" class="me-1">
-                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                          </svg>
-                          <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--accent-gold)">
-                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                          </svg>
-                        </div>
-                        <h5 class="fw-bold mb-1">Javier López</h5>
-                        <p class="text-muted mb-0">Sevilla</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Testimonio 5 -->
-              <div class="carousel-item">
-                <div class="row justify-content-center">
-                  <div class="col-lg-8">
-                    <div class="card border-0 shadow-lg p-4 p-md-5 text-center">
-                      <div class="card-body">
-                        <div class="mb-4">
-                          <svg width="48" height="48" viewBox="0 0 24 24" fill="var(--terracotta)">
-                            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
-                          </svg>
-                        </div>
-                        <p class="lead mb-4">
-                          "Excelente atención al cliente. Me resolvieron todas las dudas sobre almacenamiento y conservación del café. Se nota que son verdaderos expertos en la materia."
-                        </p>
-                        <div class="d-flex justify-content-center mb-3">
-                          <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--accent-gold)" class="me-1">
-                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                          </svg>
-                          <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--accent-gold)" class="me-1">
-                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                          </svg>
-                          <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--accent-gold)" class="me-1">
-                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                          </svg>
-                          <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--accent-gold)" class="me-1">
-                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                          </svg>
-                          <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--accent-gold)">
-                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                          </svg>
-                        </div>
-                        <h5 class="fw-bold mb-1">Laura Sánchez</h5>
-                        <p class="text-muted mb-0">Bilbao</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Anterior</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Siguiente</span>
-            </button>
+          <div class="d-flex align-items-center">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+              class="me-3">
+              <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+              <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+            </svg>
+            <h2 class="mb-0">Métodos de Pago</h2>
+            <svg class="expand-icon ms-auto" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
+              <path d="M6 9l6 6 6-6" />
+            </svg>
           </div>
         </div>
-      </section>
-    </main>
+      </div>
 
-    <!-- Modal de Contacto -->
-    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="contactModalLabel">Envíanos tu consulta</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <!-- Contenido (oculto inicialmente) -->
+      <div id="metodos-pago-content" class="accordion-content" style="display: none;">
+        <div class="container py-4">
+          <p class="lead mb-4">En Slow Coffee aceptamos múltiples formas de pago para que tu experiencia de compra sea
+            lo más cómoda posible.</p>
+
+          <div class="mb-4">
+            <h4 class="fw-bold mb-3">Tarjetas de Crédito y Débito</h4>
+            <p>Aceptamos todas las tarjetas principales: Visa, Mastercard, American Express y Maestro. Todas las
+              transacciones están protegidas con certificado SSL y encriptación de última generación para garantizar la
+              máxima seguridad de tus datos.</p>
           </div>
-          <div class="modal-body">
-            <form id="contactForm">
-              <div class="mb-3">
-                <label for="nombre" class="form-label">Nombre completo</label>
-                <input type="text" class="form-control" id="nombre" required>
-              </div>
-              <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" required>
-              </div>
-              <div class="mb-3">
-                <label for="asunto" class="form-label">Asunto</label>
-                <input type="text" class="form-control" id="asunto" required>
-              </div>
-              <div class="mb-3">
-                <label for="mensaje" class="form-label">Tu consulta</label>
-                <textarea class="form-control" id="mensaje" rows="5" required></textarea>
-              </div>
-            </form>
+
+          <div class="mb-4">
+            <h4 class="fw-bold mb-3">PayPal</h4>
+            <p>Realiza tu pago de forma rápida y segura con tu cuenta de PayPal. No necesitas compartir tus datos
+              bancarios con nosotros, PayPal gestiona todo el proceso de forma confidencial.</p>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-            <button type="submit" form="contactForm" class="btn btn-enviar">Enviar consulta</button>
+
+          <div class="mb-4">
+            <h4 class="fw-bold mb-3">Transferencia Bancaria</h4>
+            <p>Puedes realizar una transferencia directa a nuestra cuenta bancaria. Una vez confirmado el pago,
+              procesaremos tu pedido inmediatamente. Te enviaremos los datos bancarios por email tras realizar el
+              pedido.</p>
           </div>
+
+          <div class="mb-4">
+            <h4 class="fw-bold mb-3">Bizum</h4>
+            <p>Para compras dentro de España, aceptamos Bizum. Rápido, seguro y sin comisiones. Simplemente introduce tu
+              número de teléfono asociado a Bizum durante el proceso de pago.</p>
+          </div>
+
+          <div class="alert alert-info">
+            <strong>Importante:</strong> Todos nuestros métodos de pago cumplen con las normativas PSD2 europeas y
+            garantizan la máxima protección en tus transacciones online.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Envío y Entrega (Acordeón compacto) -->
+    <section id="envio-entrega" class="compact-accordion">
+      <!-- Cabecera clickable -->
+      <div class="accordion-header" data-target="envio-entrega-content">
+        <div class="container">
+          <div class="d-flex align-items-center">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+              class="me-3">
+              <path d="M20 7h-9M14 17H5M20 17h-2M5 7h2M10 3v18M18 10v7" />
+            </svg>
+            <h2 class="mb-0">Envío y Entrega</h2>
+            <svg class="expand-icon ms-auto" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
+              <path d="M6 9l6 6 6-6" />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contenido (oculto inicialmente) -->
+      <div id="envio-entrega-content" class="accordion-content" style="display: none;">
+        <div class="container py-4">
+          <p class="lead mb-4">Trabajamos con las mejores empresas de mensajería para que tu café llegue fresco y en
+            perfectas condiciones.</p>
+
+          <div class="mb-4">
+            <h4 class="fw-bold mb-3">Tiempos de Entrega</h4>
+            <ul class="list-unstyled">
+              <li class="mb-2">✓ <strong>Península:</strong> 24-48 horas laborables</li>
+              <li class="mb-2">✓ <strong>Islas Baleares:</strong> 48-72 horas laborables</li>
+              <li class="mb-2">✓ <strong>Canarias, Ceuta y Melilla:</strong> 5-7 días laborables</li>
+              <li class="mb-2">✓ <strong>Envío Express (Península):</strong> 24 horas garantizado</li>
+            </ul>
+          </div>
+
+          <div class="mb-4">
+            <h4 class="fw-bold mb-3">Costes de Envío</h4>
+            <p>Nuestras tarifas son transparentes y competitivas:</p>
+            <ul class="list-unstyled">
+              <li class="mb-2">• Envío estándar Península: <strong>4,95€</strong></li>
+              <li class="mb-2">• Envío estándar Islas: <strong>9,95€</strong></li>
+              <li class="mb-2">• Envío Express Península: <strong>7,95€</strong></li>
+              <li class="mb-2">• <strong>¡GRATIS!</strong> En pedidos superiores a 30€ (Península)</li>
+            </ul>
+          </div>
+
+          <div class="mb-4">
+            <h4 class="fw-bold mb-3">Seguimiento de Pedido</h4>
+            <p>Una vez procesado tu pedido, recibirás un email con el número de seguimiento. Podrás consultar el estado
+              de tu envío en tiempo real a través de nuestra web o directamente en la página de la empresa de
+              transporte.</p>
+          </div>
+
+          <div class="mb-4">
+            <h4 class="fw-bold mb-3">Empaquetado</h4>
+            <p>Cada pedido se empaqueta cuidadosamente en cajas especiales con válvula de desgasificación para preservar
+              el aroma y frescura del café. Utilizamos materiales 100% reciclables y biodegradables.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Devoluciones (Acordeón compacto) -->
+    <section id="devoluciones" class="compact-accordion">
+      <!-- Cabecera clickable -->
+      <div class="accordion-header" data-target="devoluciones-content">
+        <div class="container">
+          <div class="d-flex align-items-center">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+              class="me-3">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+              <polyline points="9 22 9 12 15 12 15 22" />
+            </svg>
+            <h2 class="mb-0">Devoluciones y Cancelaciones</h2>
+            <svg class="expand-icon ms-auto" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
+              <path d="M6 9l6 6 6-6" />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contenido (oculto inicialmente) -->
+      <div id="devoluciones-content" class="accordion-content" style="display: none;">
+        <div class="container py-4">
+          <p class="lead mb-4">Tu satisfacción es nuestra prioridad. Si por algún motivo no estás satisfecho, estamos
+            aquí para ayudarte.</p>
+
+          <div class="mb-4">
+            <h4 class="fw-bold mb-3">Política de Devolución</h4>
+            <p>Dispones de <strong>14 días naturales</strong> desde la recepción del pedido para solicitar una
+              devolución, de acuerdo con la ley de comercio electrónico española.</p>
+            <p><strong>Condiciones:</strong></p>
+            <ul>
+              <li>El producto debe estar sin abrir y en su embalaje original</li>
+              <li>Debe conservar todas sus etiquetas y precintos de seguridad</li>
+              <li>No se aceptan devoluciones de productos personalizados o de lotes especiales bajo petición</li>
+            </ul>
+          </div>
+
+          <div class="mb-4">
+            <h4 class="fw-bold mb-3">Cómo Solicitar una Devolución</h4>
+            <ol>
+              <li class="mb-2">Contacta con nuestro equipo a través del formulario de contacto o por email</li>
+              <li class="mb-2">Indica el número de pedido y el motivo de la devolución</li>
+              <li class="mb-2">Te enviaremos una etiqueta de devolución prepagada</li>
+              <li class="mb-2">Empaqueta el producto de forma segura</li>
+              <li class="mb-2">Deposita el paquete en cualquier punto de recogida</li>
+            </ol>
+          </div>
+
+          <div class="mb-4">
+            <h4 class="fw-bold mb-3">Reembolsos</h4>
+            <p>Una vez recibamos y verifiquemos el producto devuelto, procederemos al reembolso completo en un plazo
+              máximo de <strong>7 días laborables</strong>. El importe se abonará mediante el mismo método de pago
+              utilizado en la compra.</p>
+          </div>
+
+          <div class="mb-4">
+            <h4 class="fw-bold mb-3">Cancelaciones</h4>
+            <p>Puedes cancelar tu pedido sin coste alguno siempre que no haya sido procesado y enviado. Contacta con
+              nosotros lo antes posible si deseas cancelar tu pedido.</p>
+          </div>
+
+          <div class="alert alert-success">
+            <strong>Garantía de Satisfacción:</strong> Si el café no cumple con tus expectativas de calidad, házmelo
+            saber. Encontraremos una solución que te satisfaga.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Productos y Servicios (Acordeón compacto) -->
+    <section id="productos-servicios" class="compact-accordion">
+      <!-- Cabecera clickable -->
+      <div class="accordion-header" data-target="productos-servicios-content">
+        <div class="container">
+          <div class="d-flex align-items-center">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+              class="me-3">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M12 6v6l4 2" />
+            </svg>
+            <h2 class="mb-0">Productos y Servicios</h2>
+            <svg class="expand-icon ms-auto" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
+              <path d="M6 9l6 6 6-6" />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contenido (oculto inicialmente) -->
+      <div id="productos-servicios-content" class="accordion-content" style="display: none;">
+        <div class="container py-4">
+          <p class="lead mb-4">Descubre todo lo que Slow Coffee tiene para ofrecerte, desde café de origen único hasta
+            experiencias personalizadas.</p>
+
+          <div class="mb-4">
+            <h4 class="fw-bold mb-3">Catálogo de Cafés</h4>
+            <p>Nuestro catálogo incluye:</p>
+            <ul>
+              <li><strong>Cafés de Origen Único:</strong> Etiopía, Colombia, Sumatra y más</li>
+              <li><strong>Blends Exclusivos:</strong> Mezclas cuidadosamente balanceadas</li>
+              <li><strong>Ediciones Limitadas:</strong> Micro-lotes de temporada</li>
+              <li><strong>Café Descafeinado:</strong> Procesado mediante método suizo</li>
+              <li><strong>Formatos:</strong> Grano entero, molido fino, molido grueso</li>
+            </ul>
+          </div>
+
+          <div class="mb-4">
+            <h4 class="fw-bold mb-3">Servicio de Suscripción</h4>
+            <p>Recibe café fresco regularmente sin preocuparte de hacer pedidos:</p>
+            <ul>
+              <li>Frecuencia flexible: semanal, quincenal o mensual</li>
+              <li>Descuento del 10% en todas las entregas</li>
+              <li>Acceso anticipado a ediciones limitadas</li>
+              <li>Cambio de productos según tus preferencias</li>
+              <li>Sin permanencia: cancela cuando quieras</li>
+            </ul>
+          </div>
+
+          <div class="mb-4">
+            <h4 class="fw-bold mb-3">Experiencias y Talleres</h4>
+            <p>Sumérgete en el mundo del café con nuestras experiencias:</p>
+            <ul>
+              <li><strong>Visitas al Taller:</strong> Conoce nuestro proceso de tueste</li>
+              <li><strong>Catas de Café:</strong> Aprende a identificar sabores y aromas</li>
+              <li><strong>Talleres de Barista:</strong> Domina las técnicas de preparación</li>
+              <li><strong>Cursos Online:</strong> Formación desde casa a tu ritmo</li>
+            </ul>
+          </div>
+
+          <div class="mb-4">
+            <h4 class="fw-bold mb-3">Servicio para Empresas</h4>
+            <p>Ofrecemos soluciones personalizadas para cafeterías, restaurantes y oficinas:</p>
+            <ul>
+              <li>Volúmenes a medida con precios especiales</li>
+              <li>Formación de baristas</li>
+              <li>Desarrollo de blends exclusivos</li>
+              <li>Máquinas en comodato</li>
+              <li>Servicio técnico y mantenimiento</li>
+            </ul>
+          </div>
+
+          <div class="alert alert-info">
+            <strong>¿Necesitas asesoramiento?</strong> Nuestro equipo de expertos está disponible para ayudarte a elegir
+            el café perfecto según tus preferencias y método de preparación.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Banner de contacto con imagen de fondo (soporteFoto3) -->
+    <section class="contact-banner">
+      <div class="contact-content">
+        <span class="response-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+          Respondemos en menos de 24h
+        </span>
+        <h2>¿Aún tienes preguntas?</h2>
+        <p class="subtitle">Nuestro equipo de expertos está listo para ayudarte</p>
+        <button class="btn-contact-primary" data-bs-toggle="modal" data-bs-target="#contactModal">
+          Enviar consulta
+        </button>
+        <p class="trust-text">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+          </svg>
+          Más de 5,000 clientes satisfechos nos respaldan
+        </p>
+      </div>
+    </section>
+
+    <!-- Carrusel de Reseñas con fondo soporteFoto2 -->
+    <section class="testimonials-section">
+      <div class="container">
+        <h2 class="text-center mb-5">Lo que dicen nuestros clientes</h2>
+
+        <div id="testimonialsCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Testimonio 1"></button>
+            <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="1"
+              aria-label="Testimonio 2"></button>
+            <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="2"
+              aria-label="Testimonio 3"></button>
+            <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="3"
+              aria-label="Testimonio 4"></button>
+            <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="4"
+              aria-label="Testimonio 5"></button>
+          </div>
+
+          <div class="carousel-inner">
+            <!-- Testimonio 1 -->
+            <div class="carousel-item active">
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <div class="card border-0 shadow-lg p-4 p-md-5 text-center">
+                    <div class="card-body">
+                      <div class="mb-4">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="var(--terracotta)">
+                          <path
+                            d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                        </svg>
+                      </div>
+                      <p class="lead mb-4">
+                        "El equipo de Slow Coffee respondió mi consulta en menos de 2 horas. Su atención al detalle y
+                        conocimiento sobre el café es impresionante. Realmente se nota la pasión por lo que hacen."
+                      </p>
+                      <div class="d-flex justify-content-center mb-3">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--accent-gold)" class="me-1">
+                          <path
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--accent-gold)" class="me-1">
+                          <path
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--accent-gold)" class="me-1">
+                          <path
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--accent-gold)" class="me-1">
+                          <path
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--accent-gold)">
+                          <path
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg>
+                      </div>
+                      <h5 class="fw-bold mb-1">María González</h5>
+                      <p class="text-muted mb-0">Madrid</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonio 2 -->
+            <div class="carousel-item">
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <div class="card border-0 shadow-lg p-4 p-md-5 text-center">
+                    <div class="card-body">
+                      <div class="mb-4">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="var(--terracotta)">
+                          <path
+                            d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                        </svg>
+                      </div>
+                      <p class="lead mb-4">
+                        "Tenía dudas sobre qué método de preparación elegir y me enviaron una guía completa
+                        personalizada. El trato fue excepcional, muy profesional y cercano a la vez."
+                      </p>
+                      <div class="d-flex justify-content-center mb-3">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--accent-gold)" class="me-1">
+                          <path
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--accent-gold)" class="me-1">
+                          <path
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--accent-gold)" class="me-1">
+                          <path
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--accent-gold)" class="me-1">
+                          <path
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--accent-gold)">
+                          <path
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg>
+                      </div>
+                      <h5 class="fw-bold mb-1">Carlos Ruiz</h5>
+                      <p class="text-muted mb-0">Barcelona</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonio 3 -->
+            <div class="carousel-item">
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <div class="card border-0 shadow-lg p-4 p-md-5 text-center">
+                    <div class="card-body">
+                      <div class="mb-4">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="var(--terracotta)">
+                          <path
+                            d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                        </svg>
+                      </div>
+                      <p class="lead mb-4">
+                        "Contacté para preguntar sobre el origen de sus granos y me sorprendió la transparencia. Me
+                        explicaron todo el proceso desde la finca hasta el tueste. Un servicio de 10."
+                      </p>
+                      <div class="d-flex justify-content-center mb-3">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--accent-gold)" class="me-1">
+                          <path
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--accent-gold)" class="me-1">
+                          <path
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--accent-gold)" class="me-1">
+                          <path
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--accent-gold)" class="me-1">
+                          <path
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--accent-gold)">
+                          <path
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg>
+                      </div>
+                      <h5 class="fw-bold mb-1">Ana Martínez</h5>
+                      <p class="text-muted mb-0">Valencia</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonio 4 -->
+            <div class="carousel-item">
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <div class="card border-0 shadow-lg p-4 p-md-5 text-center">
+                    <div class="card-body">
+                      <div class="mb-4">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="var(--terracotta)">
+                          <path
+                            d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                        </svg>
+                      </div>
+                      <p class="lead mb-4">
+                        "La rapidez y calidad en las respuestas es increíble. Me ayudaron a elegir el café perfecto para
+                        mi cafetería. Ahora son nuestros proveedores principales."
+                      </p>
+                      <div class="d-flex justify-content-center mb-3">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--accent-gold)" class="me-1">
+                          <path
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--accent-gold)" class="me-1">
+                          <path
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--accent-gold)" class="me-1">
+                          <path
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--accent-gold)" class="me-1">
+                          <path
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--accent-gold)">
+                          <path
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg>
+                      </div>
+                      <h5 class="fw-bold mb-1">Javier López</h5>
+                      <p class="text-muted mb-0">Sevilla</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonio 5 -->
+            <div class="carousel-item">
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <div class="card border-0 shadow-lg p-4 p-md-5 text-center">
+                    <div class="card-body">
+                      <div class="mb-4">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="var(--terracotta)">
+                          <path
+                            d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                        </svg>
+                      </div>
+                      <p class="lead mb-4">
+                        "Excelente atención al cliente. Me resolvieron todas las dudas sobre almacenamiento y
+                        conservación del café. Se nota que son verdaderos expertos en la materia."
+                      </p>
+                      <div class="d-flex justify-content-center mb-3">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--accent-gold)" class="me-1">
+                          <path
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--accent-gold)" class="me-1">
+                          <path
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--accent-gold)" class="me-1">
+                          <path
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--accent-gold)" class="me-1">
+                          <path
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--accent-gold)">
+                          <path
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg>
+                      </div>
+                      <h5 class="fw-bold mb-1">Laura Sánchez</h5>
+                      <p class="text-muted mb-0">Bilbao</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#testimonialsCarousel"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#testimonialsCarousel"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal de Contacto -->
+  <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="contactModalLabel">Envíanos tu consulta</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="contactForm">
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre completo</label>
+              <input type="text" class="form-control" id="nombre" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="asunto" class="form-label">Asunto</label>
+              <input type="text" class="form-control" id="asunto" required>
+            </div>
+            <div class="mb-3">
+              <label for="mensaje" class="form-label">Tu consulta</label>
+              <textarea class="form-control" id="mensaje" rows="5" required></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          <button type="submit" form="contactForm" class="btn btn-enviar">Enviar consulta</button>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Footer -->
-    <footer class="site-footer py-3">
-      <div class="container footer-inner">
-        <div class="row text-center align-items-center">
-          <div class="col-md-4 mb-2">
-            <a class="brand footer-brand" href="../index.html">
-              <img src="../img/logo_negativo_png.png" alt="Slow Coffee" class="logo" height="36">
+  <!-- Footer -->
+  <footer class="site-footer py-3">
+    <div class="container footer-inner">
+      <div class="row text-center align-items-center">
+        <div class="col-md-4 mb-2">
+          <a class="brand footer-brand" href="../index.html">
+            <img src="../img/logo_negativo_png.png" alt="Slow Coffee" class="logo" height="36">
+          </a>
+        </div>
+
+        <div class="col-md-4 mb-2">
+          <h4>Contacto</h4>
+          <ul class="list-unstyled mb-0 contact-list">
+            <li>Email: <a href="mailto:hola@slowcoffee.example">hola@slowcoffee.example</a></li>
+            <li>Tel: <a href="tel:+34911222333">+34 911 222 333</a></li>
+            <li>Horario: Lun–Vie 9:00–18:00</li>
+          </ul>
+        </div>
+
+        <div class="col-md-4 mb-2">
+          <h4>Síguenos</h4>
+          <div class="d-flex justify-content-center gap-2 social-icons" aria-label="Redes sociales">
+            <a href="#" class="social-icon" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <rect x="3" y="3" width="18" height="18" rx="4" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+              </svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="Twitter">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path
+                  d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 22.43 1s-1.94 1.16-3.54 1.58A4.48 4.48 0 0 0 12 6v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5A4.5 4.5 0 0 0 23 3z" />
+              </svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path d="M18 2h-3a4 4 0 0 0-4 4v3H8v4h3v8h4v-8h3l1-4h-4V6a1 1 0 0 1 1-1h3z" />
+              </svg>
             </a>
           </div>
-
-          <div class="col-md-4 mb-2">
-            <h4>Contacto</h4>
-            <ul class="list-unstyled mb-0 contact-list">
-              <li>Email: <a href="mailto:hola@slowcoffee.example">hola@slowcoffee.example</a></li>
-              <li>Tel: <a href="tel:+34911222333">+34 911 222 333</a></li>
-              <li>Horario: Lun–Vie 9:00–18:00</li>
-            </ul>
-          </div>
-
-          <div class="col-md-4 mb-2">
-            <h4>Síguenos</h4>
-            <div class="d-flex justify-content-center gap-2 social-icons" aria-label="Redes sociales">
-              <a href="#" class="social-icon" aria-label="Instagram">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/></svg>
-              </a>
-              <a href="#" class="social-icon" aria-label="Twitter">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 22.43 1s-1.94 1.16-3.54 1.58A4.48 4.48 0 0 0 12 6v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5A4.5 4.5 0 0 0 23 3z"/></svg>
-              </a>
-              <a href="#" class="social-icon" aria-label="Facebook">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M18 2h-3a4 4 0 0 0-4 4v3H8v4h3v8h4v-8h3l1-4h-4V6a1 1 0 0 1 1-1h3z"/></svg>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="footer-bottom text-center small mt-3">
-          <p class="mb-0">© <span id="year"></span> Slow Coffee — Todos los derechos reservados.</p>
         </div>
       </div>
-    </footer>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        // Año dinámico
-        document.getElementById('year').textContent = new Date().getFullYear();
+      <div class="footer-bottom text-center small mt-3">
+        <p class="mb-0">© <span id="year"></span> Slow Coffee — Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
 
-        // ACORDEÓN COMPACTO: Funcionalidad para expandir/contraer secciones
-        document.querySelectorAll('.accordion-header').forEach(function(header) {
-          header.addEventListener('click', function() {
-            var targetId = this.getAttribute('data-target');
-            var content = document.getElementById(targetId);
-            var isCurrentlyVisible = content.style.display === 'block';
-            
-            // Cerrar TODAS las otras secciones
-            document.querySelectorAll('.accordion-content').forEach(function(section) {
-              section.style.display = 'none';
-            });
-            document.querySelectorAll('.accordion-header').forEach(function(h) {
-              h.classList.remove('active');
-            });
-            
-            // Abrir/cerrar esta sección
-            if (!isCurrentlyVisible) {
-              content.style.display = 'block';
-              this.classList.add('active');
-              
-              // Scroll suave a la sección
-              setTimeout(function() {
-                content.scrollIntoView({ behavior: 'smooth', block: 'start' });
-              }, 100);
-            }
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Año dinámico
+      document.getElementById('year').textContent = new Date().getFullYear();
+
+      // ACORDEÓN COMPACTO: Funcionalidad para expandir/contraer secciones
+      document.querySelectorAll('.accordion-header').forEach(function (header) {
+        header.addEventListener('click', function () {
+          var targetId = this.getAttribute('data-target');
+          var content = document.getElementById(targetId);
+          var isCurrentlyVisible = content.style.display === 'block';
+
+          // Cerrar TODAS las otras secciones
+          document.querySelectorAll('.accordion-content').forEach(function (section) {
+            section.style.display = 'none';
           });
-        });
+          document.querySelectorAll('.accordion-header').forEach(function (h) {
+            h.classList.remove('active');
+          });
 
-        // Cuando se hace clic en botones de categoría o cards
-        document.querySelectorAll('.category-pill, .popular-card').forEach(function(button) {
-          button.addEventListener('click', function(e) {
-            var href = this.getAttribute('href');
-            
-            if (href && href.startsWith('#')) {
-              e.preventDefault();
-              var targetId = href.substring(1); // "metodos-pago"
-              var targetSection = document.getElementById(targetId);
-              
-              if (targetSection) {
-                // Cerrar todas las secciones primero
-                document.querySelectorAll('.accordion-content').forEach(function(section) {
-                  section.style.display = 'none';
-                });
-                document.querySelectorAll('.accordion-header').forEach(function(h) {
-                  h.classList.remove('active');
-                });
-                
-                // Encontrar y abrir la sección correspondiente
-                var sectionHeader = targetSection.querySelector('.accordion-header');
-                var sectionContent = targetSection.querySelector('.accordion-content');
-                
-                if (sectionHeader && sectionContent) {
-                  sectionContent.style.display = 'block';
-                  sectionHeader.classList.add('active');
-                  
-                  // Scroll a la sección
-                  setTimeout(function() {
-                    targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                  }, 150);
-                }
+          // Abrir/cerrar esta sección
+          if (!isCurrentlyVisible) {
+            content.style.display = 'block';
+            this.classList.add('active');
+
+            // Scroll suave a la sección
+            setTimeout(function () {
+              content.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }, 100);
+          }
+        });
+      });
+
+      // Cuando se hace clic en botones de categoría o cards
+      document.querySelectorAll('.category-pill, .popular-card').forEach(function (button) {
+        button.addEventListener('click', function (e) {
+          var href = this.getAttribute('href');
+
+          if (href && href.startsWith('#')) {
+            e.preventDefault();
+            var targetId = href.substring(1); // "metodos-pago"
+            var targetSection = document.getElementById(targetId);
+
+            if (targetSection) {
+              // Cerrar todas las secciones primero
+              document.querySelectorAll('.accordion-content').forEach(function (section) {
+                section.style.display = 'none';
+              });
+              document.querySelectorAll('.accordion-header').forEach(function (h) {
+                h.classList.remove('active');
+              });
+
+              // Encontrar y abrir la sección correspondiente
+              var sectionHeader = targetSection.querySelector('.accordion-header');
+              var sectionContent = targetSection.querySelector('.accordion-content');
+
+              if (sectionHeader && sectionContent) {
+                sectionContent.style.display = 'block';
+                sectionHeader.classList.add('active');
+
+                // Scroll a la sección
+                setTimeout(function () {
+                  targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }, 150);
               }
             }
-          });
+          }
         });
-
-        // Formulario de contacto
-        var contactForm = document.getElementById('contactForm');
-        if (contactForm) {
-          contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            var nombre = document.getElementById('nombre').value;
-            var email = document.getElementById('email').value;
-            
-            alert('¡Gracias ' + nombre + '! Tu consulta ha sido enviada. Te responderemos pronto a ' + email);
-            
-            var modal = bootstrap.Modal.getInstance(document.getElementById('contactModal'));
-            modal.hide();
-            
-            contactForm.reset();
-          });
-        }
-
-        // Funcionalidad del botón "Ver más" en Preguntas Populares
-        var verMasBtn = document.getElementById('verMasBtn');
-        if (verMasBtn) {
-          verMasBtn.addEventListener('click', function(e) {
-            e.preventDefault();
-            
-            // Encontrar todas las cards ocultas (usando d-none de Bootstrap)
-            var hiddenCards = document.querySelectorAll('.col.d-none');
-            
-            if (hiddenCards.length > 0) {
-              // Mostrar las 3 primeras cards ocultas
-              var cardsToShow = Array.from(hiddenCards).slice(0, 3);
-              
-              cardsToShow.forEach(function(card, index) {
-                setTimeout(function() {
-                  card.classList.remove('d-none');
-                  card.classList.add('show');
-                }, index * 200); // Efecto escalonado
-              });
-              
-              // Actualizar el texto del botón
-              verMasBtn.innerHTML = 'Ver más <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>';
-              
-              // Si ya no quedan más cards ocultas, ocultar el botón
-              setTimeout(function() {
-                var remainingHidden = document.querySelectorAll('.col.d-none');
-                if (remainingHidden.length === 0) {
-                  verMasBtn.classList.add('hidden');
-                }
-              }, 1000);
-            } else {
-              // Si no hay más cards, ocultar el botón
-              verMasBtn.classList.add('hidden');
-            }
-          });
-        }
       });
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+
+      // Formulario de contacto
+      var contactForm = document.getElementById('contactForm');
+      if (contactForm) {
+        contactForm.addEventListener('submit', function (e) {
+          e.preventDefault();
+
+          var nombre = document.getElementById('nombre').value;
+          var email = document.getElementById('email').value;
+
+          alert('¡Gracias ' + nombre + '! Tu consulta ha sido enviada. Te responderemos pronto a ' + email);
+
+          var modal = bootstrap.Modal.getInstance(document.getElementById('contactModal'));
+          modal.hide();
+
+          contactForm.reset();
+        });
+      }
+
+      // Funcionalidad del botón "Ver más" en Preguntas Populares
+      var verMasBtn = document.getElementById('verMasBtn');
+      if (verMasBtn) {
+        verMasBtn.addEventListener('click', function (e) {
+          e.preventDefault();
+
+          // Encontrar todas las cards ocultas (usando d-none de Bootstrap)
+          var hiddenCards = document.querySelectorAll('.col.d-none');
+
+          if (hiddenCards.length > 0) {
+            // Mostrar las 3 primeras cards ocultas
+            var cardsToShow = Array.from(hiddenCards).slice(0, 3);
+
+            cardsToShow.forEach(function (card, index) {
+              setTimeout(function () {
+                card.classList.remove('d-none');
+                card.classList.add('show');
+              }, index * 200); // Efecto escalonado
+            });
+
+            // Actualizar el texto del botón
+            verMasBtn.innerHTML = 'Ver más <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>';
+
+            // Si ya no quedan más cards ocultas, ocultar el botón
+            setTimeout(function () {
+              var remainingHidden = document.querySelectorAll('.col.d-none');
+              if (remainingHidden.length === 0) {
+                verMasBtn.classList.add('hidden');
+              }
+            }, 1000);
+          } else {
+            // Si no hay más cards, ocultar el botón
+            verMasBtn.classList.add('hidden');
+          }
+        });
+      }
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>

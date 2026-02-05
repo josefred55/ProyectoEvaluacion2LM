@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="es">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,57 +8,64 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Libre+Baskerville:wght@400;700&display=swap"
+    rel="stylesheet">
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="../css/styles.css">
   <link rel="stylesheet" href="../css/catalogo-styles.css">
 </head>
+
 <body class="catalogo-page">
 
   <!-- ========== NAVEGACIÓN ========== -->
   <header class="site-header py-3">
-      <nav class="navbar navbar-expand-md">
-        <div class="container d-flex align-items-center justify-content-between px-4 px-md-0">
-          <a class="navbar-brand brand" href="../index.html">
-            <img src="../img/logo_png.png" alt="Slow Coffee" class="logo" height="40">
-          </a>
+    <nav class="navbar navbar-expand-md">
+      <div class="container d-flex align-items-center justify-content-between px-4 px-md-0">
+        <a class="navbar-brand brand" href="../index.html">
+          <img src="../img/logo_png.png" alt="Slow Coffee" class="logo" height="40">
+        </a>
 
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Alternar navegación">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+          aria-controls="mainNav" aria-expanded="false" aria-label="Alternar navegación">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-          <div class="collapse navbar-collapse" id="mainNav">
-            <ul class="navbar-nav ms-auto gap-2">
-              <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
-              <li class="nav-item"><a class="nav-link" href="historia.html">Historia</a></li>
-              <li class="nav-item"><a class="nav-link" href="catalogo.html">Productos</a></li>
-              <li class="nav-item"><a class="nav-link" href="comunidad.html">Comunidad</a></li>
-              <li class="nav-item"><a class="nav-link" href="valores.html">Valores</a></li>
-              <li class="nav-item"><a class="nav-link" href="soporte.html">Soporte</a></li>
-              
-            </ul>
-          </div>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto gap-2">
+            <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="historia.html">Historia</a></li>
+            <li class="nav-item"><a class="nav-link" href="catalogo.html">Productos</a></li>
+            <li class="nav-item"><a class="nav-link" href="comunidad.html">Comunidad</a></li>
+            <li class="nav-item"><a class="nav-link" href="valores.html">Valores</a></li>
+            <li class="nav-item"><a class="nav-link" href="soporte.html">Soporte</a></li>
+
+          </ul>
         </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
+  </header>
 
   <!-- ========== HERO ========== -->
-  <section class="hero-catalogo">
-    <img src="../img/catalagoHero.jpg" alt="Granos de café" class="hero-catalogo__bg">
-    <div class="hero-catalogo__overlay"></div>
+  <section class="hero-index-new" style="--hero-image: url('../img/catalagoHero.jpg');">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="hero-content-new">
 
-    <div class="hero-catalogo__inner">
-      <div class="hero-catalogo__content">
-        <div class="hero-badge-catalogo">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-          </svg>
-          100% Comercio Justo
+            <h1 class="hero-title-new">Nuestra Colección</h1>
+            <p class="hero-subtitle-new">30 variedades seleccionadas con cuidado, cada una con su historia y su sabor
+              único.</p>
+
+            <div class="hero-badge-catalogo">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+              100% Comercio Justo
+            </div>
+          </div>
         </div>
-
-        <h1 class="hero-catalogo__title">Nuestra Colección</h1>
-        <p class="hero-catalogo__subtitle">30 variedades seleccionadas con cuidado, cada una con su historia y su sabor único.</p>
       </div>
     </div>
   </section>
@@ -165,7 +173,8 @@
           <div class="sidebar__group">
             <h5 class="sidebar__title">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                </path>
               </svg>
               Calidad
             </h5>
@@ -232,13 +241,21 @@
           <h4>Síguenos</h4>
           <div class="d-flex justify-content-center gap-2 social-icons" aria-label="Redes sociales">
             <a href="#" class="social-icon" aria-label="Instagram">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <rect x="3" y="3" width="18" height="18" rx="4" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+              </svg>
             </a>
             <a href="#" class="social-icon" aria-label="Twitter">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 22.43 1s-1.94 1.16-3.54 1.58A4.48 4.48 0 0 0 12 6v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5A4.5 4.5 0 0 0 23 3z"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path
+                  d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 22.43 1s-1.94 1.16-3.54 1.58A4.48 4.48 0 0 0 12 6v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5A4.5 4.5 0 0 0 23 3z" />
+              </svg>
             </a>
             <a href="#" class="social-icon" aria-label="Facebook">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M18 2h-3a4 4 0 0 0-4 4v3H8v4h3v8h4v-8h3l1-4h-4V6a1 1 0 0 1 1-1h3z"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path d="M18 2h-3a4 4 0 0 0-4 4v3H8v4h3v8h4v-8h3l1-4h-4V6a1 1 0 0 1 1-1h3z" />
+              </svg>
             </a>
           </div>
         </div>
@@ -253,65 +270,65 @@
   <!-- ========== SCRIPTS ========== -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script>
-  document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('year').textContent = new Date().getFullYear();
 
-  const origins   = ["Etiopía","Colombia","Brasil","Kenya"];
-  const processes = ["Lavado","Natural","Honey"];
-  const noteMap   = {
-    "Etiopía" : ["Frutos Rojos y Cítricos","Floral y Bergamota","Bayas y Chocolate"],
-    "Colombia": ["Caramelo y Nueces","Naranja y Miel","Chocolate y Ciruela"],
-    "Brasil"  : ["Chocolate y Avellana","Nuez y Especias","Caramel y Azúcar"],
-    "Kenya"   : ["Limón y Grosella","Frambuesa y Menta","Tropical y Cítrico"]
-  };
-  const badgeTypes = ["Orgánico","Premium","Comercio Justo"];
-
-  const products = Array.from({length: 7}, (_, i) => {
-    const origin = origins[i % origins.length];
-    return {
-      id      : i + 1,
-      name    : `Café ${origin} Lote #${i + 1}`,
-      origin,
-      process : processes[i % processes.length],
-      note    : noteMap[origin][i % 3],
-      badge   : badgeTypes[i % badgeTypes.length],
-      price   : (12 + ((i * 1.37) % 15)).toFixed(2),
-      img     : "../img/productosFoto.png"
+    const origins = ["Etiopía", "Colombia", "Brasil", "Kenya"];
+    const processes = ["Lavado", "Natural", "Honey"];
+    const noteMap = {
+      "Etiopía": ["Frutos Rojos y Cítricos", "Floral y Bergamota", "Bayas y Chocolate"],
+      "Colombia": ["Caramelo y Nueces", "Naranja y Miel", "Chocolate y Ciruela"],
+      "Brasil": ["Chocolate y Avellana", "Nuez y Especias", "Caramel y Azúcar"],
+      "Kenya": ["Limón y Grosella", "Frambuesa y Menta", "Tropical y Cítrico"]
     };
-  });
+    const badgeTypes = ["Orgánico", "Premium", "Comercio Justo"];
 
-  function badgeHTML(type) {
-    if (type === "Premium") {
-      return `
+    const products = Array.from({ length: 7 }, (_, i) => {
+      const origin = origins[i % origins.length];
+      return {
+        id: i + 1,
+        name: `Café ${origin} Lote #${i + 1}`,
+        origin,
+        process: processes[i % processes.length],
+        note: noteMap[origin][i % 3],
+        badge: badgeTypes[i % badgeTypes.length],
+        price: (12 + ((i * 1.37) % 15)).toFixed(2),
+        img: "../img/productosFoto.png"
+      };
+    });
+
+    function badgeHTML(type) {
+      if (type === "Premium") {
+        return `
         <span class="cat-badge cat-badge--premium">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
             <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
           </svg>
           <span>Premium</span>
         </span>`;
-    }
-    if (type === "Comercio Justo") {
-      return `
+      }
+      if (type === "Comercio Justo") {
+        return `
         <span class="cat-badge cat-badge--justo">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
             <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
           </svg>
           <span>Comercio Justo</span>
         </span>`;
-    }
-    return `
+      }
+      return `
       <span class="cat-badge cat-badge--organico">
         <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <path d="M17 8C8 10 5.9 16.17 3.82 21.34l1.89.66.95-2.3c.48.17.98.3 1.34.3C19 20 22 3 22 3c-1 2-8 2.25-13 3.25S2 11.5 2 13.5s1.75 3.75 1.75 3.75C7 8 17 8 17 8z"/>
         </svg>
         <span>Orgánico</span>
       </span>`;
-  }
+    }
 
-  const grid    = document.getElementById("product-grid");
-  const countEl = document.getElementById("results-count");
+    const grid = document.getElementById("product-grid");
+    const countEl = document.getElementById("results-count");
 
-  function renderProducts(list) {
-    grid.innerHTML = list.map(p => `
+    function renderProducts(list) {
+      grid.innerHTML = list.map(p => `
       <div class="col-md-4">
         <div class="cat-card">
           <div class="cat-card__img-wrap">
@@ -330,29 +347,30 @@
         </div>
       </div>
     `).join("");
-    countEl.textContent = `Mostrando ${list.length} de ${products.length} productos`;
-  }
+      countEl.textContent = `Mostrando ${list.length} de ${products.length} productos`;
+    }
 
-  document.getElementById("apply-filters").addEventListener("click", () => {
-    const term          = document.getElementById("search-input").value.toLowerCase();
-    const selOrigins    = [...document.querySelectorAll(".filter-cb:checked")].map(cb => cb.value);
-    const selBadges     = [...document.querySelectorAll(".filter-cb-badge:checked")].map(cb => cb.value);
-    const sortVal       = document.getElementById("sort-select").value;
+    document.getElementById("apply-filters").addEventListener("click", () => {
+      const term = document.getElementById("search-input").value.toLowerCase();
+      const selOrigins = [...document.querySelectorAll(".filter-cb:checked")].map(cb => cb.value);
+      const selBadges = [...document.querySelectorAll(".filter-cb-badge:checked")].map(cb => cb.value);
+      const sortVal = document.getElementById("sort-select").value;
 
-    let filtered = products.filter(p => {
-      const matchSearch = !term || p.name.toLowerCase().includes(term) || p.note.toLowerCase().includes(term);
-      const matchOrigin = !selOrigins.length || selOrigins.includes(p.origin);
-      const matchBadge  = !selBadges.length  || selBadges.includes(p.badge);
-      return matchSearch && matchOrigin && matchBadge;
+      let filtered = products.filter(p => {
+        const matchSearch = !term || p.name.toLowerCase().includes(term) || p.note.toLowerCase().includes(term);
+        const matchOrigin = !selOrigins.length || selOrigins.includes(p.origin);
+        const matchBadge = !selBadges.length || selBadges.includes(p.badge);
+        return matchSearch && matchOrigin && matchBadge;
+      });
+
+      if (sortVal === "price-asc") filtered.sort((a, b) => a.price - b.price);
+      if (sortVal === "price-desc") filtered.sort((a, b) => b.price - a.price);
+
+      renderProducts(filtered);
     });
 
-    if (sortVal === "price-asc")  filtered.sort((a, b) => a.price - b.price);
-    if (sortVal === "price-desc") filtered.sort((a, b) => b.price - a.price);
-
-    renderProducts(filtered);
-  });
-
-  renderProducts(products);
+    renderProducts(products);
   </script>
 </body>
+
 </html>

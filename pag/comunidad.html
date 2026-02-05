@@ -1,427 +1,568 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Comunidad — Slow Coffee</title>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/styles.css">
-  </head>
-  
-  <body>
-    <!-- Navegación -->
-    <header class="site-header py-3">
-      <nav class="navbar navbar-expand-md">
-        <div class="container d-flex align-items-center justify-content-between px-4 px-md-0">
-          <a class="navbar-brand brand" href="../index.html">
-            <img src="../img/logo_png.png" alt="Slow Coffee" class="logo" height="40">
-          </a>
 
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Alternar navegación">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Comunidad — Slow Coffee</title>
 
-          <div class="collapse navbar-collapse" id="mainNav">
-            <ul class="navbar-nav ms-auto gap-2">
-              <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
-              <li class="nav-item"><a class="nav-link" href="historia.html">Historia</a></li>
-              <li class="nav-item"><a class="nav-link" href="catalogo.html">Productos</a></li>
-              <li class="nav-item"><a class="nav-link" href="comunidad.html">Comunidad</a></li>
-              <li class="nav-item"><a class="nav-link" href="valores.html">Valores</a></li>
-              <li class="nav-item"><a class="nav-link" href="soporte.html">Soporte</a></li>
-              
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Libre+Baskerville:wght@400;700&display=swap"
+    rel="stylesheet">
 
-    <main>
-      <!-- Hero -->
-      <section class="hero-comunidad">
-        <img src="../img/comunidadFoto1.jpg" alt="Comunidad Slow Coffee" class="hero-bg">
-        <div class="hero-overlay"></div>
-        <div class="hero-inner">
-          <div class="hero-copy">
-            <h1>Nuestra Comunidad</h1>
-            <p class="lede">Más que clientes, somos una familia unida por la pasión del café artesanal</p>
-          </div>
-        </div>
-      </section>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
 
-      <!-- Reseñas de la comunidad CON ESTRELLAS VARIADAS 3-5 -->
-      <section class="comunidad-resenas py-5">
-        <div class="container">
-          <h2 class="section-title text-center mb-5">Lo que dice nuestra comunidad</h2>
-          
-          <div class="row g-4">
-            <!-- Reseña 1: 5 estrellas -->
-            <div class="col-md-6 col-lg-4">
-              <div class="review-card h-100">
-                <div class="stars mb-3">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                </div>
-                <p class="review-text">"La calidad del café de Slow Coffee es excepcional. Se nota el cuidado artesanal en cada grano. Las entregas siempre llegan a tiempo y el café está perfectamente fresco. Es mi ritual de cada mañana."</p>
-                <div class="review-author mt-auto">
-                  <strong>Ana Martínez</strong>
-                  <span class="client-type">Particular</span>
-                </div>
-              </div>
-            </div>
+<body>
+  <!-- Navegación -->
+  <header class="site-header py-3">
+    <nav class="navbar navbar-expand-md">
+      <div class="container d-flex align-items-center justify-content-between px-4 px-md-0">
+        <a class="navbar-brand brand" href="../index.html">
+          <img src="../img/logo_png.png" alt="Slow Coffee" class="logo" height="40">
+        </a>
 
-            <!-- Reseña 2: 4 estrellas -->
-            <div class="col-md-6 col-lg-4">
-              <div class="review-card h-100">
-                <div class="stars mb-3">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="star-empty"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                </div>
-                <p class="review-text">"Llevamos 6 meses trabajando con Slow Coffee en nuestra cafetería. Nuestros clientes notan la diferencia. La puntualidad en las entregas es impecable y la calidad siempre consistente. Un proveedor de confianza."</p>
-                <div class="review-author mt-auto">
-                  <strong>Café Oasis</strong>
-                  <span class="client-type">Negocio local</span>
-                </div>
-              </div>
-            </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+          aria-controls="mainNav" aria-expanded="false" aria-label="Alternar navegación">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <!-- Reseña 3: 3 estrellas -->
-            <div class="col-md-6 col-lg-4">
-              <div class="review-card h-100">
-                <div class="stars mb-3">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="star-empty"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="star-empty"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                </div>
-                <p class="review-text">"Buen café artesanal, aunque me gustaría que hubiera más variedad de orígenes. La entrega es puntual y la calidad es correcta. El precio es adecuado para lo que ofrecen."</p>
-                <div class="review-author mt-auto">
-                  <strong>Carlos Ruiz</strong>
-                  <span class="client-type">Particular</span>
-                </div>
-              </div>
-            </div>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto gap-2">
+            <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="historia.html">Historia</a></li>
+            <li class="nav-item"><a class="nav-link" href="catalogo.html">Productos</a></li>
+            <li class="nav-item"><a class="nav-link" href="comunidad.html">Comunidad</a></li>
+            <li class="nav-item"><a class="nav-link" href="valores.html">Valores</a></li>
+            <li class="nav-item"><a class="nav-link" href="soporte.html">Soporte</a></li>
 
-            <!-- Reseña 4: 5 estrellas -->
-            <div class="col-md-6 col-lg-4">
-              <div class="review-card h-100">
-                <div class="stars mb-3">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                </div>
-                <p class="review-text">"Como restaurante, la imagen que proyectas con tu café importa. Slow Coffee nos ayuda a ofrecer una experiencia premium a nuestros comensales. La entrega es siempre puntual y la calidad artesanal habla por sí sola."</p>
-                <div class="review-author mt-auto">
-                  <strong>Restaurante El Jardín</strong>
-                  <span class="client-type">Negocio local</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Reseña 5: 4 estrellas -->
-            <div class="col-md-6 col-lg-4">
-              <div class="review-card h-100">
-                <div class="stars mb-3">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="star-empty"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                </div>
-                <p class="review-text">"Me suscribí hace tres meses y la calidad del café es buena. Las entregas son puntuales. Aunque el precio es un poco elevado, la frescura del producto lo compensa. Seguiré probando más variedades."</p>
-                <div class="review-author mt-auto">
-                  <strong>Laura Sánchez</strong>
-                  <span class="client-type">Particular</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Reseña 6: 5 estrellas -->
-            <div class="col-md-6 col-lg-4">
-              <div class="review-card h-100">
-                <div class="stars mb-3">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                </div>
-                <p class="review-text">"Nuestra oficina cambió a Slow Coffee hace 4 meses. El equipo nota la diferencia en la calidad y nosotros en la fiabilidad de las entregas. Café artesanal que motiva las mañanas. Muy contentos con el servicio."</p>
-                <div class="review-author mt-auto">
-                  <strong>Estudio Creativo Pixel</strong>
-                  <span class="client-type">Negocio local</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Conversaciones de la comunidad -->
-      <section class="conversations-wrapper">
-        <div class="container">
-          <div class="conversations-box">
-            <div class="conversations-header">
-              <h2 class="section-title mb-3">Conversaciones de la comunidad</h2>
-              <p class="conversations-intro">Compartimos abiertamente sobre nuestros procesos, lanzamientos y aprendizajes. Aquí respondemos a las preguntas más frecuentes de nuestra comunidad.</p>
-            </div>
-
-            <div class="accordion" id="communityQA">
-              <div class="accordion-item">
-                <h3 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q1">
-                    ¿Cuándo lanzaréis el nuevo café de Kenia que mencionasteis?
-                  </button>
-                </h3>
-                <div id="q1" class="accordion-collapse collapse" data-bs-parent="#communityQA">
-                  <div class="accordion-body">
-                    <span class="question-author">Pregunta de María González, Barcelona</span>
-                    <p>Estamos muy emocionados con este lanzamiento. El café de Kenia estará disponible a principios del próximo mes. Estamos en la fase final de ajuste del perfil de tueste para resaltar sus notas cítricas y su acidez vibrante característica. Los suscriptores tendrán acceso prioritario 48 horas antes del lanzamiento público.</p>
-                    <p class="mb-0"><em>— Equipo Slow Coffee</em></p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="accordion-item">
-                <h3 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q2">
-                    He notado un cambio en el perfil del café de Colombia. ¿Habéis modificado algo?
-                  </button>
-                </h3>
-                <div id="q2" class="accordion-collapse collapse" data-bs-parent="#communityQA">
-                  <div class="accordion-body">
-                    <span class="question-author">Pregunta de Javier López, Madrid</span>
-                    <p>Gran observación, Javier. Efectivamente, hemos ajustado ligeramente el perfil de tueste del café colombiano para acentuar sus notas de caramelo y reducir un poco la acidez. Este cambio responde al feedback de varios miembros de la comunidad que nos pedían un perfil más dulce y balanceado. El origen y la calidad del grano siguen siendo exactamente los mismos.</p>
-                    <p class="mb-0"><em>— Equipo Slow Coffee</em></p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="accordion-item">
-                <h3 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q3">
-                    ¿Qué método de preparación recomendáis para el café etíope?
-                  </button>
-                </h3>
-                <div id="q3" class="accordion-collapse collapse" data-bs-parent="#communityQA">
-                  <div class="accordion-body">
-                    <span class="question-author">Pregunta de Ana Ruiz, Valencia</span>
-                    <p>Para nuestro etíope, recomendamos especialmente el V60 o Chemex. Estos métodos de filtrado permiten que las notas florales y cítricas brillen con toda su intensidad. Usa agua a 92-94°C y una molienda media-fina. La proporción ideal es 1:16 (por ejemplo, 15g de café por 240ml de agua). El tiempo total de extracción debería rondar los 2:30-3:00 minutos.</p>
-                    <p class="mb-0"><em>— Equipo Slow Coffee</em></p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="accordion-item">
-                <h3 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q4">
-                    ¿Cuándo será el próximo taller de barista?
-                  </button>
-                </h3>
-                <div id="q4" class="accordion-collapse collapse" data-bs-parent="#communityQA">
-                  <div class="accordion-body">
-                    <span class="question-author">Pregunta de Carlos Martínez, Sevilla</span>
-                    <p>Estamos organizando un taller intensivo para mediados del próximo mes. Cubriremos técnicas de extracción, arte latte y calibración de molinos. Las plazas son limitadas (máximo 12 personas) para mantener la cercanía y calidad de la formación. Los suscriptores recibirán un descuento del 20%. Anunciaremos la fecha exacta y el proceso de inscripción en nuestro próximo boletín.</p>
-                    <p class="mb-0"><em>— Equipo Slow Coffee</em></p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="accordion-item">
-                <h3 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q5">
-                    ¿Vais a organizar más catas abiertas a la comunidad?
-                  </button>
-                </h3>
-                <div id="q5" class="accordion-collapse collapse" data-bs-parent="#communityQA">
-                  <div class="accordion-body">
-                    <p>¡Absolutamente! Las catas comunitarias son uno de nuestros eventos favoritos. Estamos planificando una sesión especial de cata a ciegas para el próximo trimestre, donde compararemos cafés de tres orígenes diferentes. Es una experiencia fantástica para entrenar el paladar y compartir impresiones con otros amantes del café. Mantente atento a nuestras redes sociales para más detalles.</p>
-                    <p class="mb-0"><em>— Equipo Slow Coffee</em></p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="accordion-item">
-                <h3 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q6">
-                    ¿Puedo sugerir orígenes o perfiles de tueste para futuros lanzamientos?
-                  </button>
-                </h3>
-                <div id="q6" class="accordion-collapse collapse" data-bs-parent="#communityQA">
-                  <div class="accordion-body">
-                    <span class="question-author">Pregunta de Laura Fernández, Bilbao</span>
-                    <p>¡Por supuesto! Vuestra opinión es fundamental para nosotros. Muchos de nuestros lanzamientos han nacido de sugerencias de la comunidad. Podéis escribirnos directamente por email o a través de nuestras redes sociales. Evaluamos todas las propuestas y, si encontramos un proveedor que cumpla nuestros estándares de calidad y comercio justo, no dudamos en explorar nuevas opciones.</p>
-                    <p class="mb-0"><em>— Equipo Slow Coffee</em></p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="accordion-item">
-                <h3 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q7">
-                    ¿Cómo puedo involucrarme más en la comunidad Slow Coffee?
-                  </button>
-                </h3>
-                <div id="q7" class="accordion-collapse collapse" data-bs-parent="#communityQA">
-                  <div class="accordion-body">
-                    <p>Nos encanta esta pregunta. Hay varias formas: participar en nuestras catas y talleres, seguirnos en redes sociales y compartir vuestras experiencias, unirte a nuestro programa de suscripción (que incluye beneficios exclusivos), o simplemente compartir feedback honesto sobre nuestros cafés. Estamos construyendo una comunidad basada en la transparencia, la pasión compartida y el amor por el café artesanal.</p>
-                    <p class="mb-0"><em>— Equipo Slow Coffee</em></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Sección de suscripciones CON BADGE MÁS GRANDE Y ALINEACIÓN -->
-<section class="subscription-cta">
-  <div class="container">
-    <div class="row align-items-stretch">
-      <div class="col-lg-6 mb-4 mb-lg-0 d-flex flex-column justify-content-center">
-        <div class="cta-content">
-          <span class="badge-exclusive mb-4 d-inline-block">Exclusivo para suscriptores</span>
-          <h2 class="cta-title">Únete a nuestra comunidad de suscriptores</h2>
-          <p class="cta-text">Conviértete en parte de algo especial. Nuestros suscriptores no solo reciben café fresco cada mes, también forman parte activa de nuestro proceso artesanal.</p>
-          
-          <ul class="benefits-list">
-            <li>
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <polyline points="20 6 9 17 4 12"></polyline>
-              </svg>
-              <span>Acceso anticipado a lanzamientos exclusivos</span>
-            </li>
-            <li>
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <polyline points="20 6 9 17 4 12"></polyline>
-              </svg>
-              <span>Descuentos en talleres y catas artesanales</span>
-            </li>
-            <li>
-              <svg width="24" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <polyline points="20 6 9 17 4 12"></polyline>
-              </svg>
-              <span>Participación directa en decisiones de tueste</span>
-            </li>
-            <li>
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <polyline points="20 6 9 17 4 12"></polyline>
-              </svg>
-              <span>Entregas flexibles adaptadas a tu consumo</span>
-            </li>
-            <li>
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <polyline points="20 6 9 17 4 12"></polyline>
-              </svg>
-              <span>Comunidad privada de amantes del café</span>
-            </li>
           </ul>
-
-          <a href="suscripcion.html" class="btn-subscribe">
-            Descubre los planes
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M5 12h14M12 5l7 7-7 7"/>
-            </svg>
-          </a>
-
-          <p class="cta-note">Sin permanencia. Cancela cuando quieras.</p>
         </div>
       </div>
+    </nav>
+  </header>
 
-      <div class="col-lg-6 d-flex align-items-center">
-        <div class="cta-image w-100">
-          <img src="../img/comunidadFoto4.jpg" alt="Café artesanal" class="img-fluid rounded shadow-lg">
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-      <!-- Contacto -->
-      <section class="contact-banner">
-        <div class="contact-content">
-          <h2>¿Tienes alguna pregunta?</h2>
-          <p class="subtitle">Estamos aquí para ayudarte</p>
-          
-          <div class="contact-info">
-            <div class="contact-item">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                <polyline points="22,6 12,13 2,6"/>
-              </svg>
-              <a href="mailto:hola@slowcoffee.example">hola@slowcoffee.example</a>
+  <main>
+    <section class="hero-index-new" style="--hero-image: url('../img/comunidadFoto2.jpg');">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="hero-content-new">
+              <h1 class="hero-title-new">Nuestra Comunidad</h1>
+              <p class="hero-subtitle-new">Más que clientes, somos una familia unida por la pasión del café artesanal
+              </p>
             </div>
-            <div class="contact-item">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-              </svg>
-              <a href="tel:+34911222333">+34 911 222 333</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reseñas de la comunidad CON ESTRELLAS VARIADAS 3-5 -->
+    <section class="comunidad-resenas py-5">
+      <div class="container">
+        <h2 class="section-title text-center mb-5">Lo que dice nuestra comunidad</h2>
+
+        <div class="row g-4">
+          <!-- Reseña 1: 5 estrellas -->
+          <div class="col-md-6 col-lg-4">
+            <div class="review-card h-100">
+              <div class="stars mb-3">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                </svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                </svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                </svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                </svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                </svg>
+              </div>
+              <p class="review-text">"La calidad del café de Slow Coffee es excepcional. Se nota el cuidado artesanal en
+                cada grano. Las entregas siempre llegan a tiempo y el café está perfectamente fresco. Es mi ritual de
+                cada mañana."</p>
+              <div class="review-author mt-auto">
+                <strong>Ana Martínez</strong>
+                <span class="client-type">Particular</span>
+              </div>
             </div>
           </div>
 
-          <a href="soporte.html" class="btn-contact">Ir a soporte</a>
-        </div>
-      </section>
-    </main>
+          <!-- Reseña 2: 4 estrellas -->
+          <div class="col-md-6 col-lg-4">
+            <div class="review-card h-100">
+              <div class="stars mb-3">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                </svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                </svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                </svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                </svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="star-empty">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                </svg>
+              </div>
+              <p class="review-text">"Llevamos 6 meses trabajando con Slow Coffee en nuestra cafetería. Nuestros
+                clientes notan la diferencia. La puntualidad en las entregas es impecable y la calidad siempre
+                consistente. Un proveedor de confianza."</p>
+              <div class="review-author mt-auto">
+                <strong>Café Oasis</strong>
+                <span class="client-type">Negocio local</span>
+              </div>
+            </div>
+          </div>
 
-    <!-- Footer -->
-    <footer class="site-footer py-3">
-      <div class="container footer-inner">
-        <div class="row text-center align-items-center">
-          <div class="col-md-4 mb-2">
-            <a class="brand footer-brand" href="../index.html">
-              <img src="../img/logo_negativo_png.png" alt="Slow Coffee" class="logo" height="36">
+          <!-- Reseña 3: 3 estrellas -->
+          <div class="col-md-6 col-lg-4">
+            <div class="review-card h-100">
+              <div class="stars mb-3">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                </svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                </svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                </svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="star-empty">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                </svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="star-empty">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                </svg>
+              </div>
+              <p class="review-text">"Buen café artesanal, aunque me gustaría que hubiera más variedad de orígenes. La
+                entrega es puntual y la calidad es correcta. El precio es adecuado para lo que ofrecen."</p>
+              <div class="review-author mt-auto">
+                <strong>Carlos Ruiz</strong>
+                <span class="client-type">Particular</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Reseña 4: 5 estrellas -->
+          <div class="col-md-6 col-lg-4">
+            <div class="review-card h-100">
+              <div class="stars mb-3">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                </svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                </svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                </svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                </svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                </svg>
+              </div>
+              <p class="review-text">"Como restaurante, la imagen que proyectas con tu café importa. Slow Coffee nos
+                ayuda a ofrecer una experiencia premium a nuestros comensales. La entrega es siempre puntual y la
+                calidad artesanal habla por sí sola."</p>
+              <div class="review-author mt-auto">
+                <strong>Restaurante El Jardín</strong>
+                <span class="client-type">Negocio local</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Reseña 5: 4 estrellas -->
+          <div class="col-md-6 col-lg-4">
+            <div class="review-card h-100">
+              <div class="stars mb-3">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                </svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                </svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                </svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                </svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="star-empty">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                </svg>
+              </div>
+              <p class="review-text">"Me suscribí hace tres meses y la calidad del café es buena. Las entregas son
+                puntuales. Aunque el precio es un poco elevado, la frescura del producto lo compensa. Seguiré probando
+                más variedades."</p>
+              <div class="review-author mt-auto">
+                <strong>Laura Sánchez</strong>
+                <span class="client-type">Particular</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Reseña 6: 5 estrellas -->
+          <div class="col-md-6 col-lg-4">
+            <div class="review-card h-100">
+              <div class="stars mb-3">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                </svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                </svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                </svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                </svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                </svg>
+              </div>
+              <p class="review-text">"Nuestra oficina cambió a Slow Coffee hace 4 meses. El equipo nota la diferencia en
+                la calidad y nosotros en la fiabilidad de las entregas. Café artesanal que motiva las mañanas. Muy
+                contentos con el servicio."</p>
+              <div class="review-author mt-auto">
+                <strong>Estudio Creativo Pixel</strong>
+                <span class="client-type">Negocio local</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Conversaciones de la comunidad -->
+    <section class="conversations-wrapper">
+      <div class="container">
+        <div class="conversations-box">
+          <div class="conversations-header">
+            <h2 class="section-title mb-3">Conversaciones de la comunidad</h2>
+            <p class="conversations-intro">Compartimos abiertamente sobre nuestros procesos, lanzamientos y
+              aprendizajes. Aquí respondemos a las preguntas más frecuentes de nuestra comunidad.</p>
+          </div>
+
+          <div class="accordion" id="communityQA">
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q1">
+                  ¿Cuándo lanzaréis el nuevo café de Kenia que mencionasteis?
+                </button>
+              </h3>
+              <div id="q1" class="accordion-collapse collapse" data-bs-parent="#communityQA">
+                <div class="accordion-body">
+                  <span class="question-author">Pregunta de María González, Barcelona</span>
+                  <p>Estamos muy emocionados con este lanzamiento. El café de Kenia estará disponible a principios del
+                    próximo mes. Estamos en la fase final de ajuste del perfil de tueste para resaltar sus notas
+                    cítricas y su acidez vibrante característica. Los suscriptores tendrán acceso prioritario 48 horas
+                    antes del lanzamiento público.</p>
+                  <p class="mb-0"><em>— Equipo Slow Coffee</em></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q2">
+                  He notado un cambio en el perfil del café de Colombia. ¿Habéis modificado algo?
+                </button>
+              </h3>
+              <div id="q2" class="accordion-collapse collapse" data-bs-parent="#communityQA">
+                <div class="accordion-body">
+                  <span class="question-author">Pregunta de Javier López, Madrid</span>
+                  <p>Gran observación, Javier. Efectivamente, hemos ajustado ligeramente el perfil de tueste del café
+                    colombiano para acentuar sus notas de caramelo y reducir un poco la acidez. Este cambio responde al
+                    feedback de varios miembros de la comunidad que nos pedían un perfil más dulce y balanceado. El
+                    origen y la calidad del grano siguen siendo exactamente los mismos.</p>
+                  <p class="mb-0"><em>— Equipo Slow Coffee</em></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q3">
+                  ¿Qué método de preparación recomendáis para el café etíope?
+                </button>
+              </h3>
+              <div id="q3" class="accordion-collapse collapse" data-bs-parent="#communityQA">
+                <div class="accordion-body">
+                  <span class="question-author">Pregunta de Ana Ruiz, Valencia</span>
+                  <p>Para nuestro etíope, recomendamos especialmente el V60 o Chemex. Estos métodos de filtrado permiten
+                    que las notas florales y cítricas brillen con toda su intensidad. Usa agua a 92-94°C y una molienda
+                    media-fina. La proporción ideal es 1:16 (por ejemplo, 15g de café por 240ml de agua). El tiempo
+                    total de extracción debería rondar los 2:30-3:00 minutos.</p>
+                  <p class="mb-0"><em>— Equipo Slow Coffee</em></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q4">
+                  ¿Cuándo será el próximo taller de barista?
+                </button>
+              </h3>
+              <div id="q4" class="accordion-collapse collapse" data-bs-parent="#communityQA">
+                <div class="accordion-body">
+                  <span class="question-author">Pregunta de Carlos Martínez, Sevilla</span>
+                  <p>Estamos organizando un taller intensivo para mediados del próximo mes. Cubriremos técnicas de
+                    extracción, arte latte y calibración de molinos. Las plazas son limitadas (máximo 12 personas) para
+                    mantener la cercanía y calidad de la formación. Los suscriptores recibirán un descuento del 20%.
+                    Anunciaremos la fecha exacta y el proceso de inscripción en nuestro próximo boletín.</p>
+                  <p class="mb-0"><em>— Equipo Slow Coffee</em></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q5">
+                  ¿Vais a organizar más catas abiertas a la comunidad?
+                </button>
+              </h3>
+              <div id="q5" class="accordion-collapse collapse" data-bs-parent="#communityQA">
+                <div class="accordion-body">
+                  <p>¡Absolutamente! Las catas comunitarias son uno de nuestros eventos favoritos. Estamos planificando
+                    una sesión especial de cata a ciegas para el próximo trimestre, donde compararemos cafés de tres
+                    orígenes diferentes. Es una experiencia fantástica para entrenar el paladar y compartir impresiones
+                    con otros amantes del café. Mantente atento a nuestras redes sociales para más detalles.</p>
+                  <p class="mb-0"><em>— Equipo Slow Coffee</em></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q6">
+                  ¿Puedo sugerir orígenes o perfiles de tueste para futuros lanzamientos?
+                </button>
+              </h3>
+              <div id="q6" class="accordion-collapse collapse" data-bs-parent="#communityQA">
+                <div class="accordion-body">
+                  <span class="question-author">Pregunta de Laura Fernández, Bilbao</span>
+                  <p>¡Por supuesto! Vuestra opinión es fundamental para nosotros. Muchos de nuestros lanzamientos han
+                    nacido de sugerencias de la comunidad. Podéis escribirnos directamente por email o a través de
+                    nuestras redes sociales. Evaluamos todas las propuestas y, si encontramos un proveedor que cumpla
+                    nuestros estándares de calidad y comercio justo, no dudamos en explorar nuevas opciones.</p>
+                  <p class="mb-0"><em>— Equipo Slow Coffee</em></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q7">
+                  ¿Cómo puedo involucrarme más en la comunidad Slow Coffee?
+                </button>
+              </h3>
+              <div id="q7" class="accordion-collapse collapse" data-bs-parent="#communityQA">
+                <div class="accordion-body">
+                  <p>Nos encanta esta pregunta. Hay varias formas: participar en nuestras catas y talleres, seguirnos en
+                    redes sociales y compartir vuestras experiencias, unirte a nuestro programa de suscripción (que
+                    incluye beneficios exclusivos), o simplemente compartir feedback honesto sobre nuestros cafés.
+                    Estamos construyendo una comunidad basada en la transparencia, la pasión compartida y el amor por el
+                    café artesanal.</p>
+                  <p class="mb-0"><em>— Equipo Slow Coffee</em></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de suscripciones CON BADGE MÁS GRANDE Y ALINEACIÓN -->
+    <section class="subscription-cta">
+      <div class="container">
+        <div class="row align-items-stretch">
+          <div class="col-lg-6 mb-4 mb-lg-0 d-flex flex-column justify-content-center">
+            <div class="cta-content">
+              <span class="badge-exclusive mb-4 d-inline-block">Exclusivo para suscriptores</span>
+              <h2 class="cta-title">Únete a nuestra comunidad de suscriptores</h2>
+              <p class="cta-text">Conviértete en parte de algo especial. Nuestros suscriptores no solo reciben café
+                fresco cada mes, también forman parte activa de nuestro proceso artesanal.</p>
+
+              <ul class="benefits-list">
+                <li>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Acceso anticipado a lanzamientos exclusivos</span>
+                </li>
+                <li>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Descuentos en talleres y catas artesanales</span>
+                </li>
+                <li>
+                  <svg width="24" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Participación directa en decisiones de tueste</span>
+                </li>
+                <li>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Entregas flexibles adaptadas a tu consumo</span>
+                </li>
+                <li>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Comunidad privada de amantes del café</span>
+                </li>
+              </ul>
+
+              <a href="suscripcion.html" class="btn-subscribe">
+                Descubre los planes
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
+
+              <p class="cta-note">Sin permanencia. Cancela cuando quieras.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6 d-flex align-items-center">
+            <div class="cta-image w-100">
+              <img src="../img/comunidadFoto4.jpg" alt="Café artesanal" class="img-fluid rounded shadow-lg">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="contact-banner">
+      <div class="contact-content">
+        <h2>¿Tienes alguna pregunta?</h2>
+        <p class="subtitle">Estamos aquí para ayudarte</p>
+
+        <div class="contact-info">
+          <div class="contact-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+            <a href="mailto:hola@slowcoffee.example">hola@slowcoffee.example</a>
+          </div>
+          <div class="contact-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+            </svg>
+            <a href="tel:+34911222333">+34 911 222 333</a>
+          </div>
+        </div>
+
+        <a href="soporte.html" class="btn-contact">Ir a soporte</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer py-3">
+    <div class="container footer-inner">
+      <div class="row text-center align-items-center">
+        <div class="col-md-4 mb-2">
+          <a class="brand footer-brand" href="../index.html">
+            <img src="../img/logo_negativo_png.png" alt="Slow Coffee" class="logo" height="36">
+          </a>
+        </div>
+
+        <div class="col-md-4 mb-2">
+          <h4>Contacto</h4>
+          <ul class="list-unstyled mb-0 contact-list">
+            <li>Email: <a href="mailto:hola@slowcoffee.example">hola@slowcoffee.example</a></li>
+            <li>Tel: <a href="tel:+34911222333">+34 911 222 333</a></li>
+            <li>Horario: Lun–Vie 9:00–18:00</li>
+          </ul>
+        </div>
+
+        <div class="col-md-4 mb-2">
+          <h4>Síguenos</h4>
+          <div class="d-flex justify-content-center gap-2 social-icons" aria-label="Redes sociales">
+            <a href="#" class="social-icon" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <rect x="3" y="3" width="18" height="18" rx="4" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+              </svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="Twitter">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path
+                  d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 22.43 1s-1.94 1.16-3.54 1.58A4.48 4.48 0 0 0 12 6v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5A4.5 4.5 0 0 0 23 3z" />
+              </svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path d="M18 2h-3a4 4 0 0 0-4 4v3H8v4h3v8h4v-8h3l1-4h-4V6a1 1 0 0 1 1-1h3z" />
+              </svg>
             </a>
           </div>
-
-          <div class="col-md-4 mb-2">
-            <h4>Contacto</h4>
-            <ul class="list-unstyled mb-0 contact-list">
-              <li>Email: <a href="mailto:hola@slowcoffee.example">hola@slowcoffee.example</a></li>
-              <li>Tel: <a href="tel:+34911222333">+34 911 222 333</a></li>
-              <li>Horario: Lun–Vie 9:00–18:00</li>
-            </ul>
-          </div>
-
-          <div class="col-md-4 mb-2">
-            <h4>Síguenos</h4>
-            <div class="d-flex justify-content-center gap-2 social-icons" aria-label="Redes sociales">
-              <a href="#" class="social-icon" aria-label="Instagram">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/></svg>
-              </a>
-              <a href="#" class="social-icon" aria-label="Twitter">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 22.43 1s-1.94 1.16-3.54 1.58A4.48 4.48 0 0 0 12 6v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5A4.5 4.5 0 0 0 23 3z"/></svg>
-              </a>
-              <a href="#" class="social-icon" aria-label="Facebook">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M18 2h-3a4 4 0 0 0-4 4v3H8v4h3v8h4v-8h3l1-4h-4V6a1 1 0 0 1 1-1h3z"/></svg>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="footer-bottom text-center small mt-3">
-          <p class="mb-0">© <span id="year"></span> Slow Coffee — Todos los derechos reservados.</p>
         </div>
       </div>
-    </footer>
 
-    <script>
-      document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+      <div class="footer-bottom text-center small mt-3">
+        <p class="mb-0">© <span id="year"></span> Slow Coffee — Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>
