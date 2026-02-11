@@ -200,10 +200,7 @@ h2 {font-family: var(--font-serif); font-size: 1.8rem; margin: 0 0 1rem}
 
 .footer-bottom { margin-top: .6rem; border-top: 1px solid rgba(244,239,234,0.06); padding-top: .5rem; text-align: center; font-size: .9rem; color: rgba(244,239,234,0.8); }
 
-/* =========================================
-   ESTILOS DE PÁGINA HISTORIA
-   ========================================= */
-.hero-badge-historia, .hero-badge-catalogo {
+.hero-badge-historia, .hero-badge-catalogo {/*ESTILOS DE PÁGINA HISTORIA*/
   display: inline-flex; align-items: center; gap: 0.5rem;
   background-color: rgba(245, 245, 220, 0.95);
   color: var(--gold);
@@ -301,8 +298,7 @@ h2 {font-family: var(--font-serif); font-size: 1.8rem; margin: 0 0 1rem}
 }
 .timeline-item-new:hover .timeline-img { transform: scale(1.05); }
 
-/* CTA Historia */
-.cta-historia {
+.cta-historia {/* CTA Historia */
   padding: 5rem 0;
   background: linear-gradient(135deg, var(--coffee-900), var(--coffee-600));
   color: white; text-align: center;
@@ -328,11 +324,8 @@ transform: translateY(-3px) scale(1.05);
   color: var(--coffee-900);
 }
 
-/* =========================================
-   ESTILOS DE PÁGINA VALORES
-   ========================================= */
 .btn-cta-primary {
-  background: linear-gradient(135deg, var(--terracotta), #D4895F);
+  background: linear-gradient(135deg, var(--terracotta), #D4895F);/*ESTILOS DE PÁGINA VALORES*/
   color: white; padding: 1rem 2.5rem; font-size: 1.1rem;
   font-weight: 700; border-radius: 50px; border: none;
   box-shadow: 0 8px 24px rgba(179, 106, 74, 0.4);
@@ -459,11 +452,7 @@ transform: translateY(-3px) scale(1.05);
 }
 .trust-icon { width: 24px; height: 24px; color: var(--gold); }
 
-
-/* =========================================
-   ESTILOS COMPARTIDOS: SOPORTE, COMUNIDAD & CATÁLOGO
-   ========================================= */
-.help-icon { width: 28px; height: 28px; }
+.help-icon { width: 28px; height: 28px; }/*ESTILOS COMPARTIDOS: SOPORTE, COMUNIDAD & CATÁLOGO*/
 .section-title {
   font-family: var(--font-serif); font-size: 2.5rem;
   text-align: center; margin-bottom: 3.5rem; color: var(--coffee-900);
@@ -651,11 +640,7 @@ transform: translateY(-3px) scale(1.05);
 }
 .btn-close { filter: brightness(0) invert(1); }
 
-/* =========================================
-   ESTILOS ESPECÍFICOS COMUNIDAD & CATÁLOGO
-   ========================================= */
-
-.review-card {
+.review-card {/*ESTILOS ESPECÍFICOS COMUNIDAD & CATÁLOGO*/
   background: linear-gradient(180deg, rgba(253, 253, 253, 0.7), rgba(244, 239, 234, 0.5));
   border: 1px solid rgba(35, 25, 20, 0.08); border-radius: 12px; padding: 2rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -894,10 +879,7 @@ transform: translateY(-3px) scale(1.05);
 }
 .cat-card__btn:hover { background: var(--terracotta); transform: scale(1.06); }
 
-/* =========================================
-   1. PANTALLAS MUY GRANDES A MEDIANAS
-   ========================================= */
-@media (max-width: 1400px) {
+@media (max-width: 1400px) {/*1. PANTALLAS MUY GRANDES A MEDIANAS*/
     .container { max-width: min(var(--max-width), calc(100% - 180px)); }
 }
 
@@ -905,30 +887,18 @@ transform: translateY(-3px) scale(1.05);
     .container { max-width: min(var(--max-width), calc(100% - 160px)); }
 }
 
-/* =========================================
-   2. LAPTOPS PEQUEÑOS / TABLETS (< 1000px)
-   ========================================= */
-@media (max-width: 1000px) {
+@media (max-width: 1000px) {/*2. LAPTOPS PEQUEÑOS / TABLETS (< 1000px)*/
     .container { max-width: min(var(--max-width), calc(100% - 120px)); }
     .photo-placeholder, .vertical-photo { height: 260px; }
 }
 
-/* =========================================
-   3. ESCRITORIO PEQUEÑO (< 992px)
-   Ajustes de CTA y Layouts generales
-   ========================================= */
-@media (max-width: 992px) {
+@media (max-width: 992px) {/*3. ESCRITORIO PEQUEÑO (< 992px)Ajustes de CTA y Layouts generales*/
     .cta-content { margin-bottom: 3rem; }
     .cta-image img { max-height: 350px; }
 }
 
-/* =========================================
-   4. TABLETS PORTRAIT (< 991px)
-   Timeline y Trust Bar
-   ========================================= */
-@media (max-width: 991px) {
-    /* --- TIMELINE --- */
-    .timeline-historia-new::before { display: none; }
+@media (max-width: 991px) {/* 4. TABLETS PORTRAIT (< 991px)Timeline y Trust Bar*/
+    .timeline-historia-new::before { display: none; }/* --- TIMELINE --- */
     .timeline-marker {
         position: relative; left: 0; top: 0;
         transform: none; margin-bottom: 2rem; text-align: left;
@@ -937,17 +907,11 @@ transform: translateY(-3px) scale(1.05);
     .timeline-year { font-size: 2rem; padding: 0.4rem 1.2rem; }
     .timeline-item-reverse .timeline-content-new { order: 1; }
     .timeline-img { height: 300px; }
-
-    /* --- TRUST BAR (Logos/Confianza) --- */
-    .trust-bar__sep { display: none; }
+    .trust-bar__sep { display: none; }/* --- TRUST BAR (Logos/Confianza) --- */
     .trust-bar__inner { gap: 1.4rem; }
 }
 
-/* =========================================
-   5. ESCRITORIO (Regla min-width)
-   Se aplica de tablet hacia arriba
-   ========================================= */
-@media (min-width: 768px) {
+@media (min-width: 768px) {/* 5. ESCRITORIO (Regla min-width)Se aplica de tablet hacia arriba*/
     .row.icons {
         display: flex; flex-wrap: nowrap; align-items: stretch; gap: 1.25rem;
     }
@@ -956,23 +920,10 @@ transform: translateY(-3px) scale(1.05);
         max-width: calc((100% - 2.5rem) / 3);
     }
 }
-
-/* =========================================
-   6. TABLETS PEQUEÑAS (< 768px)
-   Fusión MASIVA: Historia, Catálogo, Contacto, etc.
-   ========================================= */
-@media (max-width: 768px) {
-    
-    /* --- A. TIPOGRAFÍA GENERAL --- */
-    .section-title, 
-    .testimonials-section h2, 
-    .contact-content h2,
-    .cta-title { 
-        font-size: 2rem; 
-    }
-
-    /* --- B. HISTORIA Y TIMELINE --- */
-    .hero-badge-historia { font-size: 0.75rem; padding: 0.4rem 1rem; }
+@media (max-width: 768px) {/*6. TABLETS PEQUEÑAS (< 768px)Fusión MASIVA: Historia, Catálogo, Contacto, etc.*/
+    .section-title,.testimonials-section h2, .contact-content h2,/* --- A. TIPOGRAFÍA GENERAL --- */
+    .cta-title { font-size: 2rem; }
+    .hero-badge-historia { font-size: 0.75rem; padding: 0.4rem 1rem; }/* --- B. HISTORIA Y TIMELINE --- */
     .intro-section-historia { padding: 3rem 0 2rem; }
     .timeline-content-new { padding: 1.5rem; }
     .timeline-title { font-size: 1.5rem; }
@@ -981,90 +932,53 @@ transform: translateY(-3px) scale(1.05);
     .timeline-stats { gap: 1rem; }
     .cta-historia { padding: 3rem 0; }
     .btn-cta-historia { padding: 1rem 2.5rem; font-size: 1rem; }
-
-    /* --- C. VALORES, MANIFIESTO Y TRUST --- */
-    .value-card-new { margin-bottom: 1.5rem; }
+    .value-card-new { margin-bottom: 1.5rem; }/* --- C. VALORES, MANIFIESTO Y TRUST --- */
     .story-image-new { min-height: 300px; margin-bottom: 2rem; }
     .trust-indicators { gap: 1.5rem; }
     .stats-badge { width: 100%; justify-content: center; }
     .manifesto-block { padding: 2rem 1.5rem; }
-    
     .trust-bar__inner { gap: 1rem; }
     .trust-bar__item { font-size: 0.82rem; }
-
-    /* --- D. CATÁLOGO Y SIDEBAR --- */
-    .sidebar { position: static !important; margin-bottom: 1.5rem; }
+    .sidebar { position: static !important; margin-bottom: 1.5rem; }/* --- D. CATÁLOGO Y SIDEBAR --- */
     .catalogo-controls { flex-direction: column; align-items: flex-start; }
     .popular-card { min-height: 280px; }
     .category-pill { font-size: 0.85rem; padding: 0.6rem 1.2rem; }
-
-    /* --- E. CONTACTO, CTA Y CONVERSACIONES --- */
-    .conversations-box { padding: 2rem 1.5rem; }
+    .conversations-box { padding: 2rem 1.5rem; }/* --- E. CONTACTO, CTA Y CONVERSACIONES --- */
     .badge-exclusive { font-size: 0.95rem; padding: 0.7rem 1.5rem; }
-    
     .contact-info { gap: 0.75rem; }
     .contact-item { font-size: 0.95rem; }
-    
     .btn-cta-primary, .btn-cta-white { padding: 0.9rem 2rem; font-size: 1rem; }
     .btn-contact-primary { padding: 1rem 2rem; font-size: 1rem; }
-
-    /* --- F. ACORDEÓN / FAQ --- */
-    .accordion-header h2 { font-size: 1.3rem; }
+    .accordion-header h2 { font-size: 1.3rem; }/* --- F. ACORDEÓN / FAQ --- */
     .compact-accordion { padding: 0 1rem; }
 }
-
-/* =========================================
-   7. MÓVILES (< 720px)
-   Estructura crítica, Layout y Menú
-   ========================================= */
-@media (max-width: 720px) {
-    /* Layout Base */
-    .container { max-width: 100%; padding: 1rem; }
+@media (max-width: 720px) {/*7. MÓVILES (< 720px)Estructura crítica, Layout y Menú*/
+    .container { max-width: 100%; padding: 1rem; }/* Layout Base */
     .navbar-brand.brand, .footer-brand { height: 56px; }
     .social-icon { width: 36px; height: 36px; }
-
-    /* Story & Fotos */
-    .story article { padding-right: 0; }
+    .story article { padding-right: 0; } /* Story & Fotos */
     .story::before { display: none; }
     .story .long::first-letter { font-size: 2.4rem; margin-right: .4rem; }
     .vertical-photo { max-width: 100%; height: 240px; }
-
-    /* Iconos */
-    .icons .icon-card { padding: .9rem; border-radius: 10px; }
-
-
-    /* Grid System */
-    .grid { grid-template-columns: repeat(6, 1fr); }
+    .icons .icon-card { padding: .9rem; border-radius: 10px; }/* Iconos */
+    .grid { grid-template-columns: repeat(6, 1fr); }/* Grid System */
     .col-4, .col-7, .col-5 { grid-column: span 6; }
     .values-list { grid-template-columns: 1fr; }
 }
 
-/* =========================================
-   8. MÓVILES PEQUEÑOS (< 576px)
-   Ajustes finos para teléfonos
-   ========================================= */
-@media (max-width: 576px) {
-    /* Catálogo y Trust Bar */
-    .cat-card__img { height: 180px; }
+@media (max-width: 576px) {/*8. MÓVILES PEQUEÑOS (< 576px)Ajustes finos para teléfonos*/
+    .cat-card__img { height: 180px; }/* Catálogo y Trust Bar */
     .trust-bar { padding: 0.7rem 0; }
     .trust-bar__item { font-size: 0.78rem; }
-
-    /* Categorías */
-    .quick-categories { flex-direction: column; align-items: center; }
+    .quick-categories { flex-direction: column; align-items: center; }/* Categorías */
     .category-pill { width: 100%; max-width: 250px; text-align: center; }
-
-    /* Acordeón */
-    .accordion-header h2 { font-size: 1.1rem; }
+    .accordion-header h2 { font-size: 1.1rem; }/* Acordeón */
     .accordion-header .me-3 { width: 24px; height: 24px; }
 }
 
-/* =========================================
-   9. ANIMACIONES (Optimizado)
-   ========================================= */
-@media (prefers-reduced-motion: no-preference) {
+@media (prefers-reduced-motion: no-preference) { /*9. ANIMACIONES (Optimizado)*/
     
-    /* Aplicación de animaciones */
-    .timeline-item-new {
+    .timeline-item-new { /* Aplicación de animaciones */
         opacity: 0;
         animation: fadeInUp 0.8s ease forwards;
     }
@@ -1072,9 +986,7 @@ transform: translateY(-3px) scale(1.05);
     .timeline-item-new:nth-child(2) { animation-delay: 0.4s; }
     .timeline-item-new:nth-child(3) { animation-delay: 0.6s; }
 
-    /* --- KEYFRAMES DEFINITIONS --- */
-
-    @keyframes fadeIn {
+    @keyframes fadeIn {/* --- KEYFRAMES DEFINITIONS --- */
         from { opacity: 0; }
         to { opacity: 1; }
     }
