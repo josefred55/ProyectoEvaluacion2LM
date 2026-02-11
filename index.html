@@ -28,7 +28,6 @@
           aria-controls="mainNav" aria-expanded="false" aria-label="Alternar navegación">
           <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="mainNav">
           <ul class="navbar-nav ms-auto gap-2">
             <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
@@ -37,7 +36,6 @@
             <li class="nav-item"><a class="nav-link" href="pag/comunidad.html">Comunidad</a></li>
             <li class="nav-item"><a class="nav-link" href="pag/valores.html">Valores</a></li>
             <li class="nav-item"><a class="nav-link" href="pag/soporte.html">Soporte</a></li>
-
           </ul>
         </div>
       </div>
@@ -71,7 +69,12 @@
     <!-- productos más vendidos -->
     <section id="best-sellers" class="section best-sellers py-5">
       <div class="container">
-        <h2 class="text-center mb-4">Nuestros Productos más vendidos</h2>
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <div class="section-overline">Lo más popular</div>
+            <h2 class="section-title">Nuestros Productos más vendidos</h2>
+          </div>
+        </div>
         <div class="row g-4">
           <div class="col-md-4">
             <a href="pag/catalogo.html" class="cat-card h-100 text-decoration-none text-body"
@@ -128,23 +131,25 @@
       </div>
     </section>
 
-    <!-- historia -->
-    <section id="historia" class="section story py-5">
+    <section class="story-section-new">
       <div class="container">
-        <div class="row">
-          <article class="col-md-7">
-            <h2>Una historia de calma</h2>
-            <p class="long">Nacimos del deseo de honrar el tiempo. Cada lote se tuesta siguiendo una cadencia propia,
-              buscando claridad en el sabor. Trabajamos mano a mano con productores locales, afinando cada proceso para
-              revelar matices únicos en cada taza y cuidar la trazabilidad desde la finca hasta tu ritual diario.</p>
-          </article>
-          <aside class="col-md-5 story-media">
-            <div class="vertical-photo">
-              <img
-                src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60"
-                alt="Textura de granos de café" />
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <img src="./img/historiaFoto2.png" alt="Historia" class="story-image-new">
+          </div>
+
+          <div class="col-lg-6 ps-lg-5">
+            <div class="story-content-new">
+              <h3>Una historia de calma</h3>
+
+              <p class="story-text-new">
+                Nacimos del deseo de honrar el tiempo. Cada lote se tuesta siguiendo una cadencia propia,
+                buscando claridad en el sabor. Trabajamos mano a mano con productores locales, afinando cada proceso
+                para
+                revelar matices únicos en cada taza y cuidar la trazabilidad desde la finca hasta tu ritual diario.
+              </p>
             </div>
-          </aside>
+          </div>
         </div>
       </div>
     </section>

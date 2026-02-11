@@ -87,36 +87,6 @@ h2 {font-family: var(--font-serif); font-size: 1.8rem; margin: 0 0 1rem}
   display: inline-block;
 }
 .btn-cta-hero:hover {transform: translateY(-3px) scale(1.05); box-shadow: 0 12px 32px rgba(179, 106, 74, 0.6);}
-.lede {font-size: 1.15rem; color: var(--coffee-600); margin: 0 0 1.25rem}
-.section h3 {font-family: var(--font-serif); font-size: 1.4rem; margin-bottom: 1rem}
-.story { padding: 3rem 0; position: relative; overflow: visible;} /* --- Historia Section (Index) --- */
-.story .container { position: relative; z-index: 2 }
-.story .row { align-items: center }
-.story article { display: flex; flex-direction: column; justify-content: center }
-.story h2 { font-family: var(--font-serif); font-size: 2rem; margin-bottom: .6rem; color: var(--coffee-900)}
-.story .long { color: var(--coffee-600); font-size: 1.06rem; max-width: 55ch; line-height: 1.75;}
-.story-media { display: flex; align-items: center; justify-content: center }
-.vertical-photo {
-    height: 240px;
-    width: 100%;
-    max-width: 400px;
-    background: linear-gradient(180deg, #e9e2db, #dfd6cc);
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #7a6a5f;
-    box-shadow: 0 10px 30px rgba(43,30,22,0.08), 0 2px 6px rgba(43,30,22,0.04);
-    position: relative;
-    overflow: hidden;
-    transform: translateY(0);
-    transition: transform .28s ease, box-shadow .28s ease;
-    border: 1px solid rgba(43,30,22,0.04);
-}
-.vertical-photo img { width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 10px; }
-.vertical-photo:hover { transform: translateY(-6px) rotate(-1deg); box-shadow: 0 16px 40px rgba(43,30,22,0.12);}
-.vertical-photo::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0)); pointer-events: none;}
-.vertical-photo .caption { position: relative; z-index: 2; font-weight: 600; letter-spacing: .02em; color: rgba(43,30,22,0.7);}
 
 .icon-card { background: transparent; padding: 1rem; border-radius: 6px; text-align: left}
 .icon { width: 36px; height: 36px; color: var(--coffee-900); margin-bottom: .5rem}
@@ -144,21 +114,6 @@ h2 {font-family: var(--font-serif); font-size: 1.8rem; margin: 0 0 1rem}
 }
 .icons .icon-card h4 { margin: 0; font-size: 1.05rem; color: var(--coffee-900); }
 .row.icons { gap: 1.25rem; }
-
-.product-grid { margin-top: 1rem }
-.product-card {
-    background: var(--cream);
-    padding: 1rem;
-    border-radius: 8px;
-    border: 1px solid rgba(43, 30, 22, .04)
-}
-.product-photo {
-    height: 220px;
-    background: linear-gradient(180deg, #efe9e2, #e6dfd6);
-    border-radius: 6px;
-    margin-bottom: 1rem;
-    display: flex; align-items: center; justify-content: center; color: #7a6a5f
-}
 
 .contact-banner-hero {
   position: relative;
@@ -212,29 +167,19 @@ h2 {font-family: var(--font-serif); font-size: 1.8rem; margin: 0 0 1rem}
   margin-top: .1rem;
   backdrop-filter: blur(10px);
 }
-.intro-section-historia { padding: 5rem 0 3rem; background: var(--cream);}
-.section-title-historia {
-  font-family: var(--font-serif);
+.intro-section-historia { padding: 3rem 0 1rem; background: var(--cream);}
+.section-title {
   font-size: clamp(2rem, 4vw, 3rem);
-  color: var(--coffee-900);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   line-height: 1.2;
 }
 .lead-text-historia {
   font-size: 1.2rem; color: var(--coffee-600);
   line-height: 1.8; max-width: 800px; margin: 0 auto;
 }
-
 .timeline-historia-new {
   padding: 4rem 0 6rem;
-  background: var(--cream);
   position: relative;
-}
-.timeline-historia-new::before {
-  content: ''; position: absolute; left: 50%; top: 0; bottom: 0;
-  width: 3px;
-  background: linear-gradient(180deg, var(--terracotta) 0%, rgba(179, 106, 74, 0.3) 50%, var(--terracotta) 100%);
-  transform: translateX(-50%); opacity: 0.2;
 }
 .timeline-item-new { position: relative; margin-bottom: 6rem; }
 .timeline-item-new:last-child { margin-bottom: 0; }
