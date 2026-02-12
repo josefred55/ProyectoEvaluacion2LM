@@ -21,12 +21,12 @@
 </head>
 
 <body>
-  <!-- ========== NAVEGACIÓN ========== -->
-  <header class="site-header py-3">
+  <!-- //navegación -->
+  <header class="site-header">
     <nav class="navbar navbar-expand-md">
-      <div class="container d-flex align-items-center justify-content-between px-4 px-md-0">
-        <a class="navbar-brand brand" href="../index.html">
-          <img src="../img/logo_png.png" alt="Slow Coffee" class="logo" height="40">
+      <div class="container d-flex align-items-center justify-content-between">
+        <a class="navbar-brand" href="index.html">
+          <img src="../img/logo_png.png" alt="Slow Coffee" height="50">
         </a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
@@ -42,224 +42,244 @@
             <li class="nav-item"><a class="nav-link" href="comunidad.html">Comunidad</a></li>
             <li class="nav-item"><a class="nav-link" href="valores.html">Valores</a></li>
             <li class="nav-item"><a class="nav-link" href="soporte.html">Soporte</a></li>
-
           </ul>
         </div>
       </div>
     </nav>
   </header>
 
-  <!-- ========== HERO HISTORIA ========== -->
-  <section class="hero-index-new" style="--hero-image: url('../img/historiaFotoHero.png');">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8">
-          <div class="hero-content-new">
-            
-            <h1 class="hero-title-new">El pasado que nos impulsa</h1>
-            <p class="hero-subtitle-new">Cómo convertimos el tiempo en nuestra materia prima y la pausa en nuestro mayor valor</p>
-            
-            <div class="hero-badge-historia">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <circle cx="12" cy="12" r="10"></circle>
-                <polyline points="12 6 12 12 16 14"></polyline>
-              </svg>
-              Desde 2010
+  <!-- hero -->
+  <main>
+    <section class="hero">
+      <img src="../img/historiaFoto3.png" alt="IndexHero" class="hero-bg">
+      <div class="hero-overlay"></div>
+      <div class="container hero-inner">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 col-xl-8">
+            <div class="hero-copy text-center">
+              <h1 class="display-2 fw-bold mb-4">El pasado que nos impulsa</h1>
+              <p class="fs-3 mb-5">Cómo convertimos el tiempo en nuestra materia prima y la pausa en nuestro mayor valor
+              </p>
+              <a href="#historia" class="btn btn-hero fs-5">
+                Conocer más
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  style="margin-left: 0.5rem;">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ========== INTRODUCCIÓN ========== -->
-  <section class="intro-section-historia">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-8 text-center">
-          <div class="section-overline">El Comienzo</div>
-          <h2 class="section-title">No empezamos con prisa</h2>
-          <p class="lead-text-historia">
-            Todo comenzó en un pequeño garaje en 2010. No buscábamos revolucionar la industria,
-            solo queríamos <strong>tomar una taza de café que supiera a café</strong>, y no a azúcar quemado.
-          </p>
-        </div>
+    <!-- ========== INTRODUCCIÓN ========== -->
+<section class="intro-section-historia py-5 mt-5" id="historia">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 text-center">
+        <span class="headline d-block mb-2">El comienzo</span>
+        <h2 class="section-title mb-4 fs-1">No empezamos con prisa</h2>
+        <p class="lead fs-5 lh-lg">
+          Todo comenzó en un pequeño garaje en 2010. No buscábamos revolucionar la industria,
+          solo queríamos <strong>tomar una taza de café que supiera a café</strong>, y no a azúcar quemado.
+        </p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ========== LÍNEA DE TIEMPO MEJORADA ========== -->
-  <section class="timeline-historia-new">
-    <div class="container">
+<!-- ========== LÍNEA DE TIEMPO MEJORADA ========== -->
+<section class="timeline-historia-new mb-5 py-5">
+  <div class="container">
 
-      <!-- Milestone 1: 2010 -->
-      <div class="timeline-item-new">
-        <div class="timeline-marker">
-          <div class="timeline-dot"></div>
-          <div class="timeline-year">2010</div>
-        </div>
-
-        <div class="row align-items-center">
-          <div class="col-lg-6 mb-4 mb-lg-0">
+    <!-- Milestone 1: 2010 -->
+    <div class="timeline-item-new mb-5 position-relative">
+      <div class="timeline-checkpoint"></div>
+      
+      <div class="row align-items-stretch g-4">
+        <div class="col-md-6 mb-4 mb-md-0 text-center text-md-start d-flex">
+          <div class="card border-0 shadow-sm p-5 rounded-4 w-100">
             <div class="timeline-content-new">
+              <span class="badge mb-4 rounded-4" style="font-family: var(--font-serif)">2010</span>
               <h3 class="timeline-title">La Primera Tostadora</h3>
-              <p class="timeline-text">
+              <p class="timeline-text fs-5 lh-lg mb-3">
                 Compramos una vieja tostadora de 5kg restaurada. Pasamos <strong>noches enteras aprendiendo</strong>
                 a escuchar el "crack" del grano y a entender el fuego. Cada tueste era un experimento,
                 cada error una lección.
               </p>
-              <div class="timeline-tag">El inicio artesanal</div>
+              <span class="headline badge rounded-4 mt-3" style="background:#e8e5e1; font-size: 1rem">El Inicio
+                Artesanal</span>
             </div>
           </div>
+        </div>
 
-          <div class="col-lg-6">
-            <div class="timeline-image-wrapper">
-              <img src="../img/historiaFoto1.png" class="timeline-img" alt="Tostadora antigua">
-            </div>
+        <div class="col-md-6 d-flex">
+          <div class="timeline-image-wrapper w-100">
+            <img src="../img/comunidadFoto4.jpg" class="timeline-img img-fluid rounded-4 h-100" alt="Tostadora antigua"
+              style="width: 100%; object-fit: cover;">
           </div>
         </div>
       </div>
+    </div>
 
-      <!-- Milestone 2: 2014 -->
-      <div class="timeline-item-new timeline-item-reverse">
-        <div class="timeline-marker">
-          <div class="timeline-dot"></div>
-          <div class="timeline-year">2014</div>
-        </div>
-
-        <div class="row align-items-center">
-          <div class="col-lg-6 mb-4 mb-lg-0 order-lg-2">
+    <!-- Milestone 2: 2014 -->
+    <div class="timeline-item-new timeline-item-reverse mb-5 position-relative">
+      <div class="timeline-checkpoint"></div>
+      
+      <div class="row align-items-stretch g-4">
+        <div class="col-md-6 mb-4 mb-md-0 order-md-2 text-center text-md-start d-flex">
+          <div class="card border-0 shadow-sm p-5 rounded-4 w-100">
             <div class="timeline-content-new">
+              <span class="badge mb-4 rounded-4" style="font-family: var(--font-serif)">2014</span>
               <h3 class="timeline-title">El Primer Viaje</h3>
-              <p class="timeline-text">
+              <p class="timeline-text fs-5 lh-lg mb-3">
                 Entendimos que tostar no era suficiente. Viajamos a <strong>Colombia por primera vez</strong>
                 para conocer las manos que cultivaban nuestro grano. Allí cambió nuestra filosofía:
                 el café no empieza en la tostadora, empieza en la tierra.
               </p>
-              <div class="timeline-tag">Conexión directa</div>
+              <span class="headline badge rounded-4 mt-3" style="background:#e8e5e1; font-size: 1rem">Conexión
+                Directa</span>
             </div>
           </div>
+        </div>
 
-          <div class="col-lg-6 order-lg-1">
-            <div class="timeline-image-wrapper">
-              <img src="../img/historiaFoto2.png" class="timeline-img" alt="Primer viaje">
-            </div>
+        <div class="col-md-6 order-md-1 d-flex">
+          <div class="timeline-image-wrapper w-100">
+            <img src="../img/historiaFoto2.png" class="timeline-img img-fluid rounded-4 h-100" alt="Primer viaje"
+              style="width: 100%; object-fit: cover;">
           </div>
         </div>
       </div>
+    </div>
 
-      <!-- Milestone 3: Hoy -->
-      <div class="timeline-item-new timeline-item-current">
-        <div class="timeline-marker">
-          <div class="timeline-dot timeline-dot-current"></div>
-          <div class="timeline-year">Hoy</div>
-        </div>
-
-        <div class="row align-items-center">
-          <div class="col-lg-6 mb-4 mb-lg-0">
+    <!-- Milestone 3: Hoy -->
+    <div class="timeline-item-new timeline-item-current mb-5 position-relative">
+      <div class="timeline-checkpoint timeline-checkpoint-current"></div>
+      
+      <div class="row align-items-stretch g-4">
+        <div class="col-md-6 mb-4 mb-md-0 text-center text-md-start d-flex">
+          <div class="card border-0 shadow-sm p-5 rounded-4 w-100">
             <div class="timeline-content-new">
+              <span class="badge mb-4 rounded-4" style="font-family: var(--font-serif)">Hoy</span>
               <h3 class="timeline-title">Slow Coffee</h3>
-              <p class="timeline-text">
+              <p class="timeline-text fs-5 lh-lg mb-4">
                 Hoy somos un equipo <strong>obsesionado con la pausa</strong>. Creemos que cada taza es una
                 oportunidad para detener el reloj y disfrutar del momento. De un garaje a 15+ fincas aliadas,
                 nuestra misión sigue siendo la misma: café artesanal, sin prisa.
               </p>
-              <div class="timeline-stats">
-                <div class="stat-item">
-                  <div class="stat-number">15+</div>
-                  <div class="stat-label">Fincas aliadas</div>
+              <div class="row my-2">
+                <div class="col-6">
+                  <div class="stat-number display-4 fw-bold mb-2"
+                    style="font-family: var(--font-serif); color: var(--terracotta);">15+</div>
+                  <div class="stat-label fw-semibold"
+                    style="font-size: 1rem; letter-spacing: 0.5px; color: var(--terracotta);">FINCAS ALIADAS</div>
                 </div>
-                <div class="stat-item">
-                  <div class="stat-number">5000+</div>
-                  <div class="stat-label">Tazas diarias</div>
+                <div class="col-6">
+                  <div class="stat-number display-4 fw-bold mb-2"
+                    style="font-family: var(--font-serif); color: var(--terracotta);">5000+</div>
+                  <div class="stat-label fw-semibold"
+                    style="font-size: 1rem; letter-spacing: 0.5px; color: var(--terracotta);">TAZAS DIARIAS</div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="col-lg-6">
-            <div class="timeline-image-wrapper">
-              <img
-                src="https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                class="timeline-img" alt="Cafetería actual">
+        <div class="col-md-6 d-flex">
+          <div class="timeline-image-wrapper w-100">
+            <img
+              src="https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+              class="timeline-img img-fluid rounded-4 h-100" alt="Cafetería actual"
+              style="width: 100%; object-fit: cover;">
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+    <!-- ========== CTA FINAL ========== -->
+    <section class="hero">
+      <img class="hero-bg">
+      <div class="hero-overlay"></div>
+      <div class="container hero-inner">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 col-xl-8">
+            <div class="hero-copy text-center">
+              <h1 class="display-3 fw-bold mb-4">Sé parte de nuestra historia</h1>
+              <p class="fs-3 mb-5">Cada taza que compartes con nosotros es un nuevo capítulo en nuestra trayectoria
+                artesanal.</p>
+              <a href="pag/catalogo.html" class="btn btn-hero fs-5">
+                Descubre nuestros cafés
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  style="margin-left: 0.5rem;">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
             </div>
           </div>
         </div>
       </div>
+    </section>
 
-    </div>
-  </section>
-
-  <!-- ========== CTA FINAL ========== -->
-  <section class="cta-historia">
-    <div class="container text-center">
-      <div class="cta-content-historia">
-        <h2>Sé parte de nuestra historia</h2>
-        <p>Cada taza que compartes con nosotros es un nuevo capítulo en nuestra trayectoria artesanal.</p>
-        <a href="catalogo.html" class="btn-cta-historia">
-          Descubre nuestros cafés
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-            style="margin-left: 0.5rem;">
-            <path d="M5 12h14M12 5l7 7-7 7" />
-          </svg>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== FOOTER ========== -->
-  <footer class="site-footer py-3">
-    <div class="container footer-inner">
-      <div class="row text-center align-items-center">
-        <div class="col-md-4 mb-2">
-          <a class="brand footer-brand" href="../index.html">
-            <img src="../img/logo_negativo_png.png" alt="Slow Coffee" class="logo" height="36">
-          </a>
-        </div>
-
-        <div class="col-md-4 mb-2">
-          <h4>Contacto</h4>
-          <ul class="list-unstyled mb-0 contact-list">
-            <li>Email: <a href="mailto:hola@slowcoffee.example">hola@slowcoffee.example</a></li>
-            <li>Tel: <a href="tel:+34911222333">+34 911 222 333</a></li>
-            <li>Horario: Lun–Vie 9:00–18:00</li>
-          </ul>
-        </div>
-
-        <div class="col-md-4 mb-2">
-          <h4>Síguenos</h4>
-          <div class="d-flex justify-content-center gap-2 social-icons" aria-label="Redes sociales">
-            <a href="#" class="social-icon" aria-label="Instagram">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-                <rect x="3" y="3" width="18" height="18" rx="4" />
-                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-              </svg>
-            </a>
-            <a href="#" class="social-icon" aria-label="Twitter">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-                <path
-                  d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 22.43 1s-1.94 1.16-3.54 1.58A4.48 4.48 0 0 0 12 6v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5A4.5 4.5 0 0 0 23 3z" />
-              </svg>
-            </a>
-            <a href="#" class="social-icon" aria-label="Facebook">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-                <path d="M18 2h-3a4 4 0 0 0-4 4v3H8v4h3v8h4v-8h3l1-4h-4V6a1 1 0 0 1 1-1h3z" />
-              </svg>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row text-center align-items-center">
+          <div class="col-md-4 mb-4">
+            <a class="footer-brand d-inline-block mb-3" href="index.html">
+              <img src="../img/logo_negativo_png.png" alt="Slow Coffee" height="40">
             </a>
           </div>
+
+          <div class="col-md-4 mb-4">
+            <h3 class="mb-3" style="color: var(--cream);">Contacto</h3>
+            <ul class="list-unstyled mb-0 contact-list">
+              <li>Email: <a href="mailto:hola@slowcoffee.example">hola@slowcoffee.example</a></li>
+              <li>Tel: <a href="tel:+34911222333">+34 911 222 333</a></li>
+              <li>Horario: Lun–Vie 9:00–18:00</li>
+            </ul>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <h3 class="mb-3" style="color: var(--cream);">Síguenos</h3>
+            <div class="d-flex justify-content-center gap-2" aria-label="Redes sociales">
+              <a href="#" class="social-icon" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"
+                  width="24" height="24">
+                  <rect x="3" y="3" width="18" height="18" rx="4" />
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                </svg>
+              </a>
+              <a href="#" class="social-icon" aria-label="Twitter">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"
+                  width="24" height="24">
+                  <path
+                    d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 22.43 1s-1.94 1.16-3.54 1.58A4.48 4.48 0 0 0 12 6v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5A4.5 4.5 0 0 0 23 3z" />
+                </svg>
+              </a>
+              <a href="#" class="social-icon" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"
+                  width="24" height="24">
+                  <path d="M18 2h-3a4 4 0 0 0-4 4v3H8v4h3v8h4v-8h3l1-4h-4V6a1 1 0 0 1 1-1h3z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center medium mt-3" style="padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1);">
+          <p class="mb-0" style="color: var(--cream); opacity: 0.8;">© <span id="year"></span> Slow Coffee — Todos los
+            derechos reservados.</p>
         </div>
       </div>
+    </footer>
 
-      <div class="footer-bottom text-center small mt-3">
-        <p class="mb-0">© <span id="year"></span> Slow Coffee — Todos los derechos reservados.</p>
-      </div>
-    </div>
-  </footer>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
