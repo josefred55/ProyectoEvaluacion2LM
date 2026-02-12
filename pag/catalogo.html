@@ -19,12 +19,12 @@
 
 <body class="catalogo-page">
 
-  <!-- ========== NAVEGACIÓN ========== -->
-  <header class="site-header py-3">
+  <!-- //navegación -->
+  <header class="site-header">
     <nav class="navbar navbar-expand-md">
-      <div class="container d-flex align-items-center justify-content-between px-4 px-md-0">
-        <a class="navbar-brand brand" href="../index.html">
-          <img src="../img/logo_png.png" alt="Slow Coffee" class="logo" height="40">
+      <div class="container d-flex align-items-center justify-content-between">
+        <a class="navbar-brand" href="index.html">
+          <img src="../img/logo_png.png" alt="Slow Coffee" height="50">
         </a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
@@ -40,196 +40,215 @@
             <li class="nav-item"><a class="nav-link" href="comunidad.html">Comunidad</a></li>
             <li class="nav-item"><a class="nav-link" href="valores.html">Valores</a></li>
             <li class="nav-item"><a class="nav-link" href="soporte.html">Soporte</a></li>
-
           </ul>
         </div>
       </div>
     </nav>
   </header>
 
-  <!-- ========== HERO ========== -->
-  <section class="hero-index-new" style="--hero-image: url('../img/catalagoHero.jpg');">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8">
-          <div class="hero-content-new">
-
-            <h1 class="hero-title-new">Nuestra Colección</h1>
-            <p class="hero-subtitle-new">30 variedades seleccionadas con cuidado, cada una con su historia y su sabor
-              único.</p>
-
-            <div class="hero-badge-catalogo">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-              </svg>
-              100% Comercio Justo
+  <!-- hero -->
+  <main>
+    <section class="hero">
+      <img src="../img/historiaFoto3.png" alt="IndexHero" class="hero-bg">
+      <div class="hero-overlay"></div>
+      <div class="container hero-inner">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 col-xl-8">
+            <div class="hero-copy text-center">
+              <h1 class="display-2 fw-bold mb-4">Nuestra Colección</h1>
+              <p class="fs-3 mb-5">30 variedades seleccionadas con cuidado, cada una con su historia y su sabor único.</p>
+              <span class="hero-badge mb-4 rounded-5 fw-bold">100% Comercio justo</span>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ========== TRUST BAR ========== -->
-  <div class="trust-bar">
+    <div class="trust-bar bg-light py-4">
+      <div class="container">
+        <div class="d-flex justify-content-center align-items-center flex-wrap gap-4 gap-md-5">
+          
+          <div class="d-flex align-items-center gap-3">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" style="color:var(--terracotta)" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+            <span class="fw-semibold" style="font-size: 1.1rem; color: var(--coffee-900);">Comercio Justo<em class="fw-light d-block">Certificado</em></span>
+          </div>
+          
+          <div class="vr opacity-25 d-none d-md-block"></div>
+          
+          <div class="d-flex align-items-center gap-3">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" style="color:var(--terracotta)" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <span class="fw-semibold" style="font-size: 1.1rem; color: var(--coffee-900);">Origen<em class="fw-light d-block">Trazable</em></span>
+          </div>
+          
+          <div class="vr opacity-25 d-none d-md-block"></div>
+          
+          <div class="d-flex align-items-center gap-3">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" style="color:var(--terracotta)" stroke="currentColor" stroke-width="2">
+              <rect x="1" y="3" width="15" height="13" rx="2" ry="2"></rect>
+              <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+              <circle cx="5.5" cy="18.5" r="2.5"></circle>
+              <circle cx="18.5" cy="18.5" r="2.5"></circle>
+            </svg>
+            <span class="fw-semibold" style="font-size: 1.1rem; color: var(--coffee-900);">Envío<em class="fw-light d-block">En 48h</em></span>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== GRID + FILTROS ========== -->
+    <div class="container catalogo-grid my-5">
+      <div class="row">
+        <aside class="col-lg-3 my-4">
+          <div class="bg-white rounded-3 p-4 shadow-sm sticky-top" style="top: 100px;">
+            
+            <!-- Buscar -->
+            <div class="mb-4">
+              <h5 class="d-flex align-items-center gap-2 mb-3 fw-semibold">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                Buscar
+              </h5>
+              <input type="text" class="form-control" placeholder="Buscar café…" id="search-input">
+            </div>
+
+            <hr class="my-4">
+
+            <!-- Origen -->
+            <div class="mb-4">
+              <h5 class="d-flex align-items-center gap-2 mb-3 fw-semibold">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                Origen
+              </h5>
+              
+              <div class="form-check mb-2">
+                <input class="form-check-input filter-cb" type="checkbox" value="Etiopía" id="check-etiopia">
+                <label class="form-check-label" for="check-etiopia">
+                  🇪🇹 Etiopía
+                </label>
+              </div>
+              
+              <div class="form-check mb-2">
+                <input class="form-check-input filter-cb" type="checkbox" value="Colombia" id="check-colombia">
+                <label class="form-check-label" for="check-colombia">
+                  🇨🇴 Colombia
+                </label>
+              </div>
+              
+              <div class="form-check mb-2">
+                <input class="form-check-input filter-cb" type="checkbox" value="Brasil" id="check-brasil">
+                <label class="form-check-label" for="check-brasil">
+                  🇧🇷 Brasil
+                </label>
+              </div>
+              
+              <div class="form-check mb-2">
+                <input class="form-check-input filter-cb" type="checkbox" value="Kenya" id="check-kenya">
+                <label class="form-check-label" for="check-kenya">
+                  🇰🇪 Kenya
+                </label>
+              </div>
+            </div>
+
+            <hr class="my-4">
+
+            <!-- Calidad -->
+            <div class="mb-4">
+              <h5 class="d-flex align-items-center gap-2 mb-3 fw-semibold">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                </svg>
+                Calidad
+              </h5>
+              
+              <div class="form-check mb-2">
+                <input class="form-check-input filter-cb-badge" type="checkbox" value="Premium" id="check-premium">
+                <label class="form-check-label" for="check-premium">
+                  <span class="rounded-5" style="padding: 0.35rem 0.75rem; background: linear-gradient(135deg, #D4A574 0%, #c08a5e 100%); display: inline-flex; align-items: center; gap: 0.4rem;">
+                    <svg class="text-light" width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                    </svg>
+                    <span class="text-light fw-semibold" style="font-size: 0.85rem;">Premium</span>
+                  </span>
+                </label>
+              </div>
+              
+              <div class="form-check mb-2">
+                <input class="form-check-input filter-cb-badge" type="checkbox" value="Comercio Justo" id="check-justo">
+                <label class="form-check-label" for="check-justo">
+                  <span class="rounded-5" style="padding: 0.35rem 0.75rem; background: linear-gradient(135deg, #6F7D63 0%, #556b4a 100%); display: inline-flex; align-items: center; gap: 0.4rem;">
+                    <svg class="text-light" width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                    </svg>
+                    <span class="text-light fw-semibold" style="font-size: 0.85rem;">Comercio Justo</span>
+                  </span>
+                </label>
+              </div>
+              
+              <div class="form-check mb-2">
+                <input class="form-check-input filter-cb-badge" type="checkbox" value="Orgánico" id="check-organico">
+                <label class="form-check-label" for="check-organico">
+                  <span class="rounded-5" style="padding: 0.35rem 0.75rem; background: linear-gradient(135deg, rgba(179, 106, 74, 0.93) 0%, rgba(158, 86, 56, 0.96) 100%); display: inline-flex; align-items: center; gap: 0.4rem;">
+                    <svg class="text-light" width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                    </svg>
+                    <span class="text-light fw-semibold" style="font-size: 0.85rem;">Orgánico</span>
+                  </span>
+                </label>
+              </div>
+            </div>
+
+            <button class="btn-hero w-100 text-white fw-semibold" style="background-color: var(--terracotta);" id="apply-filters">Aplicar filtros</button>
+            
+          </div>
+        </aside>
+
+        <div class="col-lg-9">
+          <div class="d-flex justify-content-between align-items-center mb-4 p-3 bg-light rounded-3">
+            <span class="text-muted fw-medium" id="results-count">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="me-1">
+                <rect x="3" y="3" width="7" height="7"></rect>
+                <rect x="14" y="3" width="7" height="7"></rect>
+                <rect x="14" y="14" width="7" height="7"></rect>
+                <rect x="3" y="14" width="7" height="7"></rect>
+              </svg>
+              Mostrando <strong>7</strong> de <strong>7</strong> productos
+            </span>
+            
+            <select class="form-select form-select-sm" style="width: auto; min-width: 200px;" id="sort-select">
+              <option value="relevance">Ordenar por: Relevancia</option>
+              <option value="price-asc">Precio: Menor a Mayor</option>
+              <option value="price-desc">Precio: Mayor a Menor</option>
+            </select>
+          </div>
+
+          <div id="product-grid" class="row g-4"></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
     <div class="container">
-      <div class="trust-bar__inner">
-
-        <div class="trust-bar__item">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-          </svg>
-          <span>Comercio Justo<br><em>Certificado</em></span>
-        </div>
-
-        <div class="trust-bar__sep"></div>
-
-        <div class="trust-bar__item">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-            <circle cx="12" cy="10" r="3"></circle>
-          </svg>
-          <span>Origen<br><em>Trazable</em></span>
-        </div>
-
-        <div class="trust-bar__sep"></div>
-
-        <div class="trust-bar__item">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <circle cx="12" cy="12" r="10"></circle>
-            <polyline points="12 6 12 12 16 14"></polyline>
-          </svg>
-          <span>Tueste<br><em>Artesanal</em></span>
-        </div>
-
-        <div class="trust-bar__sep"></div>
-
-        <div class="trust-bar__item">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <rect x="1" y="3" width="15" height="13" rx="2" ry="2"></rect>
-            <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
-            <circle cx="5.5" cy="18.5" r="2.5"></circle>
-            <circle cx="18.5" cy="18.5" r="2.5"></circle>
-          </svg>
-          <span>Envío<br><em>en 48h</em></span>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-  <!-- ========== GRID + FILTROS ========== -->
-  <div class="container catalogo-grid">
-    <div class="row">
-      <aside class="col-lg-3 mb-4">
-        <div class="sidebar sticky-top">
-
-          <div class="sidebar__group">
-            <h5 class="sidebar__title">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <circle cx="11" cy="11" r="8"></circle>
-                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-              </svg>
-              Buscar
-            </h5>
-            <input type="text" class="sidebar__input" placeholder="Buscar café…" id="search-input">
-          </div>
-
-          <div class="sidebar__group">
-            <h5 class="sidebar__title">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                <circle cx="12" cy="10" r="3"></circle>
-              </svg>
-              Origen
-            </h5>
-
-            <label class="sidebar__check">
-              <input type="checkbox" value="Etiopía" class="filter-cb">
-              <span class="sidebar__check-label">
-                <span class="sidebar__check-flag">🇪🇹</span> Etiopía
-              </span>
-            </label>
-            <label class="sidebar__check">
-              <input type="checkbox" value="Colombia" class="filter-cb">
-              <span class="sidebar__check-label">
-                <span class="sidebar__check-flag">🇨🇴</span> Colombia
-              </span>
-            </label>
-            <label class="sidebar__check">
-              <input type="checkbox" value="Brasil" class="filter-cb">
-              <span class="sidebar__check-label">
-                <span class="sidebar__check-flag">🇧🇷</span> Brasil
-              </span>
-            </label>
-            <label class="sidebar__check">
-              <input type="checkbox" value="Kenya" class="filter-cb">
-              <span class="sidebar__check-label">
-                <span class="sidebar__check-flag">🇰🇪</span> Kenya
-              </span>
-            </label>
-          </div>
-
-          <div class="sidebar__group">
-            <h5 class="sidebar__title">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
-                </path>
-              </svg>
-              Calidad
-            </h5>
-
-            <label class="sidebar__check">
-              <input type="checkbox" value="Premium" class="filter-cb-badge">
-              <span class="sidebar__check-label">
-                <span class="sidebar__mini-badge sidebar__mini-badge--premium">★ Premium</span>
-              </span>
-            </label>
-            <label class="sidebar__check">
-              <input type="checkbox" value="Comercio Justo" class="filter-cb-badge">
-              <span class="sidebar__check-label">
-                <span class="sidebar__mini-badge sidebar__mini-badge--justo">☰ Comercio Justo</span>
-              </span>
-            </label>
-            <label class="sidebar__check">
-              <input type="checkbox" value="Orgánico" class="filter-cb-badge">
-              <span class="sidebar__check-label">
-                <span class="sidebar__mini-badge sidebar__mini-badge--organico">✿ Orgánico</span>
-              </span>
-            </label>
-          </div>
-
-          <button class="sidebar__btn-apply" id="apply-filters">Aplicar filtros</button>
-        </div>
-      </aside>
-
-      <div class="col-lg-9">
-        <div class="catalogo-controls">
-          <span class="catalogo-controls__count" id="results-count">Mostrando 30 de 30 productos</span>
-          <select class="catalogo-controls__sort" id="sort-select">
-            <option value="relevance">Ordenar por: Relevancia</option>
-            <option value="price-asc">Precio: Menor a Mayor</option>
-            <option value="price-desc">Precio: Mayor a Menor</option>
-          </select>
-        </div>
-
-        <div id="product-grid" class="row g-4"></div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ========== FOOTER ========== -->
-  <footer class="site-footer py-3">
-    <div class="container footer-inner">
       <div class="row text-center align-items-center">
-        <div class="col-md-4 mb-2">
-          <a class="brand footer-brand" href="../index.html">
-            <img src="../img/logo_negativo_png.png" alt="Slow Coffee" class="logo" height="36">
+        <div class="col-md-4 mb-4">
+          <a class="footer-brand d-inline-block mb-3" href="index.html">
+            <img src="../img/logo_negativo_png.png" alt="Slow Coffee" height="40">
           </a>
         </div>
 
-        <div class="col-md-4 mb-2">
-          <h4>Contacto</h4>
+        <div class="col-md-4 mb-4">
+          <h3 class="mb-3" style="color: var(--cream);">Contacto</h3>
           <ul class="list-unstyled mb-0 contact-list">
             <li>Email: <a href="mailto:hola@slowcoffee.example">hola@slowcoffee.example</a></li>
             <li>Tel: <a href="tel:+34911222333">+34 911 222 333</a></li>
@@ -237,23 +256,26 @@
           </ul>
         </div>
 
-        <div class="col-md-4 mb-2">
-          <h4>Síguenos</h4>
-          <div class="d-flex justify-content-center gap-2 social-icons" aria-label="Redes sociales">
+        <div class="col-md-4 mb-4">
+          <h3 class="mb-3" style="color: var(--cream);">Síguenos</h3>
+          <div class="d-flex justify-content-center gap-2" aria-label="Redes sociales">
             <a href="#" class="social-icon" aria-label="Instagram">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"
+                width="24" height="24">
                 <rect x="3" y="3" width="18" height="18" rx="4" />
                 <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
               </svg>
             </a>
             <a href="#" class="social-icon" aria-label="Twitter">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"
+                width="24" height="24">
                 <path
                   d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 22.43 1s-1.94 1.16-3.54 1.58A4.48 4.48 0 0 0 12 6v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5A4.5 4.5 0 0 0 23 3z" />
               </svg>
             </a>
             <a href="#" class="social-icon" aria-label="Facebook">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"
+                width="24" height="24">
                 <path d="M18 2h-3a4 4 0 0 0-4 4v3H8v4h3v8h4v-8h3l1-4h-4V6a1 1 0 0 1 1-1h3z" />
               </svg>
             </a>
@@ -261,8 +283,9 @@
         </div>
       </div>
 
-      <div class="footer-bottom text-center small mt-3">
-        <p class="mb-0">© <span id="year"></span> Slow Coffee — Todos los derechos reservados.</p>
+      <div class="text-center medium mt-3" style="padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1);">
+        <p class="mb-0" style="color: var(--cream); opacity: 0.8;">© <span id="year"></span> Slow Coffee — Todos los
+          derechos reservados.</p>
       </div>
     </div>
   </footer>
@@ -299,55 +322,66 @@
     function badgeHTML(type) {
       if (type === "Premium") {
         return `
-        <span class="cat-badge cat-badge--premium">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
+        <span class="rounded-5" 
+        style="padding: 0.5rem 1rem; background: linear-gradient(135deg, #D4A574 0%, #c08a5e 100%);" >
+          <svg class="text-light" width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
             <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
           </svg>
-          <span>Premium</span>
+          <span class="text-light fw-semibold">Premium</span>
         </span>`;
       }
       if (type === "Comercio Justo") {
         return `
-        <span class="cat-badge cat-badge--justo">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+        <span class="rounded-5" 
+        style="padding: 0.5rem 1rem; background: linear-gradient(135deg, #6F7D63 0%, #556b4a 100%)" >
+          <svg class="text-light" width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
           </svg>
-          <span>Comercio Justo</span>
+          <span class="text-light fw-semibold">Comercio Justo</span>
         </span>`;
       }
       return `
-      <span class="cat-badge cat-badge--organico">
-        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M17 8C8 10 5.9 16.17 3.82 21.34l1.89.66.95-2.3c.48.17.98.3 1.34.3C19 20 22 3 22 3c-1 2-8 2.25-13 3.25S2 11.5 2 13.5s1.75 3.75 1.75 3.75C7 8 17 8 17 8z"/>
-        </svg>
-        <span>Orgánico</span>
-      </span>`;
+        <span class="rounded-5" 
+        style="padding: 0.5rem 1rem; background: linear-gradient(135deg, rgba(179, 106, 74, 0.93) 0%, rgba(158, 86, 56, 0.96) 100%)" >
+          <svg class="text-light" width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+          </svg>
+          <span class="text-light fw-semibold">Orgánico</span>
+        </span>`;
     }
 
     const grid = document.getElementById("product-grid");
     const countEl = document.getElementById("results-count");
 
     function renderProducts(list) {
-      grid.innerHTML = list.map(p => `
-      <div class="col-md-4">
-        <div class="cat-card">
-          <div class="cat-card__img-wrap">
-            <img src="${p.img}" alt="${p.name}" class="cat-card__img">
-            ${badgeHTML(p.badge)}
-          </div>
-          <div class="cat-card__body">
-            <span class="cat-card__origin">${p.origin} · ${p.process}</span>
-            <h5 class="cat-card__title">${p.name}</h5>
-            <p class="cat-card__note">${p.note}</p>
-            <div class="cat-card__footer">
-              <span class="cat-card__price">${p.price} €</span>
-              <button class="cat-card__btn">Añadir al carrito</button>
+      grid.innerHTML = list.map(p => `   
+        <div class="col-md-6 col-lg-4">
+          <div class="product-card rounded-4">
+            <div class="product-photo rounded-top-4">
+              <img src="${p.img}" alt="${p.name}">
+            </div>
+            <div class="card-body"> 
+              <span class="d-block mb-3">${badgeHTML(p.badge)}</span>
+              <span class="headline d-block mb-2">${p.origin} · ${p.process}</span>
+              <h5 class="card-title">${p.name}</h5>
+              <p>${p.note}</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="price">${p.price} €</span>
+                <a href="#" class="btn btn-outline-secondary" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Añadir al carrito</a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    `).join("");
-      countEl.textContent = `Mostrando ${list.length} de ${products.length} productos`;
+      `).join("");
+      countEl.innerHTML = `
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="me-1">
+          <rect x="3" y="3" width="7" height="7"></rect>
+          <rect x="14" y="3" width="7" height="7"></rect>
+          <rect x="14" y="14" width="7" height="7"></rect>
+          <rect x="3" y="14" width="7" height="7"></rect>
+        </svg>
+        Mostrando <strong>${list.length}</strong> de <strong>${products.length}</strong> productos
+      `;
     }
 
     document.getElementById("apply-filters").addEventListener("click", () => {

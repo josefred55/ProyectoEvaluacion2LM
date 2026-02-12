@@ -58,6 +58,13 @@ a { text-decoration: none; transition: 0.3s; }
 .product-card .card-title { font-family: var(--font-serif); font-weight: 600; margin-bottom: 0.5rem; }
 .product-card .price {color: var(--terracotta); font-weight: 700; font-size: 1.2rem; font-family: var(--font-serif); }
 
+.product-card { background: white; border-radius: 8px; border: 1px solid rgba(0,0,0,0.05); height: 100%; }
+.product-card .card-body { padding: 1.25rem; }
+.product-photo { height: 230px; background: #eee; margin-bottom: .5rem; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+.product-photo img { width: 100%; height: 100%; object-fit: cover; }
+.product-card .card-title { font-family: var(--font-serif); font-weight: 600; margin-bottom: 0.5rem; }
+.product-card .price {color: var(--terracotta); font-weight: 700; font-size: 1.2rem; font-family: var(--font-serif); }
+
 /* 6. ICONOS (Origen & Proceso) - Corregido tamaño */
 .icon-card { text-align: center;   padding: 2.5rem 2rem; background: white; border-radius: 12px; transition: transform 0.3s ease, box-shadow 0.3s ease; height: 100%;}
 .icon-card:hover { transform: translateY(-8px); box-shadow: 0 12px 24px rgba(0,0,0,0.1); }
@@ -107,6 +114,11 @@ a { text-decoration: none; transition: 0.3s; }
 @media (max-width: 767px) {
   .timeline-historia-new::before { left: 20px; }
   .timeline-checkpoint { left: 20px; } }
+
+/* PAGINA CATALOGO */
+.hero-badge{ font-size: 1.1rem; padding: 1rem 1.5rem; color: var(--terracotta); background: #e4d5b4; }
+
+
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
