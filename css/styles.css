@@ -29,12 +29,29 @@ a { text-decoration: none; transition: 0.3s; }
 .py-section { padding: 4rem 0; }
 
 /* 3. HEADER & NAV */
-.site-header { background: var(--cream); padding: 1rem 0; }
+.site-header { background: var(--cream); padding: 1rem 0; z-index: 1050; }
 .navbar-brand img { height: 60px; width: auto; object-fit: contain; }
 .nav-link { 
   color: var(--coffee-900) !important; font-weight: 400; font-size: 1.2rem;
-  padding: 0.5rem 1rem !important;
+  padding: 0.5rem 1rem !important; transition: color 0.3s ease; }
+.nav-link:hover { color: var(--terracotta) !important; }
+
+/* Menú móvil pantalla completa */
+@media (max-width: 767px) {
+  .navbar-collapse { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: var(--cream); 
+    z-index: 1040; padding: 2rem; overflow-y: auto; }
+  .navbar-collapse.show,
+  .navbar-collapse.collapsing { display: flex !important; flex-direction: column; justify-content: center; height: 100vh !important;
+    transform: translateX(0); } 
+  .navbar-nav { width: 100%; text-align: center; gap: 1rem !important;}
+  .nav-item { width: 100%; } 
+  .nav-link { font-size: 1.5rem !important; padding: 1rem !important; display: block; border-bottom: 1px solid rgba(0, 0, 0, 0.05);}
+  .nav-link:last-child { border-bottom: none; }
+  .navbar-toggler { position: relative; z-index: 1050; }
+  .navbar-brand { position: relative; z-index: 1050 }
 }
+.navbar-collapse.collapsing { transition: none; }
+.navbar-toggler:focus { box-shadow: none; }
 
 /* 4. HERO SYSTEM */
 .hero {
@@ -88,7 +105,6 @@ a { text-decoration: none; transition: 0.3s; }
 .headline { color: var(--terracotta); font-size: 1rem; text-transform: uppercase; letter-spacing: 1.1px; font-weight: 700;}
 .badge{ font-size: 2rem; padding: 0.75rem 1.5rem; color: var(--terracotta);
         box-shadow: 0 4px 24px var(--cream); }
-
 .timeline-historia-new {
   position: relative;
 }
@@ -107,22 +123,12 @@ a { text-decoration: none; transition: 0.3s; }
 .hero-badge, .btn-hero{ font-size: 1.1rem; padding: 1rem 1.5rem; color: var(--terracotta); 
   background: white; transition: all 0.3s ease; border-radius: 40px; font-weight: 600;}
 .hero-badge:hover, .btn-hero:hover {
-  background-color: var(--terracotta) !important;
-  color: white !important;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(212, 165, 116, 0.3);
+  background-color: var(--terracotta) !important; color: white !important;
+  transform: translateY(-2px); box-shadow: 0 4px 12px rgba(212, 165, 116, 0.3);
 }
-
-.hero-badge:hover svg {
-  stroke: white;
-}
+.hero-badge:hover svg { stroke: white; }
 
 /* PAGINA COMUNIDAD */
-
 .card:hover {
   box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15) !important;
   transform: translateY(-5px); }
-
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  .hero-copy { text-align: center; margin: 0 auto; } }
