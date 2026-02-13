@@ -6,23 +6,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Comunidad — Slow Coffee</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com ">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com " crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300 ;400;600;700&family=Libre+Baskerville:wght@400;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Libre+Baskerville:wght@400;700&display=swap"
     rel="stylesheet">
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css " rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>
   <!-- Navegación -->
-  <header class="site-header py-3">
+  <header class="site-header">
     <nav class="navbar navbar-expand-md">
-      <div class="container d-flex align-items-center justify-content-between px-4 px-md-0">
-        <a class="navbar-brand brand" href="../index.html">
-          <img src="../img/logo_png.png" alt="Slow Coffee" class="logo" height="40">
+      <div class="container d-flex align-items-center justify-content-between">
+        <a class="navbar-brand" href="index.html">
+          <img src="../img/logo_png.png" alt="Slow Coffee" height="50">
         </a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
@@ -38,22 +38,31 @@
             <li class="nav-item"><a class="nav-link" href="comunidad.html">Comunidad</a></li>
             <li class="nav-item"><a class="nav-link" href="valores.html">Valores</a></li>
             <li class="nav-item"><a class="nav-link" href="soporte.html">Soporte</a></li>
-
           </ul>
         </div>
       </div>
     </nav>
   </header>
 
+  <!-- hero -->
   <main>
-    <section class="hero-index-new" style="--hero-image: url('../img/comunidadFoto2.jpg');">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8">
-            <div class="hero-content-new">
-              <h1 class="hero-title-new">Nuestra Comunidad</h1>
-              <p class="hero-subtitle-new">Más que clientes, somos una familia unida por la pasión del café artesanal
+    <section class="hero">
+      <img src="../img/comunidadhero.jpg" alt="IndexHero" class="hero-bg">
+      <div class="hero-overlay"></div>
+      <div class="container hero-inner">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 col-xl-8">
+            <div class="hero-copy text-center">
+              <h1 class="display-2 fw-bold mb-4">Nuestra comunidad</h1>
+              <Más class="fs-3 mb-5">Más que clientes, somos una familia unida por la pasión del café artesanal.
               </p>
+              <a href="#historia" class="btn btn-hero fs-5">
+                Conocer más
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  style="margin-left: 0.5rem;">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
             </div>
           </div>
         </div>
@@ -371,53 +380,57 @@
   </main>
 
   <!-- Footer -->
-  <footer class="site-footer py-3">
-    <div class="container footer-inner">
-      <div class="row text-center align-items-center">
-        <div class="col-md-4 mb-2">
-          <a class="brand footer-brand" href="../index.html">
-            <img src="../img/logo_negativo_png.png" alt="Slow Coffee" class="logo" height="36">
-          </a>
-        </div>
-
-        <div class="col-md-4 mb-2">
-          <h4>Contacto</h4>
-          <ul class="list-unstyled mb-0 contact-list">
-            <li>Email: <a href="mailto:hola@slowcoffee.example">hola@slowcoffee.example</a></li>
-            <li>Tel: <a href="tel:+34911222333">+34 911 222 333</a></li>
-            <li>Horario: Lun–Vie 9:00–18:00</li>
-          </ul>
-        </div>
-
-        <div class="col-md-4 mb-2">
-          <h4>Síguenos</h4>
-          <div class="d-flex justify-content-center gap-2 social-icons" aria-label="Redes sociales">
-            <a href="#" class="social-icon" aria-label="Instagram">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-                <rect x="3" y="3" width="18" height="18" rx="4" />
-                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-              </svg>
-            </a>
-            <a href="#" class="social-icon" aria-label="Twitter">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-                <path
-                  d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 22.43 1s-1.94 1.16-3.54 1.58A4.48 4.48 0 0 0 12 6v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5A4.5 4.5 0 0 0 23 3z" />
-              </svg>
-            </a>
-            <a href="#" class="social-icon" aria-label="Facebook">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-                <path d="M18 2h-3a4 4 0 0 0-4 4v3H8v4h3v8h4v-8h3l1-4h-4V6a1 1 0 0 1 1-1h3z" />
-              </svg>
+<footer class="site-footer">
+      <div class="container">
+        <div class="row text-center align-items-center">
+          <div class="col-md-4 mb-4">
+            <a class="footer-brand d-inline-block mb-3" href="index.html">
+              <img src="../img/logo_negativo_png.png" alt="Slow Coffee" height="40">
             </a>
           </div>
+
+          <div class="col-md-4 mb-4">
+            <h3 class="mb-3" style="color: var(--cream);">Contacto</h3>
+            <ul class="list-unstyled mb-0 contact-list">
+              <li>Email: <a href="mailto:hola@slowcoffee.example">hola@slowcoffee.example</a></li>
+              <li>Tel: <a href="tel:+34911222333">+34 911 222 333</a></li>
+              <li>Horario: Lun–Vie 9:00–18:00</li>
+            </ul>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <h3 class="mb-3" style="color: var(--cream);">Síguenos</h3>
+            <div class="d-flex justify-content-center gap-2" aria-label="Redes sociales">
+              <a href="#" class="social-icon" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"
+                  width="24" height="24">
+                  <rect x="3" y="3" width="18" height="18" rx="4" />
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                </svg>
+              </a>
+              <a href="#" class="social-icon" aria-label="Twitter">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"
+                  width="24" height="24">
+                  <path
+                    d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 22.43 1s-1.94 1.16-3.54 1.58A4.48 4.48 0 0 0 12 6v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5A4.5 4.5 0 0 0 23 3z" />
+                </svg>
+              </a>
+              <a href="#" class="social-icon" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"
+                  width="24" height="24">
+                  <path d="M18 2h-3a4 4 0 0 0-4 4v3H8v4h3v8h4v-8h3l1-4h-4V6a1 1 0 0 1 1-1h3z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center medium mt-3" style="padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1);">
+          <p class="mb-0" style="color: var(--cream); opacity: 0.8;">© <span id="year"></span> Slow Coffee — Todos los
+            derechos reservados.</p>
         </div>
       </div>
-
-      <div class="footer-bottom text-center small mt-3">
-        <p class="mb-0">© <span id="year"></span> Slow Coffee — Todos los derechos reservados.</p>
-      </div>
-    </div>
-  </footer>
+    </footer>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
