@@ -6,23 +6,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Comunidad — Slow Coffee</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com ">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com " crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300 ;400;600;700&family=Libre+Baskerville:wght@400;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Libre+Baskerville:wght@400;700&display=swap"
     rel="stylesheet">
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css " rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>
   <!-- Navegación -->
-  <header class="site-header py-3">
+  <header class="site-header">
     <nav class="navbar navbar-expand-md">
-      <div class="container d-flex align-items-center justify-content-between px-4 px-md-0">
-        <a class="navbar-brand brand" href="../index.html">
-          <img src="../img/logo_png.png" alt="Slow Coffee" class="logo" height="40">
+      <div class="container d-flex align-items-center justify-content-between">
+        <a class="navbar-brand" href="index.html">
+          <img src="../img/logo_png.png" alt="Slow Coffee" height="50">
         </a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
@@ -38,22 +38,31 @@
             <li class="nav-item"><a class="nav-link" href="comunidad.html">Comunidad</a></li>
             <li class="nav-item"><a class="nav-link" href="valores.html">Valores</a></li>
             <li class="nav-item"><a class="nav-link" href="soporte.html">Soporte</a></li>
-
           </ul>
         </div>
       </div>
     </nav>
   </header>
 
+  <!-- hero -->
   <main>
-    <section class="hero-index-new" style="--hero-image: url('../img/comunidadFoto2.jpg');">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8">
-            <div class="hero-content-new">
-              <h1 class="hero-title-new">Nuestra Comunidad</h1>
-              <p class="hero-subtitle-new">Más que clientes, somos una familia unida por la pasión del café artesanal
-              </p>
+    <section class="hero">
+      <img src="../img/heroComunidad.jpg" alt="IndexHero" class="hero-bg">
+      <div class="hero-overlay"></div>
+      <div class="container hero-inner">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 col-xl-8">
+            <div class="hero-copy text-center">
+              <h1 class="display-2 fw-bold mb-4">Nuestra comunidad</h1>
+              <p class="fs-4 mb-4">Más que clientes, somos una familia unida por la pasión del café artesanal.
+                </p>
+                <a href="#historia" class="btn btn-hero fs-5">
+                  Conocer más
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    style="margin-left: 0.5rem;">
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </a>
             </div>
           </div>
         </div>
@@ -61,15 +70,16 @@
     </section>
 
     <!-- Reseñas de la comunidad CON ESTRELLAS VARIADAS 3-5 -->
-    <section class="comunidad-resenas py-5">
+    <section class="comunidad-resenas py-3 my-5">
       <div class="container">
-        <h2 class="section-title text-center mb-5">Lo que dice nuestra comunidad</h2>
+        <h2 class="display-5 fw-bold text-center mb-5">Lo que dice nuestra comunidad</h2>
 
         <div class="row g-4">
           <!-- Reseña 1: 5 estrellas -->
           <div class="col-md-6 col-lg-4">
-            <div class="review-card h-100">
-              <div class="stars mb-3">
+            <div class="card h-100 border-0 shadow-sm rounded-4 p-4 d-flex flex-column"
+              style="transition: all 0.3s ease;">
+              <div class="stars mb-3" style="color: #D4A574;">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                   <path
                     d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
@@ -91,20 +101,20 @@
                     d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
                 </svg>
               </div>
-              <p class="review-text">"La calidad del café de Slow Coffee es excepcional. Se nota el cuidado artesanal en
-                cada grano. Las entregas siempre llegan a tiempo y el café está perfectamente fresco. Es mi ritual de
-                cada mañana."</p>
-              <div class="review-author mt-auto">
-                <strong>Ana Martínez</strong>
-                <span class="client-type">Particular</span>
+              <p class="mb-1 flex-grow-1">"La calidad del café de Slow Coffee es excepcional. Se nota el cuidado
+                artesanal en cada grano. Las entregas siempre llegan a tiempo y el café está perfectamente fresco. Es mi
+                ritual de cada mañana."</p>
+              <div class="mt-auto">
+                <strong class="d-block mb-1">Ana Martínez</strong>
               </div>
             </div>
           </div>
 
           <!-- Reseña 2: 4 estrellas -->
           <div class="col-md-6 col-lg-4">
-            <div class="review-card h-100">
-              <div class="stars mb-3">
+            <div class="card h-100 border-0 shadow-sm rounded-4 p-4 d-flex flex-column"
+              style="transition: all 0.3s ease;">
+              <div class="stars mb-3" style="color: #D4A574;">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                   <path
                     d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
@@ -121,25 +131,25 @@
                   <path
                     d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
                 </svg>
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="star-empty">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="color: #e0e0e0;">
                   <path
                     d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
                 </svg>
               </div>
-              <p class="review-text">"Llevamos 6 meses trabajando con Slow Coffee en nuestra cafetería. Nuestros
+              <p class="mb-4 flex-grow-1">"Llevamos 6 meses trabajando con Slow Coffee en nuestra cafetería. Nuestros
                 clientes notan la diferencia. La puntualidad en las entregas es impecable y la calidad siempre
                 consistente. Un proveedor de confianza."</p>
-              <div class="review-author mt-auto">
-                <strong>Café Oasis</strong>
-                <span class="client-type">Negocio local</span>
+              <div class="mt-auto">
+                <strong class="d-block mb-1">Café Oasis</strong>
               </div>
             </div>
           </div>
 
           <!-- Reseña 3: 3 estrellas -->
           <div class="col-md-6 col-lg-4">
-            <div class="review-card h-100">
-              <div class="stars mb-3">
+            <div class="card h-100 border-0 shadow-sm rounded-4 p-4 d-flex flex-column"
+              style="transition: all 0.3s ease;">
+              <div class="stars mb-3" style="color: #D4A574;">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                   <path
                     d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
@@ -152,28 +162,28 @@
                   <path
                     d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
                 </svg>
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="star-empty">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="color: #e0e0e0;">
                   <path
                     d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
                 </svg>
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="star-empty">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="color: #e0e0e0;">
                   <path
                     d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
                 </svg>
               </div>
-              <p class="review-text">"Buen café artesanal, aunque me gustaría que hubiera más variedad de orígenes. La
-                entrega es puntual y la calidad es correcta. El precio es adecuado para lo que ofrecen."</p>
-              <div class="review-author mt-auto">
-                <strong>Carlos Ruiz</strong>
-                <span class="client-type">Particular</span>
+              <p class="mb-4 flex-grow-1">"Buen café artesanal, aunque me gustaría que hubiera más variedad de orígenes.
+                La entrega es puntual y la calidad es correcta. El precio es adecuado para lo que ofrecen."</p>
+              <div class="mt-auto">
+                <strong class="d-block mb-1">Carlos Ruiz</strong>
               </div>
             </div>
           </div>
 
           <!-- Reseña 4: 5 estrellas -->
           <div class="col-md-6 col-lg-4">
-            <div class="review-card h-100">
-              <div class="stars mb-3">
+            <div class="card h-100 border-0 shadow-sm rounded-4 p-4 d-flex flex-column"
+              style="transition: all 0.3s ease;">
+              <div class="stars mb-3" style="color: #D4A574;">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                   <path
                     d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
@@ -195,20 +205,20 @@
                     d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
                 </svg>
               </div>
-              <p class="review-text">"Como restaurante, la imagen que proyectas con tu café importa. Slow Coffee nos
-                ayuda a ofrecer una experiencia premium a nuestros comensales. La entrega es siempre puntual y la
+              <p class="mb-4 flex-grow-1">"Como restaurante, la imagen que proyectas con tu café importa. Slow Coffee
+                nos ayuda a ofrecer una experiencia premium a nuestros comensales. La entrega es siempre puntual y la
                 calidad artesanal habla por sí sola."</p>
-              <div class="review-author mt-auto">
-                <strong>Restaurante El Jardín</strong>
-                <span class="client-type">Negocio local</span>
+              <div class="mt-auto">
+                <strong class="d-block mb-1">Restaurante El Jardín</strong>
               </div>
             </div>
           </div>
 
           <!-- Reseña 5: 4 estrellas -->
           <div class="col-md-6 col-lg-4">
-            <div class="review-card h-100">
-              <div class="stars mb-3">
+            <div class="card h-100 border-0 shadow-sm rounded-4 p-4 d-flex flex-column"
+              style="transition: all 0.3s ease;">
+              <div class="stars mb-3" style="color: #D4A574;">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                   <path
                     d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
@@ -225,25 +235,25 @@
                   <path
                     d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
                 </svg>
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="star-empty">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="color: #e0e0e0;">
                   <path
                     d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
                 </svg>
               </div>
-              <p class="review-text">"Me suscribí hace tres meses y la calidad del café es buena. Las entregas son
+              <p class="mb-4 flex-grow-1">"Me suscribí hace tres meses y la calidad del café es buena. Las entregas son
                 puntuales. Aunque el precio es un poco elevado, la frescura del producto lo compensa. Seguiré probando
                 más variedades."</p>
-              <div class="review-author mt-auto">
-                <strong>Laura Sánchez</strong>
-                <span class="client-type">Particular</span>
+              <div class="mt-auto">
+                <strong class="d-block mb-1">Laura Sánchez</strong>
               </div>
             </div>
           </div>
 
           <!-- Reseña 6: 5 estrellas -->
           <div class="col-md-6 col-lg-4">
-            <div class="review-card h-100">
-              <div class="stars mb-3">
+            <div class="card h-100 border-0 shadow-sm rounded-4 p-4 d-flex flex-column"
+              style="transition: all 0.3s ease;">
+              <div class="stars mb-3" style="color: #D4A574;">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                   <path
                     d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
@@ -265,12 +275,11 @@
                     d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
                 </svg>
               </div>
-              <p class="review-text">"Nuestra oficina cambió a Slow Coffee hace 4 meses. El equipo nota la diferencia en
-                la calidad y nosotros en la fiabilidad de las entregas. Café artesanal que motiva las mañanas. Muy
-                contentos con el servicio."</p>
-              <div class="review-author mt-auto">
-                <strong>Estudio Creativo Pixel</strong>
-                <span class="client-type">Negocio local</span>
+              <p class="mb-4 flex-grow-1">"Nuestra oficina cambió a Slow Coffee hace 4 meses. El equipo nota la
+                diferencia en la calidad y nosotros en la fiabilidad de las entregas. Café artesanal que motiva las
+                mañanas. Muy contentos con el servicio."</p>
+              <div class="mt-auto">
+                <strong class="d-block mb-1">Estudio Creativo Pixel</strong>
               </div>
             </div>
           </div>
@@ -279,109 +288,172 @@
     </section>
 
     <!-- Sección de suscripciones CON BADGE MÁS GRANDE Y ALINEACIÓN -->
-    <section class="subscription-cta">
+    <section class="subscription-cta py-2 mb-5">
       <div class="container">
-        <div class="row align-items-stretch">
-          <div class="col-lg-6 mb-4 mb-lg-0 d-flex flex-column justify-content-center">
-            <div class="cta-content">
-              <span class="badge-exclusive mb-4 d-inline-block">Exclusivo para suscriptores</span>
-              <h2 class="cta-title">Únete a nuestra comunidad de suscriptores</h2>
-              <p class="cta-text">Conviértete en parte de algo especial. Nuestros suscriptores no solo reciben café
-                fresco cada mes, también forman parte activa de nuestro proceso artesanal.</p>
+        <!-- Título centrado arriba -->
+        <div class="row mb-5">
+          <div class="col-12 text-center">
+            <h2 class="display-5 fw-bold mb-3">Únete a nuestra comunidad de suscriptores</h2>
+            <span class="badge rounded-pill px-4 py-3"
+              style="background: linear-gradient(135deg, #D4A574 0%, #c08a5e 100%); color: white; font-size: 1rem;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="me-2"
+                style="vertical-align: middle;">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              Exclusivo para suscriptores
+            </span>
+          </div>
+        </div>
 
-              <ul class="benefits-list">
-                <li>
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <!-- Contenido: texto + imagen -->
+        <div class="row align-items-center g-3">
+          <!-- Columna de texto -->
+          <div class="col-lg-6 text-center text-lg-start">
+            <div class="pe-lg-5">
+              <p class="fs-5 mb-4"><strong>Conviértete en parte de algo especial.</strong> Nuestros suscriptores no solo
+                reciben café fresco cada mes, también forman parte activa de nuestro proceso artesanal.</p>
+
+              <ul class="comunidad list-unstyled mb-4 fs-5">
+                <li class="d-flex align-items mb-3">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    class="text-success flex-shrink-0 me-3" style="color: var(--terracotta) !important;">
                     <polyline points="20 6 9 17 4 12"></polyline>
                   </svg>
                   <span>Acceso anticipado a lanzamientos exclusivos</span>
                 </li>
-                <li>
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <li class="d-flex align-items-start mb-3">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    class="text-success flex-shrink-0 me-3" style="color: var(--terracotta) !important;">
                     <polyline points="20 6 9 17 4 12"></polyline>
                   </svg>
                   <span>Descuentos en talleres y catas artesanales</span>
                 </li>
-                <li>
-                  <svg width="24" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <li class="d-flex align-items-start mb-3">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    class="text-success flex-shrink-0 me-3" style="color: var(--terracotta) !important;">
                     <polyline points="20 6 9 17 4 12"></polyline>
                   </svg>
                   <span>Participación directa en decisiones de tueste</span>
                 </li>
-                <li>
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <li class="d-flex align-items-start mb-3">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    class="text-success flex-shrink-0 me-3" style="color: var(--terracotta) !important;">
                     <polyline points="20 6 9 17 4 12"></polyline>
                   </svg>
                   <span>Entregas flexibles adaptadas a tu consumo</span>
                 </li>
-                <li>
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <li class="d-flex align-items-start mb-3">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    class="text-success flex-shrink-0 me-3" style="color: var(--terracotta) !important;">
                     <polyline points="20 6 9 17 4 12"></polyline>
                   </svg>
                   <span>Comunidad privada de amantes del café</span>
                 </li>
               </ul>
 
-              <a href="suscripcion.html" class="btn-subscribe">
+              <a href="mailto:hola@slowcoffee.example"
+                class="btn-hero btn-lg text-white fw-semibold d-inline-flex align-items-center gap-2 mb-3 rounded-4"
+                style="background-color: var(--terracotta); padding: 0.75rem 2rem; border-color: var(--terracotta);">
                 Descubre los planes
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M5 12h14M12 5l7 7-7 7" />
                 </svg>
               </a>
 
-              <p class="cta-note">Sin permanencia. Cancela cuando quieras.</p>
+              <p class="small mb-0">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  class="me-1" style="vertical-align: middle;">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+                Sin permanencia. Cancela cuando quieras.
+              </p>
             </div>
           </div>
 
-          <div class="col-lg-6 d-flex align-items-center">
-            <div class="cta-image w-100">
-              <img src="../img/comunidadFoto4.jpg" alt="Café artesanal" class="img-fluid rounded shadow-lg">
+          <!-- Columna de imagen -->
+          <div class="col-lg-6">
+            <div class="position-relative">
+              <img src="../img/comunidadFoto4.jpg" alt="Café artesanal"
+                class="img-fluid rounded-4 shadow-lg w-100 h-100" style="object-fit: cover; max-height: 500px;">
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Contacto -->
-    <section class="contact-banner">
-      <div class="contact-content">
-        <h2>¿Tienes alguna pregunta?</h2>
-        <p class="subtitle">Estamos aquí para ayudarte</p>
+    <section class="hero">
+      <img class="hero-bg">
+      <div class="hero-overlay"></div>
+      <div class="container hero-inner">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 col-xl-8">
+            <div class="hero-copy text-center">
+              <h1 class="display-3 fw-bold mb-4">¿Tienes alguna pregunta?</h1>
+              <p class="fs-4 mb-5">Estamos aquí para ayudarte</p>
 
-        <div class="contact-info">
-          <div class="contact-item">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-              <polyline points="22,6 12,13 2,6" />
-            </svg>
-            <a href="mailto:hola@slowcoffee.example">hola@slowcoffee.example</a>
-          </div>
-          <div class="contact-item">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path
-                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-            </svg>
-            <a href="tel:+34911222333">+34 911 222 333</a>
+              <div class="d-flex flex-column flex-md-row gap-4 justify-content-center align-items-center mb-4">
+                <div class="d-flex align-items-center gap-3">
+                  <div class="rounded-circle d-flex align-items-center justify-content-center"
+                    style="width: 48px; height: 48px; background-color: rgba(212, 165, 116, 0.1);">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      style="color: var(--terracotta);">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                      <polyline points="22,6 12,13 2,6" />
+                    </svg>
+                  </div>
+                  <a href="mailto:hola@slowcoffee.example" class="text-decoration-none fw-medium"
+                    style="color: white; font-size: 1.1rem;">
+                    hola@slowcoffee.example
+                  </a>
+                </div>
+
+                <div class="d-none d-md-block vr" style="height: 48px; opacity: 0.2;"></div>
+
+                <div class="d-flex align-items-center gap-3">
+                  <div class="rounded-circle d-flex align-items-center justify-content-center"
+                    style="width: 48px; height: 48px; background-color: rgba(212, 165, 116, 0.1);">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      style="color: var(--terracotta);">
+                      <path
+                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                    </svg>
+                  </div>
+                  <a href="tel:+34911222333" class="text-decoration-none fw-medium"
+                    style="color: white; font-size: 1.1rem;">
+                    +34 911 222 333
+                  </a>
+                </div>
+              </div>
+
+              <a href="pag/soporte.html" class="btn btn-hero fs-5">
+                Ir a soporte
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  style="margin-left: 0.5rem;">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
-
-        <a href="soporte.html" class="btn-contact">Ir a soporte</a>
       </div>
     </section>
+
   </main>
 
   <!-- Footer -->
-  <footer class="site-footer py-3">
-    <div class="container footer-inner">
+  <footer class="site-footer">
+    <div class="container">
       <div class="row text-center align-items-center">
-        <div class="col-md-4 mb-2">
-          <a class="brand footer-brand" href="../index.html">
-            <img src="../img/logo_negativo_png.png" alt="Slow Coffee" class="logo" height="36">
+        <div class="col-md-4 mb-4">
+          <a class="footer-brand d-inline-block mb-3" href="index.html">
+            <img src="../img/logo_negativo_png.png" alt="Slow Coffee" height="40">
           </a>
         </div>
 
-        <div class="col-md-4 mb-2">
-          <h4>Contacto</h4>
+        <div class="col-md-4 mb-4">
+          <h3 class="mb-3" style="color: var(--cream);">Contacto</h3>
           <ul class="list-unstyled mb-0 contact-list">
             <li>Email: <a href="mailto:hola@slowcoffee.example">hola@slowcoffee.example</a></li>
             <li>Tel: <a href="tel:+34911222333">+34 911 222 333</a></li>
@@ -389,23 +461,26 @@
           </ul>
         </div>
 
-        <div class="col-md-4 mb-2">
-          <h4>Síguenos</h4>
-          <div class="d-flex justify-content-center gap-2 social-icons" aria-label="Redes sociales">
+        <div class="col-md-4 mb-4">
+          <h3 class="mb-3" style="color: var(--cream);">Síguenos</h3>
+          <div class="d-flex justify-content-center gap-2" aria-label="Redes sociales">
             <a href="#" class="social-icon" aria-label="Instagram">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"
+                width="24" height="24">
                 <rect x="3" y="3" width="18" height="18" rx="4" />
                 <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
               </svg>
             </a>
             <a href="#" class="social-icon" aria-label="Twitter">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"
+                width="24" height="24">
                 <path
                   d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 22.43 1s-1.94 1.16-3.54 1.58A4.48 4.48 0 0 0 12 6v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5A4.5 4.5 0 0 0 23 3z" />
               </svg>
             </a>
             <a href="#" class="social-icon" aria-label="Facebook">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"
+                width="24" height="24">
                 <path d="M18 2h-3a4 4 0 0 0-4 4v3H8v4h3v8h4v-8h3l1-4h-4V6a1 1 0 0 1 1-1h3z" />
               </svg>
             </a>
@@ -413,8 +488,9 @@
         </div>
       </div>
 
-      <div class="footer-bottom text-center small mt-3">
-        <p class="mb-0">© <span id="year"></span> Slow Coffee — Todos los derechos reservados.</p>
+      <div class="text-center medium mt-3" style="padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1);">
+        <p class="mb-0" style="color: var(--cream); opacity: 0.8;">© <span id="year"></span> Slow Coffee — Todos los
+          derechos reservados.</p>
       </div>
     </div>
   </footer>

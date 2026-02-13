@@ -19,7 +19,7 @@ body {
   background: var(--cream); line-height: 1.6; -webkit-font-smoothing: antialiased; 
 }
 h1, h2, h3, h4, h5 { font-family: var(--font-serif); font-weight: 700; color: var(--coffee-900); }
-p { color: var(--coffee-600)}
+p, .comunidad{ color: var(--coffee-600)}
 a { text-decoration: none; transition: 0.3s; }
 
 /* 2. LAYOUT - Ajuste para que no se vea comprimido */
@@ -29,7 +29,7 @@ a { text-decoration: none; transition: 0.3s; }
 .py-section { padding: 4rem 0; }
 
 /* 3. HEADER & NAV */
-.site-header { background: var(--cream); padding: 2rem 0; }
+.site-header { background: var(--cream); padding: 1rem 0; }
 .navbar-brand img { height: 60px; width: auto; object-fit: contain; }
 .nav-link { 
   color: var(--coffee-900) !important; font-weight: 400; font-size: 1.2rem;
@@ -58,13 +58,6 @@ a { text-decoration: none; transition: 0.3s; }
 .product-card .card-title { font-family: var(--font-serif); font-weight: 600; margin-bottom: 0.5rem; }
 .product-card .price {color: var(--terracotta); font-weight: 700; font-size: 1.2rem; font-family: var(--font-serif); }
 
-.product-card { background: white; border-radius: 8px; border: 1px solid rgba(0,0,0,0.05); height: 100%; }
-.product-card .card-body { padding: 1.25rem; }
-.product-photo { height: 230px; background: #eee; margin-bottom: .5rem; display: flex; align-items: center; justify-content: center; overflow: hidden; }
-.product-photo img { width: 100%; height: 100%; object-fit: cover; }
-.product-card .card-title { font-family: var(--font-serif); font-weight: 600; margin-bottom: 0.5rem; }
-.product-card .price {color: var(--terracotta); font-weight: 700; font-size: 1.2rem; font-family: var(--font-serif); }
-
 /* 6. ICONOS (Origen & Proceso) - Corregido tamaño */
 .icon-card { text-align: center;   padding: 2.5rem 2rem; background: white; border-radius: 12px; transition: transform 0.3s ease, box-shadow 0.3s ease; height: 100%;}
 .icon-card:hover { transform: translateY(-8px); box-shadow: 0 12px 24px rgba(0,0,0,0.1); }
@@ -81,11 +74,6 @@ a { text-decoration: none; transition: 0.3s; }
 .social-icon { 
   width: 40px; height: 40px; background: rgba(255,255,255,0.1); 
   border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; color: white;}
-
-/* 9. BOTONES */
-.btn-hero { background: white; color: var(--coffee-900, #2c1810); border: 2px solid white; border-radius: 50px;
-  padding: 1rem 2rem; font-weight: 600; font-size: 1.1rem; transition: transform 0.3s ease, box-shadow 0.3s ease; }
-.btn-hero:hover { background: white; color: var(--coffee-900, #2c1810); transform: scale(1.08); box-shadow: 0 0 25px rgba(255, 255, 255, 0.8); }
 
 .btn-outline-secondary {
   border: 2px solid var(--coffee-900); padding: 1.2rem 2rem; border-radius: 50px; 
@@ -116,12 +104,25 @@ a { text-decoration: none; transition: 0.3s; }
   .timeline-checkpoint { left: 20px; } }
 
 /* PAGINA CATALOGO */
-.hero-badge{ font-size: 1.1rem; padding: 1rem 1.5rem; color: var(--terracotta); background: #e4d5b4; }
+.hero-badge, .btn-hero{ font-size: 1.1rem; padding: 1rem 1.5rem; color: var(--terracotta); 
+  background: white; transition: all 0.3s ease; border-radius: 40px; font-weight: 600;}
+.hero-badge:hover, .btn-hero:hover {
+  background-color: var(--terracotta) !important;
+  color: white !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(212, 165, 116, 0.3);
+}
 
+.hero-badge:hover svg {
+  stroke: white;
+}
 
+/* PAGINA COMUNIDAD */
+
+.card:hover {
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15) !important;
+  transform: translateY(-5px); }
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
-  .hero-copy { text-align: center; margin: 0 auto; }
-
-}
+  .hero-copy { text-align: center; margin: 0 auto; } }
